@@ -1,0 +1,49 @@
+# Ludus あそびの辞書 — OKF bundle
+
+このbundleは、Notionの「ゲーム構造一覧 (テンプレート一覧)」から得たジャンル別の主要システムを、Ludusの辞書としてOKF化したものです。各Markdownファイルが1つの概念であり、通常のMarkdownリンクが知識グラフの辺になります。
+
+## 構成
+
+- ジャンル: 23
+- 主要システム: 192
+- UX成果: 410
+- ドメイン要素: 13
+- Pictor候補: 6
+
+## 入口
+
+- [グラフスキーマ](./graph-schema.md)
+- [Pictorの責務境界](./owners/pictor.md)
+- [グラフDB投入用のProperty Graph JSON](./exports/property-graph.json)
+
+## ジャンル
+
+- [アクションゲーム](./genres/action.md)
+- [プラットフォーマー](./genres/platformer.md)
+- [シューティングゲーム(FPS/TPS)](./genres/shooter.md)
+- [RPG(ロールプレイングゲーム)](./genres/rpg.md)
+- [ストラテジー/シミュレーション](./genres/strategy-sim.md)
+- [パズルゲーム](./genres/puzzle.md)
+- [レーシングゲーム](./genres/racing.md)
+- [格闘ゲーム](./genres/fighting.md)
+- [サバイバルゲーム](./genres/survival.md)
+- [ホラーゲーム](./genres/horror.md)
+- [ローグライク/ローグライト](./genres/roguelike.md)
+- [タワーディフェンス](./genres/tower-defense.md)
+- [MOBA (Multiplayer Online Battle Arena)](./genres/moba.md)
+- [メトロイドヴァニア](./genres/metroidvania.md)
+- [ハックアンドスラッシュ](./genres/hack-and-slash.md)
+- [放置系/アイドル/クリッカー](./genres/idle-clicker.md)
+- [ガチャ/収集型RPG](./genres/gacha-rpg.md)
+- [クラッシュ・オブ・クラン型(ストラテジー/クラン戦)](./genres/coc-strategy.md)
+- [パズル&ドラゴンズ型(パズル+RPG)](./genres/puzzle-rpg.md)
+- [リズムゲーム/音ゲー](./genres/rhythm.md)
+- [デッキ構築型カードゲーム](./genres/deckbuilder.md)
+- [オートバトラー](./genres/auto-battler.md)
+- [街づくり/経営シミュレーション](./genres/city-builder.md)
+
+## 生成元
+
+- 原典: Notion「ゲーム構造一覧 (テンプレート一覧)」 (page id: `30453028-8e8d-805d-a922-f92949ebd575`)
+- 変換元: `game-knowledge-graph` の `manifest.json` と `graph/*.json`
+- 生成器: `tools/import-game-knowledge-graph.mjs`

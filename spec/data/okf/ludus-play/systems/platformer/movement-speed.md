@@ -6,12 +6,12 @@ tags:
   - "ludus"
   - "gameplay-system"
   - "platformer"
-  - "shared-logic"
+  - "split"
 timestamp: "2026-07-15T00:00:00+09:00"
 system_id: "system:platformer:movement-speed"
 genre_id: "genre:platformer"
-implementation_status: "shared-logic"
-implementation_owner: "Ergo/Ars"
+implementation_status: "split"
+implementation_owner: "Ergo/Ars + Pictor"
 assessment_basis: "rule-based-v1; manual review required before implementation"
 ---
 
@@ -43,16 +43,17 @@ assessment_basis: "rule-based-v1; manual review required before implementation"
 - [入力と操作](../../domains/input-and-control.md)
 - [ルールと状態](../../domains/rules-and-state.md)
 - [音とリズム](../../domains/audio-and-rhythm.md)
+- [物語と知識](../../domains/narrative-and-knowledge.md)
 
 # 汎用実装の判定
 
-- **状態**: shared-logic
-- **所有**: Ergo/Ars
-- **判断**: 複数ジャンルで再利用しうるが、描画専用のPictorではなく上位のゲームロジック層が所有する。
+- **状態**: split
+- **所有**: Ergo/Ars + Pictor
+- **判断**: ゲーム規則はErgo/Ars、再利用可能な視覚出力はPictorへ分離する候補。
 
 # Pictor候補
 
-- なし。視覚表現に分離できる要求が具体化した時点で再評価する。
+- [テキスト・ベクター・モーショングラフィックス](../../pictor/text-vector-motion.md)
 
 # 実装上の前提
 

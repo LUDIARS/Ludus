@@ -1,0 +1,153 @@
+{
+  "version": "1.0.0",
+  "title": "Ludus あそびの辞書・編集補足",
+  "editorial_policy": "原典のNotion一覧にない代表ジャンルと、物語・同期・アクセシビリティのような横断要素を補う。既存ジャンルを細分化して重複させず、Ludusのテンプレートと辞書に存在するが原典にない遊びを優先する。",
+  "genres": [
+    {
+      "genre": {
+        "id": "genre:adventure",
+        "type": "Genre",
+        "name": "アドベンチャーゲーム",
+        "summary": "場所・物・会話を結び、手がかりから状況を理解して前進する遊び。反射神経よりも観察、推理、選択の連鎖を中心に据える。"
+      },
+      "import_id": "ludus_supplement_20260715",
+      "source_page_id": "ludus-editorial-supplement-20260715",
+      "systems": [
+        {"id":"system:adventure:scene-exploration","type":"System","name":"シーン探索と移動","order":1,"purpose":"場所を観察し、次に調べる対象や移動先を選べるようにする。","features":["地点・画面の遷移","注目対象の提示","既訪問地点への再訪"],"ux_effects":["探索の手触り: 自分で情報源を見つける感覚","見通し: 次に調べる候補を把握できる"],"design_principle":"移動そのものではなく、発見と意味づけのために空間を使う。"},
+        {"id":"system:adventure:object-interaction","type":"System","name":"対象調査と使用","order":2,"purpose":"物や人物への調査、アイテム使用、組み合わせを通じて状態を変化させる。","features":["調べる・話す・使うの動詞","条件付きインタラクション","所持品と対象の照合"],"ux_effects":["試行の納得感: 行動と結果の因果を学べる","発見の喜び: 意外な組み合わせを見つけられる"],"design_principle":"総当たりを強いるのでなく、文脈と反応で仮説を導く。"},
+        {"id":"system:adventure:clue-knowledge","type":"System","name":"手がかりと知識管理","order":3,"purpose":"得た情報を記録し、未解決の問いと結び付けて推理を支える。","features":["手がかりログ","人物・場所・物の関連付け","未解決事項の提示"],"ux_effects":["推理の連続性: 中断後も思考を再開できる","理解の達成感: 断片がつながる快感"],"design_principle":"プレイヤーの記憶を試すだけにせず、推論の質を試す。"},
+        {"id":"system:adventure:puzzle-resolution","type":"System","name":"環境パズルと解決判定","order":4,"purpose":"観察した規則と持ち物を使い、障害を解く進行の節目を作る。","features":["状態条件の判定","段階的ヒント","解決時の世界変化"],"ux_effects":["ひらめき: 観察が答えになる満足","停滞の緩和: 必要時に次の一手を得られる"],"design_principle":"答えを隠すより、問題の構造を読ませる。"},
+        {"id":"system:adventure:dialogue-choice","type":"System","name":"会話と選択","order":5,"purpose":"対話の選択で情報・関係・進行条件を変え、物語への関与を生む。","features":["選択肢表示","会話状態の分岐","既知情報に応じた台詞"],"ux_effects":["主体性: どう聞くかを自分で選べる","人物理解: 会話から相手の意図を読める"],"design_principle":"正解探しだけにせず、情報の取り方にも個性を持たせる。"},
+        {"id":"system:adventure:save-resume","type":"System","name":"保存と再開","order":6,"purpose":"長い探索と推理を任意の区切りで安全に中断・再開できるようにする。","features":["任意保存","状態復元","既読・既取得情報の維持"],"ux_effects":["安心感: 自分のペースで遊べる","継続性: 推理の蓄積を失わない"],"design_principle":"長時間の思考体験を、生活の時間割に適応させる。"}
+      ],
+      "implementation_order": ["シーン探索と移動","対象調査と使用","手がかりと知識管理","環境パズルと解決判定","会話と選択","保存と再開"],
+      "edges": {"PRECEDES":[["system:adventure:scene-exploration","system:adventure:object-interaction"],["system:adventure:object-interaction","system:adventure:clue-knowledge"],["system:adventure:clue-knowledge","system:adventure:puzzle-resolution"],["system:adventure:puzzle-resolution","system:adventure:dialogue-choice"],["system:adventure:dialogue-choice","system:adventure:save-resume"]]}
+    },
+    {
+      "genre": {"id":"genre:visual-novel","type":"Genre","name":"ビジュアルノベル／インタラクティブフィクション","summary":"文章・音・画面演出を読み進め、選択と状態によって異なる物語をたどる遊び。読解の快適さと選択の意味を中心に据える。"},
+      "import_id":"ludus_supplement_20260715","source_page_id":"ludus-editorial-supplement-20260715",
+      "systems": [
+        {"id":"system:visual-novel:script-scene","type":"System","name":"台本とシーン再生","order":1,"purpose":"文章、立ち絵、背景、音声、演出を時系列に再生して場面を成立させる。","features":["台本イベント列","話者・表示状態","音声と演出の同期"],"ux_effects":["読書への没入: 物語を途切れず受け取れる","情景理解: 誰が何をしているかを追える"],"design_principle":"演出は文章の理解を支え、読ませる速度を奪わない。"},
+        {"id":"system:visual-novel:choice-route","type":"System","name":"選択肢とルート分岐","order":2,"purpose":"選択により次の場面・結末・閲覧情報を変化させる。","features":["条件付き選択肢","分岐先の決定","既読ルートの追跡"],"ux_effects":["選択の重み: 自分の判断が展開を変える","再読の動機: 別の可能性を試せる"],"design_principle":"選択の頻度より、選択後に生じる意味の差を大切にする。"},
+        {"id":"system:visual-novel:flags-relations","type":"System","name":"フラグと関係値","order":3,"purpose":"既読・選択・関係値を状態として管理し、会話や結末を文脈に合わせる。","features":["物語フラグ","人物ごとの関係値","到達条件の評価"],"ux_effects":["文脈性: 過去の行動が会話に反映される","人物への愛着: 関係の変化を感じられる"],"design_principle":"隠れた数値ではなく、物語上の因果として変化を伝える。"},
+        {"id":"system:visual-novel:backlog-skip-auto","type":"System","name":"バックログ・既読スキップ・オート","order":4,"purpose":"既読確認、再読、読む速度の調整を可能にし、読書体験を各人に合わせる。","features":["会話バックログ","既読判定スキップ","オート送りと速度設定"],"ux_effects":["読みやすさ: 好みの速度で読める","再探索の快適さ: 既知の部分を負担なく越えられる"],"design_principle":"便利機能を攻略の妨げではなく、再読の入口にする。"},
+        {"id":"system:visual-novel:text-accessibility","type":"System","name":"テキストアクセシビリティ","order":5,"purpose":"文字サイズ、字幕、色、入力補助を調整し、物語情報に等しくアクセスできるようにする。","features":["文字サイズと表示速度","字幕・音量設定","色覚配慮と操作リマップ"],"ux_effects":["アクセス可能性: 読む・聞く条件の差を小さくできる","安心感: 自分に合う表示で集中できる"],"design_principle":"物語体験の必須情報を、単一の感覚や操作に閉じ込めない。"},
+        {"id":"system:visual-novel:save-load","type":"System","name":"セーブ・ロードと既読管理","order":6,"purpose":"任意地点の保存と既読履歴の復元により、分岐探索を安全に行えるようにする。","features":["複数セーブ枠","クイックセーブ","既読・選択履歴の保存"],"ux_effects":["試行の自由: 選択を恐れず試せる","継続性: 物語の位置を失わない"],"design_principle":"戻る行為を失敗の否定ではなく、物語の探索にする。"}
+      ],
+      "implementation_order":["台本とシーン再生","選択肢とルート分岐","フラグと関係値","バックログ・既読スキップ・オート","テキストアクセシビリティ","セーブ・ロードと既読管理"],
+      "edges":{"PRECEDES":[["system:visual-novel:script-scene","system:visual-novel:choice-route"],["system:visual-novel:choice-route","system:visual-novel:flags-relations"],["system:visual-novel:flags-relations","system:visual-novel:backlog-skip-auto"],["system:visual-novel:backlog-skip-auto","system:visual-novel:text-accessibility"],["system:visual-novel:text-accessibility","system:visual-novel:save-load"]]}
+    },
+    {
+      "genre":{"id":"genre:life-sim","type":"Genre","name":"ライフシム／農場シム","summary":"日々の時間、仕事、関係、住環境を少しずつ整え、自分らしい生活の循環を作る遊び。効率だけでなく習慣と愛着を価値にする。"},
+      "import_id":"ludus_supplement_20260715","source_page_id":"ludus-editorial-supplement-20260715",
+      "systems":[
+        {"id":"system:life-sim:calendar-time","type":"System","name":"暦・時間・季節","order":1,"purpose":"一日・季節・イベントの周期を管理し、生活行動に意味のあるリズムを与える。","features":["時刻進行","季節変化","予定イベント"],"ux_effects":["生活感: 世界に日々の流れを感じる","計画性: 先の予定を見通せる"],"design_principle":"待ち時間ではなく、選択の文脈として時間を使う。"},
+        {"id":"system:life-sim:daily-actions","type":"System","name":"日課と行動力","order":2,"purpose":"採取、会話、作業などの行動に時間や体力のコストを与え、一日の優先順位を作る。","features":["行動力消費","作業時間","回復と休息"],"ux_effects":["選択の手触り: 今日何をするか決められる","達成感: 小さな日課を積み重ねられる"],"design_principle":"制限は焦らせるためでなく、暮らしにリズムを与える。"},
+        {"id":"system:life-sim:farming-crafting","type":"System","name":"栽培・生産・クラフト","order":3,"purpose":"育成と加工の連鎖で、手をかけた結果を資源や環境の変化として返す。","features":["育成段階","レシピと加工","品質・収穫の変動"],"ux_effects":["育成の愛着: 手入れの結果を見守れる","創意工夫: 素材の使い道を考えられる"],"design_principle":"反復作業の量でなく、次の生活を豊かにする連鎖を報いる。"},
+        {"id":"system:life-sim:relationships-events","type":"System","name":"人間関係と地域イベント","order":4,"purpose":"会話、贈答、共同作業を通じて人物との関係や地域の出来事を変化させる。","features":["好感度と記憶","会話条件","季節イベント"],"ux_effects":["居場所感: 地域とのつながりを感じる","人物理解: 関係の積み重ねを味わえる"],"design_principle":"数値を上げることより、相手との文脈を増やす。"},
+        {"id":"system:life-sim:home-customization","type":"System","name":"住環境と装飾","order":5,"purpose":"家具、配置、外観を編集し、生活の成果を自分の空間として表現する。","features":["配置編集","装飾収集","環境ボーナス"],"ux_effects":["自己表現: 空間に自分らしさを置ける","愛着: 生活の成果を眺められる"],"design_principle":"最適解だけでなく、見た目と物語性の選択を成立させる。"},
+        {"id":"system:life-sim:economy-progression","type":"System","name":"生活経済と解放","order":6,"purpose":"収入、買い物、設備投資を循環させ、できる暮らしの幅を段階的に広げる。","features":["売買","設備投資","機能解放"],"ux_effects":["前進感: 暮らしが少しずつ豊かになる","自律性: 自分の目標を選べる"],"design_principle":"稼ぐことを目的化せず、生活の選択肢を増やす手段にする。"}
+      ],
+      "implementation_order":["暦・時間・季節","日課と行動力","栽培・生産・クラフト","人間関係と地域イベント","住環境と装飾","生活経済と解放"],
+      "edges":{"PRECEDES":[["system:life-sim:calendar-time","system:life-sim:daily-actions"],["system:life-sim:daily-actions","system:life-sim:farming-crafting"],["system:life-sim:farming-crafting","system:life-sim:relationships-events"],["system:life-sim:relationships-events","system:life-sim:home-customization"],["system:life-sim:home-customization","system:life-sim:economy-progression"]]}
+    },
+    {
+      "genre":{"id":"genre:sports","type":"Genre","name":"スポーツゲーム","summary":"身体操作、ボールや用具の物理、競技規則、チーム戦術を通じて、競技の判断と高揚を再現する遊び。"},
+      "import_id":"ludus_supplement_20260715","source_page_id":"ludus-editorial-supplement-20260715",
+      "systems":[
+        {"id":"system:sports:player-team-control","type":"System","name":"選手・チーム操作","order":1,"purpose":"直接操作と選手切替を組み合わせ、意図したプレーを素早く実行できるようにする。","features":["選手切替","パス・シュート入力","味方への指示"],"ux_effects":["操作の一体感: 自分がプレーしている感覚","戦術性: 個人とチームの選択を両立できる"],"design_principle":"入力の複雑さより、競技らしい意思決定を優先する。"},
+        {"id":"system:sports:object-physics","type":"System","name":"ボール・用具の物理","order":2,"purpose":"速度、回転、衝突を扱い、プレーの結果が予測と技術に応じて変わるようにする。","features":["衝突と反発","回転・軌道","接触判定"],"ux_effects":["納得感: 打ち方と結果の関係を理解できる","技術表現: 精度やタイミングを磨ける"],"design_principle":"現実の完全再現より、競技として読み取れる一貫性を優先する。"},
+        {"id":"system:sports:match-rules","type":"System","name":"試合進行と競技規則","order":3,"purpose":"得点、反則、時間、ラウンドを判定して、競技の緊張と公平性を成立させる。","features":["時間・ピリオド管理","反則判定","勝敗決定"],"ux_effects":["緊張感: 残り時間と点差を意識できる","公平感: 同じ規則で競える"],"design_principle":"規則を見えない制約にせず、状況判断の材料として伝える。"},
+        {"id":"system:sports:opponent-ai","type":"System","name":"対戦相手AIと戦術","order":4,"purpose":"相手や味方が状況に応じて配置・守備・攻撃を変え、競技らしい駆け引きを作る。","features":["役割別行動","戦術切替","難易度調整"],"ux_effects":["読み合い: 相手の意図を予測できる","上達実感: 戦術で優位を作れる"],"design_principle":"反射の強さだけでなく、理解可能なチーム行動を持たせる。"},
+        {"id":"system:sports:score-replay","type":"System","name":"スコア表示とリプレイ","order":5,"purpose":"試合状況と決定的なプレーを見やすく示し、成功を共有・振り返りできるようにする。","features":["スコアボード","ハイライト再生","カメラ演出"],"ux_effects":["高揚感: 決定的瞬間を味わえる","振り返り: 成功と失敗を理解できる"],"design_principle":"表示と演出は競技の流れを止めず、意味のある瞬間を強調する。"},
+        {"id":"system:sports:online-session","type":"System","name":"オンライン対戦セッション","order":6,"purpose":"参加者を公平な試合に接続し、通信遅延下でも結果の一貫性を保つ。","features":["マッチメイク","同期と遅延補償","切断時の扱い"],"ux_effects":["対戦の信頼: 同じ条件で競える","継続性: 参加しやすい試合導線"],"design_principle":"ネットワーク品質の差を勝敗の要因にしない。"}
+      ],
+      "implementation_order":["選手・チーム操作","ボール・用具の物理","試合進行と競技規則","対戦相手AIと戦術","スコア表示とリプレイ","オンライン対戦セッション"],
+      "edges":{"PRECEDES":[["system:sports:player-team-control","system:sports:object-physics"],["system:sports:object-physics","system:sports:match-rules"],["system:sports:match-rules","system:sports:opponent-ai"],["system:sports:opponent-ai","system:sports:score-replay"],["system:sports:score-replay","system:sports:online-session"]]}
+    },
+    {
+      "genre":{"id":"genre:board-card","type":"Genre","name":"ボードゲーム／カードゲーム","summary":"明示的な規則、ターン、公開・非公開情報、手札と盤面の変化を読み合いに変える遊び。デッキ構築を前提にしない対戦・協力遊びを含む。"},
+      "import_id":"ludus_supplement_20260715","source_page_id":"ludus-editorial-supplement-20260715",
+      "systems":[
+        {"id":"system:board-card:setup-information","type":"System","name":"セットアップと公開情報","order":1,"purpose":"盤面、手札、役割、初期条件を整え、誰が何を知っているかを定義する。","features":["初期配置","公開・非公開領域","役割配布"],"ux_effects":["公平な開始: 条件を理解して始められる","期待感: まだ見えない可能性を持てる"],"design_principle":"隠す情報と共有する情報を、遊びの目的に沿って明確に分ける。"},
+        {"id":"system:board-card:turn-phase","type":"System","name":"ターンとフェーズ進行","order":2,"purpose":"手番、行動回数、フェーズを管理し、意思決定の順序を明確にする。","features":["手番管理","行動コスト","フェーズ遷移"],"ux_effects":["見通し: 今できることを把握できる","緊張感: 一手の順序を考えられる"],"design_principle":"待ち時間を増やすためでなく、決断の区切りを作る。"},
+        {"id":"system:board-card:rule-resolution","type":"System","name":"ルール解決と例外処理","order":3,"purpose":"カードや盤面の効果を一貫して解決し、競合する規則の優先順位を扱う。","features":["効果スタック","条件判定","履歴と検証"],"ux_effects":["信頼感: 規則どおりに結果が出る","戦略性: 規則の組み合わせを考えられる"],"design_principle":"自動化しても、なぜその結果になるかを確認可能にする。"},
+        {"id":"system:board-card:hand-table-state","type":"System","name":"手札・盤面・山札の状態","order":4,"purpose":"カードや駒の位置・所有・可視性を追跡し、プレイの根拠を保つ。","features":["手札管理","山札・捨て札","盤面配置"],"ux_effects":["状況理解: 勝ち筋に必要な情報を読める","安心感: 状態の取り違えを防げる"],"design_principle":"情報量を減らすのでなく、読み解ける構造に整える。"},
+        {"id":"system:board-card:opponent-assist","type":"System","name":"対戦相手AIと進行補助","order":5,"purpose":"ソロ対戦・協力時の相手行動と、ルール説明・操作補助を提供する。","features":["方針を持つAI","手順ガイド","取り消しと確認"],"ux_effects":["学びやすさ: 規則を遊びながら理解できる","一人遊び: 相手がいなくても成立する"],"design_principle":"AIを単なる最適解計算機にせず、学習相手にもする。"},
+        {"id":"system:board-card:match-session","type":"System","name":"対局セッションと保存","order":6,"purpose":"対局の開始・再開・終了を管理し、長いゲームでも状態と履歴を保つ。","features":["セッション作成","中断再開","勝敗記録"],"ux_effects":["継続性: 長い対局を生活に合わせられる","振り返り: 一局の流れを確認できる"],"design_principle":"卓上の手触りを損なわず、デジタルの利点で支える。"}
+      ],
+      "implementation_order":["セットアップと公開情報","ターンとフェーズ進行","ルール解決と例外処理","手札・盤面・山札の状態","対戦相手AIと進行補助","対局セッションと保存"],
+      "edges":{"PRECEDES":[["system:board-card:setup-information","system:board-card:turn-phase"],["system:board-card:turn-phase","system:board-card:rule-resolution"],["system:board-card:rule-resolution","system:board-card:hand-table-state"],["system:board-card:hand-table-state","system:board-card:opponent-assist"],["system:board-card:opponent-assist","system:board-card:match-session"]]}
+    },
+    {
+      "genre":{"id":"genre:battle-royale","type":"Genre","name":"バトルロイヤル／エクストラクション","summary":"不確実な開始条件の中で装備を集め、縮小する危険と他者の存在を読み、最後まで生存または離脱を目指す対人サバイバル遊び。"},
+      "import_id":"ludus_supplement_20260715","source_page_id":"ludus-editorial-supplement-20260715",
+      "systems":[
+        {"id":"system:battle-royale:deployment-zone","type":"System","name":"降下・危険区域","order":1,"purpose":"開始地点と危険区域の変化を設計し、毎試合の移動判断を生む。","features":["降下地点選択","安全地帯の縮小","危険区域の予告"],"ux_effects":["緊張感: 次の安全を常に判断する","戦術の多様性: 開始位置で方針を変えられる"],"design_principle":"偶然の配置を、意味のある移動判断に変える。"},
+        {"id":"system:battle-royale:loot-inventory","type":"System","name":"戦利品とインベントリ","order":2,"purpose":"探索で得た装備を選別・管理し、準備と生存力のトレードオフを作る。","features":["ランダム配置","装備比較","容量と回復資源"],"ux_effects":["発見の高揚: 欲しい装備を見つける","選択の重み: 持つ物を取捨選択できる"],"design_principle":"希少性だけでなく、今の戦況との適合で価値を決める。"},
+        {"id":"system:battle-royale:combat-survival","type":"System","name":"戦闘と生存","order":3,"purpose":"射撃、遮蔽、被弾、回復を扱い、情報不足下の対立を成立させる。","features":["照準と弾道","遮蔽と位置取り","回復・防具"],"ux_effects":["対峙の緊張: 一瞬の判断に集中できる","技能表現: 狙いと位置取りを磨ける"],"design_principle":"先に見つけた側だけが勝つのでなく、対応の余地を残す。"},
+        {"id":"system:battle-royale:squad-revive","type":"System","name":"分隊・救助・再参加","order":4,"purpose":"仲間との役割分担、救助、再参加条件を通じてチームの物語を作る。","features":["分隊状態","救助行動","再参加条件"],"ux_effects":["協力感: 仲間を助ける意味がある","逆転の期待: 失敗後にも関与を続けられる"],"design_principle":"脱落を即時の退屈にせず、チーム判断に変える。"},
+        {"id":"system:battle-royale:authoritative-sync","type":"System","name":"権威同期と不正対策","order":5,"purpose":"移動、命中、所持品の状態を権威的に同期し、公平な対戦を支える。","features":["サーバー権威判定","遅延補償","不正検知の境界"],"ux_effects":["公平感: 結果を信頼できる","対戦の安心: 不自然な差を減らせる"],"design_principle":"通信品質の違いと不正が、遊びの上達を損なわないようにする。"},
+        {"id":"system:battle-royale:spectate-replay","type":"System","name":"観戦とリプレイ","order":6,"purpose":"脱落後の観戦と試合後の振り返りを提供し、学習と共有を支える。","features":["チーム観戦","死亡理由の確認","ハイライト記録"],"ux_effects":["学習: 次回の判断を改善できる","参加継続: 脱落後も試合に関われる"],"design_principle":"敗北を切断点にせず、次の理解につなげる。"}
+      ],
+      "implementation_order":["降下・危険区域","戦利品とインベントリ","戦闘と生存","分隊・救助・再参加","権威同期と不正対策","観戦とリプレイ"],
+      "edges":{"PRECEDES":[["system:battle-royale:deployment-zone","system:battle-royale:loot-inventory"],["system:battle-royale:loot-inventory","system:battle-royale:combat-survival"],["system:battle-royale:combat-survival","system:battle-royale:squad-revive"],["system:battle-royale:squad-revive","system:battle-royale:authoritative-sync"],["system:battle-royale:authoritative-sync","system:battle-royale:spectate-replay"]]}
+    },
+    {
+      "genre":{"id":"genre:shmup","type":"Genre","name":"シューティングゲーム（STG／SHMUP）","summary":"自機の移動と攻撃、敵弾のパターン、出現のリズムを読み、危険な弾幕を抜けながらスコアや生存を目指す遊び。"},
+      "import_id":"ludus_supplement_20260715","source_page_id":"ludus-editorial-supplement-20260715",
+      "systems":[
+        {"id":"system:shmup:player-control","type":"System","name":"自機操作と当たり判定","order":1,"purpose":"移動速度、当たり判定、ボムなどを制御し、精密な回避を可能にする。","features":["移動速度切替","ヒットボックス","緊急回避資源"],"ux_effects":["精密操作: 狭い隙間を抜けられる","安心感: 判定を学んで上達できる"],"design_principle":"見た目の大きさでなく、回避の読みやすさを優先する。"},
+        {"id":"system:shmup:bullet-pattern","type":"System","name":"弾幕パターン","order":2,"purpose":"敵弾の発射規則と軌道を組み合わせ、読める危険と攻略余地を作る。","features":["発射間隔","軌道・速度変化","予兆と安全地帯"],"ux_effects":["緊張と集中: 危険を読み続ける","攻略の喜び: パターンを理解して突破できる"],"design_principle":"避けられない量ではなく、学習可能な構造を設計する。"},
+        {"id":"system:shmup:enemy-wave","type":"System","name":"敵編隊とウェーブ出現","order":3,"purpose":"敵の出現順・配置・攻撃を時間軸で管理し、ステージごとのリズムを作る。","features":["編隊配置","出現キュー","ボス遷移"],"ux_effects":["高揚感: 局面の盛り上がりを感じる","予測可能性: 学習して準備できる"],"design_principle":"暗記を要求するのでなく、出現から次の行動を読ませる。"},
+        {"id":"system:shmup:score-chain","type":"System","name":"スコアとチェイン","order":4,"purpose":"連続撃破や危険行動に得点報酬を与え、生存以外の挑戦目標を作る。","features":["連続撃破条件","倍率","スコア表示"],"ux_effects":["挑戦意欲: もう一段高い遊び方を目指せる","技能の可視化: 上達を数値で確かめられる"],"design_principle":"安全行動を否定せず、欲張る選択に魅力を与える。"},
+        {"id":"system:shmup:power-up","type":"System","name":"パワーアップと装備選択","order":5,"purpose":"攻撃・防御・移動の能力を変化させ、局面に応じた攻略方針を作る。","features":["強化アイテム","武器切替","ボム・残機"],"ux_effects":["成長感: 自機が強くなる実感","戦略性: 強化の使い方を選べる"],"design_principle":"強化を単なる火力増加にせず、回避と攻略の手段にする。"},
+        {"id":"system:shmup:stage-pacing","type":"System","name":"ステージペーシング","order":6,"purpose":"通常敵、休息、ボス、演出の密度を調整し、短いプレイでも起伏を作る。","features":["難度曲線","休息区間","ボスフェーズ"],"ux_effects":["達成感: 山場を越えた感覚","集中の持続: 緩急で疲労を調整できる"],"design_principle":"密度を上げ続けず、次の挑戦に必要な呼吸を残す。"}
+      ],
+      "implementation_order":["自機操作と当たり判定","弾幕パターン","敵編隊とウェーブ出現","スコアとチェイン","パワーアップと装備選択","ステージペーシング"],
+      "edges":{"PRECEDES":[["system:shmup:player-control","system:shmup:bullet-pattern"],["system:shmup:bullet-pattern","system:shmup:enemy-wave"],["system:shmup:enemy-wave","system:shmup:score-chain"],["system:shmup:score-chain","system:shmup:power-up"],["system:shmup:power-up","system:shmup:stage-pacing"]]}
+    },
+    {
+      "genre":{"id":"genre:open-world","type":"Genre","name":"オープンワールドゲーム","summary":"広く連続した世界を自分の順序で移動・発見し、複数の活動と物語を結びながら居場所と目的を見つける遊び。"},
+      "import_id":"ludus_supplement_20260715","source_page_id":"ludus-editorial-supplement-20260715",
+      "systems":[
+        {"id":"system:open-world:streaming-traversal","type":"System","name":"世界ストリーミングと移動","order":1,"purpose":"広い世界を継ぎ目なく読み込み、多様な移動手段で探索できるようにする。","features":["領域ストリーミング","徒歩・乗り物移動","遠景と可視性"],"ux_effects":["自由感: 行きたい方向へ進める","没入感: 世界が連続して感じられる"],"design_principle":"広さの数値でなく、移動中に発見が続く密度を設計する。"},
+        {"id":"system:open-world:discovery-map","type":"System","name":"発見と地図","order":2,"purpose":"地点、関心事、未踏領域を記録し、自発的な探索を支える。","features":["地図の開示","目印と注釈","発見ログ"],"ux_effects":["方向感覚: 自分の位置と候補を把握できる","探索の動機: 気になる場所を追える"],"design_principle":"地図は答えを示し切るのでなく、好奇心を次の行動へ変える。"},
+        {"id":"system:open-world:quest-narrative","type":"System","name":"クエストと物語導線","order":3,"purpose":"主目標と寄り道を記録し、プレイヤーの順序でも物語の意味を保つ。","features":["複数クエスト","会話・選択条件","進行ログ"],"ux_effects":["自己決定: 今追う物語を選べる","継続性: 寄り道後も目的に戻れる"],"design_principle":"一本道に戻すのではなく、複数の行為が世界理解に寄与するようにする。"},
+        {"id":"system:open-world:world-simulation","type":"System","name":"世界シミュレーション","order":4,"purpose":"人物、時間、天候、勢力の状態変化を扱い、世界がプレイヤー不在でも動く感覚を作る。","features":["日夜・天候","NPC行動","勢力・地域状態"],"ux_effects":["生きた世界: 世界に独自の時間を感じる","予測と発見: 状態変化を利用・観察できる"],"design_principle":"すべてを動かすのでなく、意味のある変化を読み取れるようにする。"},
+        {"id":"system:open-world:fast-travel-save","type":"System","name":"移動短縮と保存","order":5,"purpose":"既知の場所への移動短縮と保存により、広い世界の反復移動を負担にしない。","features":["ファストトラベル","チェックポイント","状態保存"],"ux_effects":["尊重: プレイヤーの時間を守れる","継続性: 大きな冒険を中断できる"],"design_principle":"初回の旅は味わわせ、既知の移動は選んで省略できるようにする。"},
+        {"id":"system:open-world:navigation-accessibility","type":"System","name":"ナビゲーション支援とアクセシビリティ","order":6,"purpose":"目的地案内、入力補助、視認性設定を通じて、多様な遊び方で世界を探索できるようにする。","features":["案内強度の設定","入力リマップ","視認性・字幕設定"],"ux_effects":["アクセス可能性: 自分に合う探索方法を選べる","安心感: 迷いや負荷を調整できる"],"design_principle":"支援を強制せず、探索の不確かさを自分で調整できるようにする。"}
+      ],
+      "implementation_order":["世界ストリーミングと移動","発見と地図","クエストと物語導線","世界シミュレーション","移動短縮と保存","ナビゲーション支援とアクセシビリティ"],
+      "edges":{"PRECEDES":[["system:open-world:streaming-traversal","system:open-world:discovery-map"],["system:open-world:discovery-map","system:open-world:quest-narrative"],["system:open-world:quest-narrative","system:open-world:world-simulation"],["system:open-world:world-simulation","system:open-world:fast-travel-save"],["system:open-world:fast-travel-save","system:open-world:navigation-accessibility"]]}
+    },
+    {
+      "genre":{"id":"genre:runner","type":"Genre","name":"ランナー／エンドレスラン","summary":"自動的に進む移動と即時の障害回避を軸に、短い試行を繰り返して距離・スコア・操作精度を伸ばす遊び。"},
+      "import_id":"ludus_supplement_20260715","source_page_id":"ludus-editorial-supplement-20260715",
+      "systems":[
+        {"id":"system:runner:auto-lane-control","type":"System","name":"自動移動とレーン操作","order":1,"purpose":"前進を自動化し、レーン移動・ジャンプ・スライドに判断を集中させる。","features":["自動前進","レーン切替","ジャンプ・スライド"],"ux_effects":["即応性: 少ない入力で集中できる","理解しやすさ: 操作目的が明確"],"design_principle":"移動の手間を省き、瞬間の判断を遊びにする。"},
+        {"id":"system:runner:obstacle-timing","type":"System","name":"障害物とタイミング判定","order":2,"purpose":"障害物の配置と判定猶予を調整し、反応と予測の気持ちよい連鎖を作る。","features":["障害物種別","予兆","猶予時間"],"ux_effects":["緊張と快感: ぎりぎりを抜ける感覚","上達実感: パターンを先読みできる"],"design_principle":"不意打ちでなく、見て判断できる速さを守る。"},
+        {"id":"system:runner:pickup-score","type":"System","name":"収集物とスコア","order":3,"purpose":"安全な経路から少し外れた収集物に報酬を与え、走行中の選択を増やす。","features":["収集ライン","距離スコア","連続取得報酬"],"ux_effects":["リスク選択: 安全と得点を天秤にかけられる","達成感: 走りの精度を数値で確かめられる"],"design_principle":"最短経路だけが最適にならないようにする。"},
+        {"id":"system:runner:procedural-track","type":"System","name":"コース生成","order":4,"purpose":"障害物と収集物の並びをルールに従って生成し、繰り返し遊んでも新しい判断を作る。","features":["安全性制約","難度区間","パターンプール"],"ux_effects":["新鮮さ: 毎回違う走りを楽しめる","公平感: 回避不能な配置を避けられる"],"design_principle":"ランダム性より、必ず解けるリズムを優先する。"},
+        {"id":"system:runner:speed-curve","type":"System","name":"速度曲線と難度調整","order":5,"purpose":"進行に応じて速度・密度・猶予を変化させ、短い試行に明確な山場を作る。","features":["速度上昇","密度調整","救済区間"],"ux_effects":["集中の高まり: 走りが加速する感覚","挑戦意欲: 次はもっと先へ行きたくなる"],"design_principle":"急な理不尽で終わらせず、学習に合わせて緊張を上げる。"},
+        {"id":"system:runner:retry-loop","type":"System","name":"失敗・即時再挑戦ループ","order":6,"purpose":"失敗理由を明確に返し、少ない手順で次の試行へ戻せるようにする。","features":["失敗フィードバック","ワンタップ再開","記録比較"],"ux_effects":["再挑戦の軽さ: すぐに改善を試せる","学習: 失敗原因を理解できる"],"design_principle":"待機画面より、学び直す一回を大切にする。"}
+      ],
+      "implementation_order":["自動移動とレーン操作","障害物とタイミング判定","収集物とスコア","コース生成","速度曲線と難度調整","失敗・即時再挑戦ループ"],
+      "edges":{"PRECEDES":[["system:runner:auto-lane-control","system:runner:obstacle-timing"],["system:runner:obstacle-timing","system:runner:pickup-score"],["system:runner:pickup-score","system:runner:procedural-track"],["system:runner:procedural-track","system:runner:speed-curve"],["system:runner:speed-curve","system:runner:retry-loop"]]}
+    },
+    {
+      "genre":{"id":"genre:survivors-like","type":"Genre","name":"サバイバーライク","summary":"大量の敵に囲まれる中で移動とビルド選択を繰り返し、時間生存と能力の相乗効果を味わう遊び。"},
+      "import_id":"ludus_supplement_20260715","source_page_id":"ludus-editorial-supplement-20260715",
+      "systems":[
+        {"id":"system:survivors-like:movement-kiting","type":"System","name":"移動とカイティング","order":1,"purpose":"敵群との距離と経路を調整し、攻撃を受けずに生存する操作を成立させる。","features":["全方向移動","敵との距離判定","地形・経路"],"ux_effects":["生存の手触り: 位置取りで危機を切り抜ける","集中: 群れの流れを読み続ける"],"design_principle":"攻撃入力より、移動判断が主役になるようにする。"},
+        {"id":"system:survivors-like:auto-attack","type":"System","name":"自動攻撃と武器挙動","order":2,"purpose":"武器の発射・範囲・周期を自動化し、ビルド選択の結果を戦場に表す。","features":["発射周期","対象選択","範囲・貫通"],"ux_effects":["爽快感: 選んだ武器が群れを押し返す","理解: ビルドの効果を視覚で読める"],"design_principle":"手数の忙しさではなく、選択の結果を見る遊びにする。"},
+        {"id":"system:survivors-like:swarm-spawn","type":"System","name":"敵群生成と圧力制御","order":3,"purpose":"敵の種類・量・出現方向を制御し、時間経過で増す圧力を作る。","features":["スポーン規則","敵群の誘導","時間別難度"],"ux_effects":["高揚感: 画面を埋める危機を越える","緊張感: 生存時間が延びるほど判断が重くなる"],"design_principle":"数を増やすだけでなく、回避経路が生まれる群れ方にする。"},
+        {"id":"system:survivors-like:experience-choice","type":"System","name":"経験値とレベルアップ選択","order":4,"purpose":"経験値取得と複数候補の提示により、試行ごとに異なる成長方針を作る。","features":["経験値ドロップ","選択肢提示","レベル閾値"],"ux_effects":["選択の喜び: 次に強くする要素を選べる","期待感: 組み合わせの可能性を想像できる"],"design_principle":"毎回の最適解を固定せず、局面で価値が変わる候補を出す。"},
+        {"id":"system:survivors-like:build-evolution","type":"System","name":"ビルド相乗と進化","order":5,"purpose":"武器・補助効果・条件達成を組み合わせ、強力な進化と個性的な戦い方を生む。","features":["相乗ルール","進化条件","ビルド履歴"],"ux_effects":["発見の快感: 強い組み合わせを見つける","自己表現: 好きな戦い方を作れる"],"design_principle":"単純な数値上昇より、行動の見え方が変わる相乗を作る。"},
+        {"id":"system:survivors-like:entity-budget","type":"System","name":"大量エンティティ予算","order":6,"purpose":"敵・弾・経験値を大量に扱いながら、入力応答と画面の読みやすさを維持する。","features":["生成上限","更新間引き","描画・当たり判定の予算"],"ux_effects":["安定感: 高密度でも操作が崩れない","視認性: 危険と成果を読み取れる"],"design_principle":"技術的な節約を、遊びの気持ちよさと公平性のために行う。"}
+      ],
+      "implementation_order":["移動とカイティング","自動攻撃と武器挙動","敵群生成と圧力制御","経験値とレベルアップ選択","ビルド相乗と進化","大量エンティティ予算"],
+      "edges":{"PRECEDES":[["system:survivors-like:movement-kiting","system:survivors-like:auto-attack"],["system:survivors-like:auto-attack","system:survivors-like:swarm-spawn"],["system:survivors-like:swarm-spawn","system:survivors-like:experience-choice"],["system:survivors-like:experience-choice","system:survivors-like:build-evolution"],["system:survivors-like:build-evolution","system:survivors-like:entity-budget"]]}
+    }
+  ]
+}

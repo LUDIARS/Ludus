@@ -18,10 +18,13 @@ timestamp: "2026-07-15T00:00:00+09:00"
 - 達成感: マップの埋まる満足
 - 達成感: レベルアップ時の報酬とファンファーレ
 - 達成感: 大台突破の喜び
+- 達成感: 小さな日課を積み重ねられる
+- 達成感: 山場を越えた感覚
 - 達成感: 強敵撃破の満足
 - 達成感: 溜まった資源の回収
 - 達成感: 簡単なタスクの完了
 - 達成感: 解けた時の安堵
+- 達成感: 走りの精度を数値で確かめられる
 - 達成感: 高コンボ成功の喜び
 
 # 接続元
@@ -30,6 +33,7 @@ timestamp: "2026-07-15T00:00:00+09:00"
 - [デイリーミッション/ログインボーナス](../systems/gacha-rpg/s05.md)
 - [謎解き/パズル要素](../systems/horror/s08.md)
 - [増分成長/指数関数的スケーリング](../systems/idle-clicker/s02.md)
+- [日課と行動力](../systems/life-sim/daily-actions.md)
 - [ボス戦/チャレンジ](../systems/metroidvania/s07.md)
 - [マップシステム/ナビゲーション](../systems/metroidvania/s08.md)
 - [コンボシステム/倍率計算](../systems/puzzle-rpg/s02.md)
@@ -38,4 +42,6 @@ timestamp: "2026-07-15T00:00:00+09:00"
 - [パーマデス/死亡ペナルティ](../systems/roguelike/s02.md)
 - [経験値/レベルシステム](../systems/rpg/s01.md)
 - [クエスト/ミッションシステム](../systems/rpg/s06.md)
+- [収集物とスコア](../systems/runner/pickup-score.md)
+- [ステージペーシング](../systems/shmup/stage-pacing.md)
 - [ウェーブ/敵出現システム](../systems/tower-defense/s04.md)

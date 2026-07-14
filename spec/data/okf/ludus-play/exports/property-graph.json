@@ -4,7 +4,8 @@
     "format": "OKF v0.1 projection",
     "generated_at": "2026-07-15T00:00:00+09:00",
     "source_graph_root": "E:\\Document\\Ars\\game-knowledge-graph",
-    "source_page_id": "30453028-8e8d-805d-a922-f92949ebd575"
+    "source_page_id": "30453028-8e8d-805d-a922-f92949ebd575",
+    "supplemental_source": "spec/data/okf/ludus-play-supplement.json"
   },
   "nodes": [
     {
@@ -90,6 +91,24 @@
       "type": "Ludus Domain Element",
       "title": "メタゲームと運用",
       "path": "domains/meta-and-live-operations.md"
+    },
+    {
+      "id": "domain:narrative-and-knowledge",
+      "type": "Ludus Domain Element",
+      "title": "物語と知識",
+      "path": "domains/narrative-and-knowledge.md"
+    },
+    {
+      "id": "domain:network-and-synchronization",
+      "type": "Ludus Domain Element",
+      "title": "ネットワークと同期",
+      "path": "domains/network-and-synchronization.md"
+    },
+    {
+      "id": "domain:accessibility-and-assistance",
+      "type": "Ludus Domain Element",
+      "title": "アクセシビリティと支援",
+      "path": "domains/accessibility-and-assistance.md"
     },
     {
       "id": "implementation:pictor:scene-rendering",
@@ -2588,6 +2607,474 @@
       "path": "ux/d6db8c6a9b5fcd44.md"
     },
     {
+      "id": "ux:12ace9bbc2050b28",
+      "type": "Ludus UX Outcome",
+      "title": "探索の手触り",
+      "path": "ux/12ace9bbc2050b28.md"
+    },
+    {
+      "id": "ux:7fb4b30947b02823",
+      "type": "Ludus UX Outcome",
+      "title": "見通し",
+      "path": "ux/7fb4b30947b02823.md"
+    },
+    {
+      "id": "ux:fce17513950e6877",
+      "type": "Ludus UX Outcome",
+      "title": "試行の納得感",
+      "path": "ux/fce17513950e6877.md"
+    },
+    {
+      "id": "ux:ac211f0e2999f75c",
+      "type": "Ludus UX Outcome",
+      "title": "推理の連続性",
+      "path": "ux/ac211f0e2999f75c.md"
+    },
+    {
+      "id": "ux:02953e394be20e0c",
+      "type": "Ludus UX Outcome",
+      "title": "理解の達成感",
+      "path": "ux/02953e394be20e0c.md"
+    },
+    {
+      "id": "ux:19715a5cdc003848",
+      "type": "Ludus UX Outcome",
+      "title": "ひらめき",
+      "path": "ux/19715a5cdc003848.md"
+    },
+    {
+      "id": "ux:8a1f3f7a1f65c67f",
+      "type": "Ludus UX Outcome",
+      "title": "停滞の緩和",
+      "path": "ux/8a1f3f7a1f65c67f.md"
+    },
+    {
+      "id": "ux:3a388fbe295034b6",
+      "type": "Ludus UX Outcome",
+      "title": "主体性",
+      "path": "ux/3a388fbe295034b6.md"
+    },
+    {
+      "id": "ux:32aa5b6a9c6dca8a",
+      "type": "Ludus UX Outcome",
+      "title": "人物理解",
+      "path": "ux/32aa5b6a9c6dca8a.md"
+    },
+    {
+      "id": "ux:1be380841e916268",
+      "type": "Ludus UX Outcome",
+      "title": "安心感",
+      "path": "ux/1be380841e916268.md"
+    },
+    {
+      "id": "ux:1c3a5a078e3ce5b4",
+      "type": "Ludus UX Outcome",
+      "title": "継続性",
+      "path": "ux/1c3a5a078e3ce5b4.md"
+    },
+    {
+      "id": "ux:9c5693b8049fb14c",
+      "type": "Ludus UX Outcome",
+      "title": "読書への没入",
+      "path": "ux/9c5693b8049fb14c.md"
+    },
+    {
+      "id": "ux:0c6562e8de5cc039",
+      "type": "Ludus UX Outcome",
+      "title": "情景理解",
+      "path": "ux/0c6562e8de5cc039.md"
+    },
+    {
+      "id": "ux:50a4a20a4c68de56",
+      "type": "Ludus UX Outcome",
+      "title": "再読の動機",
+      "path": "ux/50a4a20a4c68de56.md"
+    },
+    {
+      "id": "ux:4eaa9ee71602bc64",
+      "type": "Ludus UX Outcome",
+      "title": "文脈性",
+      "path": "ux/4eaa9ee71602bc64.md"
+    },
+    {
+      "id": "ux:c14a58129e045445",
+      "type": "Ludus UX Outcome",
+      "title": "人物への愛着",
+      "path": "ux/c14a58129e045445.md"
+    },
+    {
+      "id": "ux:b1e84747ce2e1fb9",
+      "type": "Ludus UX Outcome",
+      "title": "読みやすさ",
+      "path": "ux/b1e84747ce2e1fb9.md"
+    },
+    {
+      "id": "ux:53ecf2ae9d930f87",
+      "type": "Ludus UX Outcome",
+      "title": "再探索の快適さ",
+      "path": "ux/53ecf2ae9d930f87.md"
+    },
+    {
+      "id": "ux:0fa71ff85bb71375",
+      "type": "Ludus UX Outcome",
+      "title": "アクセス可能性",
+      "path": "ux/0fa71ff85bb71375.md"
+    },
+    {
+      "id": "ux:463405847267894f",
+      "type": "Ludus UX Outcome",
+      "title": "試行の自由",
+      "path": "ux/463405847267894f.md"
+    },
+    {
+      "id": "ux:2949ba26bd201d46",
+      "type": "Ludus UX Outcome",
+      "title": "生活感",
+      "path": "ux/2949ba26bd201d46.md"
+    },
+    {
+      "id": "ux:e8d8247f8bbbdbe0",
+      "type": "Ludus UX Outcome",
+      "title": "選択の手触り",
+      "path": "ux/e8d8247f8bbbdbe0.md"
+    },
+    {
+      "id": "ux:7a648c2f31d54947",
+      "type": "Ludus UX Outcome",
+      "title": "育成の愛着",
+      "path": "ux/7a648c2f31d54947.md"
+    },
+    {
+      "id": "ux:e5ab05fc98565e60",
+      "type": "Ludus UX Outcome",
+      "title": "創意工夫",
+      "path": "ux/e5ab05fc98565e60.md"
+    },
+    {
+      "id": "ux:ffbe59aeabe088bc",
+      "type": "Ludus UX Outcome",
+      "title": "居場所感",
+      "path": "ux/ffbe59aeabe088bc.md"
+    },
+    {
+      "id": "ux:acdb56909eecad60",
+      "type": "Ludus UX Outcome",
+      "title": "自己表現",
+      "path": "ux/acdb56909eecad60.md"
+    },
+    {
+      "id": "ux:1b83fac88275658c",
+      "type": "Ludus UX Outcome",
+      "title": "愛着",
+      "path": "ux/1b83fac88275658c.md"
+    },
+    {
+      "id": "ux:4d3da3d46e604332",
+      "type": "Ludus UX Outcome",
+      "title": "前進感",
+      "path": "ux/4d3da3d46e604332.md"
+    },
+    {
+      "id": "ux:2a19a9655634da2a",
+      "type": "Ludus UX Outcome",
+      "title": "自律性",
+      "path": "ux/2a19a9655634da2a.md"
+    },
+    {
+      "id": "ux:da50318696a92ee0",
+      "type": "Ludus UX Outcome",
+      "title": "操作の一体感",
+      "path": "ux/da50318696a92ee0.md"
+    },
+    {
+      "id": "ux:daf702a77e8b6d75",
+      "type": "Ludus UX Outcome",
+      "title": "納得感",
+      "path": "ux/daf702a77e8b6d75.md"
+    },
+    {
+      "id": "ux:97930a0c352ea349",
+      "type": "Ludus UX Outcome",
+      "title": "技術表現",
+      "path": "ux/97930a0c352ea349.md"
+    },
+    {
+      "id": "ux:761295392476961e",
+      "type": "Ludus UX Outcome",
+      "title": "公平感",
+      "path": "ux/761295392476961e.md"
+    },
+    {
+      "id": "ux:4333f56898c1e87e",
+      "type": "Ludus UX Outcome",
+      "title": "読み合い",
+      "path": "ux/4333f56898c1e87e.md"
+    },
+    {
+      "id": "ux:3edd93bc53040a0c",
+      "type": "Ludus UX Outcome",
+      "title": "上達実感",
+      "path": "ux/3edd93bc53040a0c.md"
+    },
+    {
+      "id": "ux:4ce3cf3d58819115",
+      "type": "Ludus UX Outcome",
+      "title": "高揚感",
+      "path": "ux/4ce3cf3d58819115.md"
+    },
+    {
+      "id": "ux:6a54b9eecb7483fc",
+      "type": "Ludus UX Outcome",
+      "title": "振り返り",
+      "path": "ux/6a54b9eecb7483fc.md"
+    },
+    {
+      "id": "ux:e76757282365a703",
+      "type": "Ludus UX Outcome",
+      "title": "対戦の信頼",
+      "path": "ux/e76757282365a703.md"
+    },
+    {
+      "id": "ux:33bcd68cb98f6ced",
+      "type": "Ludus UX Outcome",
+      "title": "公平な開始",
+      "path": "ux/33bcd68cb98f6ced.md"
+    },
+    {
+      "id": "ux:91ca175d56b093ef",
+      "type": "Ludus UX Outcome",
+      "title": "期待感",
+      "path": "ux/91ca175d56b093ef.md"
+    },
+    {
+      "id": "ux:37ce614903ff205b",
+      "type": "Ludus UX Outcome",
+      "title": "信頼感",
+      "path": "ux/37ce614903ff205b.md"
+    },
+    {
+      "id": "ux:8ded4fcfb58a7e88",
+      "type": "Ludus UX Outcome",
+      "title": "戦略性",
+      "path": "ux/8ded4fcfb58a7e88.md"
+    },
+    {
+      "id": "ux:43b64ffb933bcf23",
+      "type": "Ludus UX Outcome",
+      "title": "状況理解",
+      "path": "ux/43b64ffb933bcf23.md"
+    },
+    {
+      "id": "ux:b6583c64a32d777f",
+      "type": "Ludus UX Outcome",
+      "title": "学びやすさ",
+      "path": "ux/b6583c64a32d777f.md"
+    },
+    {
+      "id": "ux:536a13e95e2ecc41",
+      "type": "Ludus UX Outcome",
+      "title": "一人遊び",
+      "path": "ux/536a13e95e2ecc41.md"
+    },
+    {
+      "id": "ux:10b3229edfeae30f",
+      "type": "Ludus UX Outcome",
+      "title": "戦術の多様性",
+      "path": "ux/10b3229edfeae30f.md"
+    },
+    {
+      "id": "ux:84ad0b94100ce6a8",
+      "type": "Ludus UX Outcome",
+      "title": "発見の高揚",
+      "path": "ux/84ad0b94100ce6a8.md"
+    },
+    {
+      "id": "ux:4c64970ac6a535b5",
+      "type": "Ludus UX Outcome",
+      "title": "対峙の緊張",
+      "path": "ux/4c64970ac6a535b5.md"
+    },
+    {
+      "id": "ux:a1c1a67d02963016",
+      "type": "Ludus UX Outcome",
+      "title": "技能表現",
+      "path": "ux/a1c1a67d02963016.md"
+    },
+    {
+      "id": "ux:0b38736654c4c3bc",
+      "type": "Ludus UX Outcome",
+      "title": "協力感",
+      "path": "ux/0b38736654c4c3bc.md"
+    },
+    {
+      "id": "ux:ab1bb84b02c1f8b7",
+      "type": "Ludus UX Outcome",
+      "title": "逆転の期待",
+      "path": "ux/ab1bb84b02c1f8b7.md"
+    },
+    {
+      "id": "ux:fd4206976feedf11",
+      "type": "Ludus UX Outcome",
+      "title": "対戦の安心",
+      "path": "ux/fd4206976feedf11.md"
+    },
+    {
+      "id": "ux:a9eb6ef8ef7d2f55",
+      "type": "Ludus UX Outcome",
+      "title": "学習",
+      "path": "ux/a9eb6ef8ef7d2f55.md"
+    },
+    {
+      "id": "ux:c9c19c2e33fe2358",
+      "type": "Ludus UX Outcome",
+      "title": "参加継続",
+      "path": "ux/c9c19c2e33fe2358.md"
+    },
+    {
+      "id": "ux:c29909653a961b12",
+      "type": "Ludus UX Outcome",
+      "title": "精密操作",
+      "path": "ux/c29909653a961b12.md"
+    },
+    {
+      "id": "ux:dfc6f9307a841d9d",
+      "type": "Ludus UX Outcome",
+      "title": "緊張と集中",
+      "path": "ux/dfc6f9307a841d9d.md"
+    },
+    {
+      "id": "ux:1eb04611b6a60d48",
+      "type": "Ludus UX Outcome",
+      "title": "攻略の喜び",
+      "path": "ux/1eb04611b6a60d48.md"
+    },
+    {
+      "id": "ux:3271670179421220",
+      "type": "Ludus UX Outcome",
+      "title": "挑戦意欲",
+      "path": "ux/3271670179421220.md"
+    },
+    {
+      "id": "ux:b8acac36166895a6",
+      "type": "Ludus UX Outcome",
+      "title": "技能の可視化",
+      "path": "ux/b8acac36166895a6.md"
+    },
+    {
+      "id": "ux:a20ec92b8f4e292a",
+      "type": "Ludus UX Outcome",
+      "title": "成長感",
+      "path": "ux/a20ec92b8f4e292a.md"
+    },
+    {
+      "id": "ux:b2b7bb6c504c0c75",
+      "type": "Ludus UX Outcome",
+      "title": "集中の持続",
+      "path": "ux/b2b7bb6c504c0c75.md"
+    },
+    {
+      "id": "ux:7a4cd99cf95c3f72",
+      "type": "Ludus UX Outcome",
+      "title": "自由感",
+      "path": "ux/7a4cd99cf95c3f72.md"
+    },
+    {
+      "id": "ux:38c9858546eb9d22",
+      "type": "Ludus UX Outcome",
+      "title": "自己決定",
+      "path": "ux/38c9858546eb9d22.md"
+    },
+    {
+      "id": "ux:7215d33766b74717",
+      "type": "Ludus UX Outcome",
+      "title": "生きた世界",
+      "path": "ux/7215d33766b74717.md"
+    },
+    {
+      "id": "ux:bb44ac736f9827d2",
+      "type": "Ludus UX Outcome",
+      "title": "予測と発見",
+      "path": "ux/bb44ac736f9827d2.md"
+    },
+    {
+      "id": "ux:ede29e6ed2aee238",
+      "type": "Ludus UX Outcome",
+      "title": "尊重",
+      "path": "ux/ede29e6ed2aee238.md"
+    },
+    {
+      "id": "ux:135fe683c520de16",
+      "type": "Ludus UX Outcome",
+      "title": "理解しやすさ",
+      "path": "ux/135fe683c520de16.md"
+    },
+    {
+      "id": "ux:9ad9a2421eea5082",
+      "type": "Ludus UX Outcome",
+      "title": "緊張と快感",
+      "path": "ux/9ad9a2421eea5082.md"
+    },
+    {
+      "id": "ux:3189d605706334cc",
+      "type": "Ludus UX Outcome",
+      "title": "リスク選択",
+      "path": "ux/3189d605706334cc.md"
+    },
+    {
+      "id": "ux:9d6f0ad4816c2116",
+      "type": "Ludus UX Outcome",
+      "title": "集中の高まり",
+      "path": "ux/9d6f0ad4816c2116.md"
+    },
+    {
+      "id": "ux:0d7ed44d48b68cdf",
+      "type": "Ludus UX Outcome",
+      "title": "再挑戦の軽さ",
+      "path": "ux/0d7ed44d48b68cdf.md"
+    },
+    {
+      "id": "ux:e31532b8102f5ea5",
+      "type": "Ludus UX Outcome",
+      "title": "生存の手触り",
+      "path": "ux/e31532b8102f5ea5.md"
+    },
+    {
+      "id": "ux:a24f502c764c34cb",
+      "type": "Ludus UX Outcome",
+      "title": "集中",
+      "path": "ux/a24f502c764c34cb.md"
+    },
+    {
+      "id": "ux:5cb53e3de202ecbb",
+      "type": "Ludus UX Outcome",
+      "title": "理解",
+      "path": "ux/5cb53e3de202ecbb.md"
+    },
+    {
+      "id": "ux:b32ba2c4e5dcb7a3",
+      "type": "Ludus UX Outcome",
+      "title": "選択の喜び",
+      "path": "ux/b32ba2c4e5dcb7a3.md"
+    },
+    {
+      "id": "ux:d1216983d635067c",
+      "type": "Ludus UX Outcome",
+      "title": "発見の快感",
+      "path": "ux/d1216983d635067c.md"
+    },
+    {
+      "id": "ux:b702516fa9d75b7f",
+      "type": "Ludus UX Outcome",
+      "title": "安定感",
+      "path": "ux/b702516fa9d75b7f.md"
+    },
+    {
+      "id": "ux:188f1b23eb61acd7",
+      "type": "Ludus UX Outcome",
+      "title": "視認性",
+      "path": "ux/188f1b23eb61acd7.md"
+    },
+    {
       "id": "genre:action",
       "type": "Ludus Game Genre",
       "title": "アクションゲーム",
@@ -2724,6 +3211,66 @@
       "type": "Ludus Game Genre",
       "title": "街づくり/経営シミュレーション",
       "path": "genres/city-builder.md"
+    },
+    {
+      "id": "genre:adventure",
+      "type": "Ludus Game Genre",
+      "title": "アドベンチャーゲーム",
+      "path": "genres/adventure.md"
+    },
+    {
+      "id": "genre:visual-novel",
+      "type": "Ludus Game Genre",
+      "title": "ビジュアルノベル／インタラクティブフィクション",
+      "path": "genres/visual-novel.md"
+    },
+    {
+      "id": "genre:life-sim",
+      "type": "Ludus Game Genre",
+      "title": "ライフシム／農場シム",
+      "path": "genres/life-sim.md"
+    },
+    {
+      "id": "genre:sports",
+      "type": "Ludus Game Genre",
+      "title": "スポーツゲーム",
+      "path": "genres/sports.md"
+    },
+    {
+      "id": "genre:board-card",
+      "type": "Ludus Game Genre",
+      "title": "ボードゲーム／カードゲーム",
+      "path": "genres/board-card.md"
+    },
+    {
+      "id": "genre:battle-royale",
+      "type": "Ludus Game Genre",
+      "title": "バトルロイヤル／エクストラクション",
+      "path": "genres/battle-royale.md"
+    },
+    {
+      "id": "genre:shmup",
+      "type": "Ludus Game Genre",
+      "title": "シューティングゲーム（STG／SHMUP）",
+      "path": "genres/shmup.md"
+    },
+    {
+      "id": "genre:open-world",
+      "type": "Ludus Game Genre",
+      "title": "オープンワールドゲーム",
+      "path": "genres/open-world.md"
+    },
+    {
+      "id": "genre:runner",
+      "type": "Ludus Game Genre",
+      "title": "ランナー／エンドレスラン",
+      "path": "genres/runner.md"
+    },
+    {
+      "id": "genre:survivors-like",
+      "type": "Ludus Game Genre",
+      "title": "サバイバーライク",
+      "path": "genres/survivors-like.md"
     },
     {
       "id": "system:action:character-controller",
@@ -3876,6 +4423,366 @@
       "type": "Ludus Gameplay System",
       "title": "デコレーション/カスタマイズ",
       "path": "systems/city-builder/s08.md"
+    },
+    {
+      "id": "system:adventure:scene-exploration",
+      "type": "Ludus Gameplay System",
+      "title": "シーン探索と移動",
+      "path": "systems/adventure/scene-exploration.md"
+    },
+    {
+      "id": "system:adventure:object-interaction",
+      "type": "Ludus Gameplay System",
+      "title": "対象調査と使用",
+      "path": "systems/adventure/object-interaction.md"
+    },
+    {
+      "id": "system:adventure:clue-knowledge",
+      "type": "Ludus Gameplay System",
+      "title": "手がかりと知識管理",
+      "path": "systems/adventure/clue-knowledge.md"
+    },
+    {
+      "id": "system:adventure:puzzle-resolution",
+      "type": "Ludus Gameplay System",
+      "title": "環境パズルと解決判定",
+      "path": "systems/adventure/puzzle-resolution.md"
+    },
+    {
+      "id": "system:adventure:dialogue-choice",
+      "type": "Ludus Gameplay System",
+      "title": "会話と選択",
+      "path": "systems/adventure/dialogue-choice.md"
+    },
+    {
+      "id": "system:adventure:save-resume",
+      "type": "Ludus Gameplay System",
+      "title": "保存と再開",
+      "path": "systems/adventure/save-resume.md"
+    },
+    {
+      "id": "system:visual-novel:script-scene",
+      "type": "Ludus Gameplay System",
+      "title": "台本とシーン再生",
+      "path": "systems/visual-novel/script-scene.md"
+    },
+    {
+      "id": "system:visual-novel:choice-route",
+      "type": "Ludus Gameplay System",
+      "title": "選択肢とルート分岐",
+      "path": "systems/visual-novel/choice-route.md"
+    },
+    {
+      "id": "system:visual-novel:flags-relations",
+      "type": "Ludus Gameplay System",
+      "title": "フラグと関係値",
+      "path": "systems/visual-novel/flags-relations.md"
+    },
+    {
+      "id": "system:visual-novel:backlog-skip-auto",
+      "type": "Ludus Gameplay System",
+      "title": "バックログ・既読スキップ・オート",
+      "path": "systems/visual-novel/backlog-skip-auto.md"
+    },
+    {
+      "id": "system:visual-novel:text-accessibility",
+      "type": "Ludus Gameplay System",
+      "title": "テキストアクセシビリティ",
+      "path": "systems/visual-novel/text-accessibility.md"
+    },
+    {
+      "id": "system:visual-novel:save-load",
+      "type": "Ludus Gameplay System",
+      "title": "セーブ・ロードと既読管理",
+      "path": "systems/visual-novel/save-load.md"
+    },
+    {
+      "id": "system:life-sim:calendar-time",
+      "type": "Ludus Gameplay System",
+      "title": "暦・時間・季節",
+      "path": "systems/life-sim/calendar-time.md"
+    },
+    {
+      "id": "system:life-sim:daily-actions",
+      "type": "Ludus Gameplay System",
+      "title": "日課と行動力",
+      "path": "systems/life-sim/daily-actions.md"
+    },
+    {
+      "id": "system:life-sim:farming-crafting",
+      "type": "Ludus Gameplay System",
+      "title": "栽培・生産・クラフト",
+      "path": "systems/life-sim/farming-crafting.md"
+    },
+    {
+      "id": "system:life-sim:relationships-events",
+      "type": "Ludus Gameplay System",
+      "title": "人間関係と地域イベント",
+      "path": "systems/life-sim/relationships-events.md"
+    },
+    {
+      "id": "system:life-sim:home-customization",
+      "type": "Ludus Gameplay System",
+      "title": "住環境と装飾",
+      "path": "systems/life-sim/home-customization.md"
+    },
+    {
+      "id": "system:life-sim:economy-progression",
+      "type": "Ludus Gameplay System",
+      "title": "生活経済と解放",
+      "path": "systems/life-sim/economy-progression.md"
+    },
+    {
+      "id": "system:sports:player-team-control",
+      "type": "Ludus Gameplay System",
+      "title": "選手・チーム操作",
+      "path": "systems/sports/player-team-control.md"
+    },
+    {
+      "id": "system:sports:object-physics",
+      "type": "Ludus Gameplay System",
+      "title": "ボール・用具の物理",
+      "path": "systems/sports/object-physics.md"
+    },
+    {
+      "id": "system:sports:match-rules",
+      "type": "Ludus Gameplay System",
+      "title": "試合進行と競技規則",
+      "path": "systems/sports/match-rules.md"
+    },
+    {
+      "id": "system:sports:opponent-ai",
+      "type": "Ludus Gameplay System",
+      "title": "対戦相手AIと戦術",
+      "path": "systems/sports/opponent-ai.md"
+    },
+    {
+      "id": "system:sports:score-replay",
+      "type": "Ludus Gameplay System",
+      "title": "スコア表示とリプレイ",
+      "path": "systems/sports/score-replay.md"
+    },
+    {
+      "id": "system:sports:online-session",
+      "type": "Ludus Gameplay System",
+      "title": "オンライン対戦セッション",
+      "path": "systems/sports/online-session.md"
+    },
+    {
+      "id": "system:board-card:setup-information",
+      "type": "Ludus Gameplay System",
+      "title": "セットアップと公開情報",
+      "path": "systems/board-card/setup-information.md"
+    },
+    {
+      "id": "system:board-card:turn-phase",
+      "type": "Ludus Gameplay System",
+      "title": "ターンとフェーズ進行",
+      "path": "systems/board-card/turn-phase.md"
+    },
+    {
+      "id": "system:board-card:rule-resolution",
+      "type": "Ludus Gameplay System",
+      "title": "ルール解決と例外処理",
+      "path": "systems/board-card/rule-resolution.md"
+    },
+    {
+      "id": "system:board-card:hand-table-state",
+      "type": "Ludus Gameplay System",
+      "title": "手札・盤面・山札の状態",
+      "path": "systems/board-card/hand-table-state.md"
+    },
+    {
+      "id": "system:board-card:opponent-assist",
+      "type": "Ludus Gameplay System",
+      "title": "対戦相手AIと進行補助",
+      "path": "systems/board-card/opponent-assist.md"
+    },
+    {
+      "id": "system:board-card:match-session",
+      "type": "Ludus Gameplay System",
+      "title": "対局セッションと保存",
+      "path": "systems/board-card/match-session.md"
+    },
+    {
+      "id": "system:battle-royale:deployment-zone",
+      "type": "Ludus Gameplay System",
+      "title": "降下・危険区域",
+      "path": "systems/battle-royale/deployment-zone.md"
+    },
+    {
+      "id": "system:battle-royale:loot-inventory",
+      "type": "Ludus Gameplay System",
+      "title": "戦利品とインベントリ",
+      "path": "systems/battle-royale/loot-inventory.md"
+    },
+    {
+      "id": "system:battle-royale:combat-survival",
+      "type": "Ludus Gameplay System",
+      "title": "戦闘と生存",
+      "path": "systems/battle-royale/combat-survival.md"
+    },
+    {
+      "id": "system:battle-royale:squad-revive",
+      "type": "Ludus Gameplay System",
+      "title": "分隊・救助・再参加",
+      "path": "systems/battle-royale/squad-revive.md"
+    },
+    {
+      "id": "system:battle-royale:authoritative-sync",
+      "type": "Ludus Gameplay System",
+      "title": "権威同期と不正対策",
+      "path": "systems/battle-royale/authoritative-sync.md"
+    },
+    {
+      "id": "system:battle-royale:spectate-replay",
+      "type": "Ludus Gameplay System",
+      "title": "観戦とリプレイ",
+      "path": "systems/battle-royale/spectate-replay.md"
+    },
+    {
+      "id": "system:shmup:player-control",
+      "type": "Ludus Gameplay System",
+      "title": "自機操作と当たり判定",
+      "path": "systems/shmup/player-control.md"
+    },
+    {
+      "id": "system:shmup:bullet-pattern",
+      "type": "Ludus Gameplay System",
+      "title": "弾幕パターン",
+      "path": "systems/shmup/bullet-pattern.md"
+    },
+    {
+      "id": "system:shmup:enemy-wave",
+      "type": "Ludus Gameplay System",
+      "title": "敵編隊とウェーブ出現",
+      "path": "systems/shmup/enemy-wave.md"
+    },
+    {
+      "id": "system:shmup:score-chain",
+      "type": "Ludus Gameplay System",
+      "title": "スコアとチェイン",
+      "path": "systems/shmup/score-chain.md"
+    },
+    {
+      "id": "system:shmup:power-up",
+      "type": "Ludus Gameplay System",
+      "title": "パワーアップと装備選択",
+      "path": "systems/shmup/power-up.md"
+    },
+    {
+      "id": "system:shmup:stage-pacing",
+      "type": "Ludus Gameplay System",
+      "title": "ステージペーシング",
+      "path": "systems/shmup/stage-pacing.md"
+    },
+    {
+      "id": "system:open-world:streaming-traversal",
+      "type": "Ludus Gameplay System",
+      "title": "世界ストリーミングと移動",
+      "path": "systems/open-world/streaming-traversal.md"
+    },
+    {
+      "id": "system:open-world:discovery-map",
+      "type": "Ludus Gameplay System",
+      "title": "発見と地図",
+      "path": "systems/open-world/discovery-map.md"
+    },
+    {
+      "id": "system:open-world:quest-narrative",
+      "type": "Ludus Gameplay System",
+      "title": "クエストと物語導線",
+      "path": "systems/open-world/quest-narrative.md"
+    },
+    {
+      "id": "system:open-world:world-simulation",
+      "type": "Ludus Gameplay System",
+      "title": "世界シミュレーション",
+      "path": "systems/open-world/world-simulation.md"
+    },
+    {
+      "id": "system:open-world:fast-travel-save",
+      "type": "Ludus Gameplay System",
+      "title": "移動短縮と保存",
+      "path": "systems/open-world/fast-travel-save.md"
+    },
+    {
+      "id": "system:open-world:navigation-accessibility",
+      "type": "Ludus Gameplay System",
+      "title": "ナビゲーション支援とアクセシビリティ",
+      "path": "systems/open-world/navigation-accessibility.md"
+    },
+    {
+      "id": "system:runner:auto-lane-control",
+      "type": "Ludus Gameplay System",
+      "title": "自動移動とレーン操作",
+      "path": "systems/runner/auto-lane-control.md"
+    },
+    {
+      "id": "system:runner:obstacle-timing",
+      "type": "Ludus Gameplay System",
+      "title": "障害物とタイミング判定",
+      "path": "systems/runner/obstacle-timing.md"
+    },
+    {
+      "id": "system:runner:pickup-score",
+      "type": "Ludus Gameplay System",
+      "title": "収集物とスコア",
+      "path": "systems/runner/pickup-score.md"
+    },
+    {
+      "id": "system:runner:procedural-track",
+      "type": "Ludus Gameplay System",
+      "title": "コース生成",
+      "path": "systems/runner/procedural-track.md"
+    },
+    {
+      "id": "system:runner:speed-curve",
+      "type": "Ludus Gameplay System",
+      "title": "速度曲線と難度調整",
+      "path": "systems/runner/speed-curve.md"
+    },
+    {
+      "id": "system:runner:retry-loop",
+      "type": "Ludus Gameplay System",
+      "title": "失敗・即時再挑戦ループ",
+      "path": "systems/runner/retry-loop.md"
+    },
+    {
+      "id": "system:survivors-like:movement-kiting",
+      "type": "Ludus Gameplay System",
+      "title": "移動とカイティング",
+      "path": "systems/survivors-like/movement-kiting.md"
+    },
+    {
+      "id": "system:survivors-like:auto-attack",
+      "type": "Ludus Gameplay System",
+      "title": "自動攻撃と武器挙動",
+      "path": "systems/survivors-like/auto-attack.md"
+    },
+    {
+      "id": "system:survivors-like:swarm-spawn",
+      "type": "Ludus Gameplay System",
+      "title": "敵群生成と圧力制御",
+      "path": "systems/survivors-like/swarm-spawn.md"
+    },
+    {
+      "id": "system:survivors-like:experience-choice",
+      "type": "Ludus Gameplay System",
+      "title": "経験値とレベルアップ選択",
+      "path": "systems/survivors-like/experience-choice.md"
+    },
+    {
+      "id": "system:survivors-like:build-evolution",
+      "type": "Ludus Gameplay System",
+      "title": "ビルド相乗と進化",
+      "path": "systems/survivors-like/build-evolution.md"
+    },
+    {
+      "id": "system:survivors-like:entity-budget",
+      "type": "Ludus Gameplay System",
+      "title": "大量エンティティ予算",
+      "path": "systems/survivors-like/entity-budget.md"
     }
   ],
   "edges": [
@@ -4193,6 +5100,11 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:action:lock-on",
       "to": "domain:presentation-and-feedback"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:action:lock-on",
+      "to": "domain:accessibility-and-assistance"
     },
     {
       "type": "HAS_PICTOR_VISUAL_CANDIDATE",
@@ -4688,6 +5600,17 @@
       "to": "domain:audio-and-rhythm"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:platformer:movement-speed",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:platformer:movement-speed",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "split"
+    },
+    {
       "type": "HAS_SYSTEM",
       "from": "genre:platformer",
       "to": "system:platformer:ledge-grab",
@@ -4809,6 +5732,11 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:shooter:s01",
       "to": "domain:audio-and-rhythm"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shooter:s01",
+      "to": "domain:accessibility-and-assistance"
     },
     {
       "type": "HAS_PICTOR_VISUAL_CANDIDATE",
@@ -5228,6 +6156,11 @@
       "to": "domain:objectives-and-progression"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:rpg:s01",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
       "type": "PRECEDES",
       "from": "system:rpg:s04",
       "to": "system:rpg:s01"
@@ -5361,6 +6294,17 @@
       "to": "domain:objectives-and-progression"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:rpg:s03",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:rpg:s03",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "split"
+    },
+    {
       "type": "HAS_SYSTEM",
       "from": "genre:rpg",
       "to": "system:rpg:s04",
@@ -5407,6 +6351,11 @@
       "to": "domain:information-and-ui"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:rpg:s04",
+      "to": "domain:accessibility-and-assistance"
+    },
+    {
       "type": "HAS_PICTOR_VISUAL_CANDIDATE",
       "from": "system:rpg:s04",
       "to": "implementation:pictor:ui-rendering",
@@ -5447,6 +6396,11 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:rpg:s05",
       "to": "domain:meta-and-live-operations"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:rpg:s05",
+      "to": "domain:accessibility-and-assistance"
     },
     {
       "type": "HAS_SYSTEM",
@@ -5495,9 +6449,20 @@
       "to": "domain:information-and-ui"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:rpg:s06",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
       "type": "HAS_PICTOR_VISUAL_CANDIDATE",
       "from": "system:rpg:s06",
       "to": "implementation:pictor:ui-rendering",
+      "assessment": "pictor-visual"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:rpg:s06",
+      "to": "implementation:pictor:text-vector-motion",
       "assessment": "pictor-visual"
     },
     {
@@ -5551,6 +6516,11 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:rpg:s07",
       "to": "domain:meta-and-live-operations"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:rpg:s07",
+      "to": "domain:network-and-synchronization"
     },
     {
       "type": "HAS_PICTOR_VISUAL_CANDIDATE",
@@ -5609,6 +6579,11 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:rpg:s08",
       "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:rpg:s08",
+      "to": "domain:narrative-and-knowledge"
     },
     {
       "type": "HAS_PICTOR_VISUAL_CANDIDATE",
@@ -5807,6 +6782,11 @@
       "to": "domain:objectives-and-progression"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:strategy-sim:s04",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
       "type": "HAS_SYSTEM",
       "from": "genre:strategy-sim",
       "to": "system:strategy-sim:s05",
@@ -5965,6 +6945,12 @@
       "type": "HAS_PICTOR_VISUAL_CANDIDATE",
       "from": "system:strategy-sim:s08",
       "to": "implementation:pictor:ui-rendering",
+      "assessment": "pictor-visual"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:strategy-sim:s08",
+      "to": "implementation:pictor:text-vector-motion",
       "assessment": "pictor-visual"
     },
     {
@@ -6338,6 +7324,11 @@
       "to": "domain:information-and-ui"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:puzzle:s06",
+      "to": "domain:accessibility-and-assistance"
+    },
+    {
       "type": "HAS_PICTOR_VISUAL_CANDIDATE",
       "from": "system:puzzle:s06",
       "to": "implementation:pictor:ui-rendering",
@@ -6378,6 +7369,11 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:puzzle:s07",
       "to": "domain:information-and-ui"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:puzzle:s07",
+      "to": "domain:network-and-synchronization"
     },
     {
       "type": "HAS_PICTOR_VISUAL_CANDIDATE",
@@ -6829,9 +7825,20 @@
       "to": "domain:presentation-and-feedback"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:racing:s08",
+      "to": "domain:network-and-synchronization"
+    },
+    {
       "type": "HAS_PICTOR_VISUAL_CANDIDATE",
       "from": "system:racing:s08",
       "to": "implementation:pictor:camera-presentation",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:racing:s08",
+      "to": "implementation:pictor:text-vector-motion",
       "assessment": "split"
     },
     {
@@ -7250,6 +8257,11 @@
       "to": "domain:conflict-and-resolution"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:fighting:s09",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
       "type": "HAS_SYSTEM",
       "from": "genre:fighting",
       "to": "system:fighting:s10",
@@ -7362,6 +8374,11 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:fighting:s11",
       "to": "domain:information-and-ui"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:fighting:s11",
+      "to": "domain:narrative-and-knowledge"
     },
     {
       "type": "HAS_PICTOR_VISUAL_CANDIDATE",
@@ -8392,6 +9409,11 @@
       "to": "domain:presentation-and-feedback"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:horror:s08",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
       "type": "HAS_PICTOR_VISUAL_CANDIDATE",
       "from": "system:horror:s08",
       "to": "implementation:pictor:impact-and-postprocess",
@@ -8702,6 +9724,11 @@
       "to": "domain:objectives-and-progression"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:roguelike:s06",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
       "type": "HAS_SYSTEM",
       "from": "genre:roguelike",
       "to": "system:roguelike:s07",
@@ -8731,6 +9758,16 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:roguelike:s07",
       "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:roguelike:s07",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:roguelike:s07",
+      "to": "domain:accessibility-and-assistance"
     },
     {
       "type": "HAS_SYSTEM",
@@ -8767,6 +9804,12 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:roguelike:s08",
       "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:roguelike:s08",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "pictor-visual"
     },
     {
       "type": "HAS_SYSTEM",
@@ -8918,6 +9961,11 @@
       "to": "domain:objectives-and-progression"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:tower-defense:s03",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
       "type": "HAS_SYSTEM",
       "from": "genre:tower-defense",
       "to": "system:tower-defense:s04",
@@ -9003,6 +10051,11 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:tower-defense:s05",
       "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:tower-defense:s05",
+      "to": "domain:narrative-and-knowledge"
     },
     {
       "type": "HAS_SYSTEM",
@@ -9383,6 +10436,11 @@
       "to": "domain:audio-and-rhythm"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:moba:s05",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
       "type": "HAS_SYSTEM",
       "from": "genre:moba",
       "to": "system:moba:s06",
@@ -9685,6 +10743,11 @@
       "to": "domain:content-and-pacing"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:metroidvania:s03",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
       "type": "HAS_PICTOR_VISUAL_CANDIDATE",
       "from": "system:metroidvania:s03",
       "to": "implementation:pictor:scene-rendering",
@@ -9737,6 +10800,11 @@
       "to": "domain:objectives-and-progression"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:metroidvania:s04",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
       "type": "HAS_PICTOR_VISUAL_CANDIDATE",
       "from": "system:metroidvania:s04",
       "to": "implementation:pictor:scene-rendering",
@@ -9772,6 +10840,17 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:metroidvania:s05",
       "to": "domain:content-and-pacing"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:metroidvania:s05",
+      "to": "domain:accessibility-and-assistance"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:metroidvania:s05",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "pictor-visual"
     },
     {
       "type": "HAS_SYSTEM",
@@ -10122,6 +11201,11 @@
       "to": "domain:objectives-and-progression"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:hack-and-slash:s04",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
       "type": "HAS_SYSTEM",
       "from": "genre:hack-and-slash",
       "to": "system:hack-and-slash:s05",
@@ -10171,6 +11255,11 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:hack-and-slash:s05",
       "to": "domain:meta-and-live-operations"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:hack-and-slash:s05",
+      "to": "domain:narrative-and-knowledge"
     },
     {
       "type": "HAS_SYSTEM",
@@ -10295,6 +11384,11 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:hack-and-slash:s08",
       "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:hack-and-slash:s08",
+      "to": "domain:network-and-synchronization"
     },
     {
       "type": "HAS_SYSTEM",
@@ -10891,6 +11985,11 @@
       "to": "domain:meta-and-live-operations"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:gacha-rpg:s04",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
       "type": "HAS_SYSTEM",
       "from": "genre:gacha-rpg",
       "to": "system:gacha-rpg:s05",
@@ -10962,6 +12061,11 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:gacha-rpg:s06",
       "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:gacha-rpg:s06",
+      "to": "domain:narrative-and-knowledge"
     },
     {
       "type": "HAS_SYSTEM",
@@ -11036,6 +12140,11 @@
       "to": "domain:social-and-session"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:gacha-rpg:s08",
+      "to": "domain:network-and-synchronization"
+    },
+    {
       "type": "HAS_SYSTEM",
       "from": "genre:coc-strategy",
       "to": "system:coc-strategy:s01",
@@ -11075,6 +12184,12 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:coc-strategy:s01",
       "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:coc-strategy:s01",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "split"
     },
     {
       "type": "HAS_PICTOR_VISUAL_CANDIDATE",
@@ -11246,6 +12361,17 @@
       "to": "domain:audio-and-rhythm"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:coc-strategy:s04",
+      "to": "domain:network-and-synchronization"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:coc-strategy:s04",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "split"
+    },
+    {
       "type": "HAS_SYSTEM",
       "from": "genre:coc-strategy",
       "to": "system:coc-strategy:s05",
@@ -11285,6 +12411,17 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:coc-strategy:s05",
       "to": "domain:meta-and-live-operations"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:coc-strategy:s05",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:coc-strategy:s05",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "pictor-visual"
     },
     {
       "type": "HAS_SYSTEM",
@@ -11367,6 +12504,11 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:coc-strategy:s07",
       "to": "domain:meta-and-live-operations"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:coc-strategy:s07",
+      "to": "domain:narrative-and-knowledge"
     },
     {
       "type": "HAS_SYSTEM",
@@ -11611,6 +12753,11 @@
       "to": "domain:meta-and-live-operations"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:puzzle-rpg:s03",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
       "type": "HAS_SYSTEM",
       "from": "genre:puzzle-rpg",
       "to": "system:puzzle-rpg:s04",
@@ -11635,6 +12782,11 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:puzzle-rpg:s04",
       "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:puzzle-rpg:s04",
+      "to": "domain:accessibility-and-assistance"
     },
     {
       "type": "HAS_SYSTEM",
@@ -11732,6 +12884,11 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:puzzle-rpg:s06",
       "to": "domain:content-and-pacing"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:puzzle-rpg:s06",
+      "to": "domain:narrative-and-knowledge"
     },
     {
       "type": "HAS_PICTOR_VISUAL_CANDIDATE",
@@ -12201,6 +13358,11 @@
       "to": "domain:social-and-session"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:rhythm:s06",
+      "to": "domain:network-and-synchronization"
+    },
+    {
       "type": "HAS_PICTOR_VISUAL_CANDIDATE",
       "from": "system:rhythm:s06",
       "to": "implementation:pictor:text-vector-motion",
@@ -12491,6 +13653,17 @@
       "to": "domain:resources-and-economy"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:deckbuilder:s04",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:deckbuilder:s04",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "split"
+    },
+    {
       "type": "HAS_SYSTEM",
       "from": "genre:deckbuilder",
       "to": "system:deckbuilder:s05",
@@ -12604,6 +13777,12 @@
       "to": "domain:objectives-and-progression"
     },
     {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:deckbuilder:s07",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "split"
+    },
+    {
       "type": "HAS_SYSTEM",
       "from": "genre:deckbuilder",
       "to": "system:deckbuilder:s08",
@@ -12643,6 +13822,11 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:deckbuilder:s08",
       "to": "domain:meta-and-live-operations"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:deckbuilder:s08",
+      "to": "domain:narrative-and-knowledge"
     },
     {
       "type": "HAS_SYSTEM",
@@ -12773,6 +13957,22 @@
       "to": "domain:rules-and-state"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:auto-battler:s02",
+      "to": "domain:network-and-synchronization"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:auto-battler:s02",
+      "to": "domain:accessibility-and-assistance"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:auto-battler:s02",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "split"
+    },
+    {
       "type": "HAS_SYSTEM",
       "from": "genre:auto-battler",
       "to": "system:auto-battler:s03",
@@ -12812,6 +14012,17 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:auto-battler:s03",
       "to": "domain:content-and-pacing"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:auto-battler:s03",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:auto-battler:s03",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "pictor-visual"
     },
     {
       "type": "HAS_SYSTEM",
@@ -12953,6 +14164,17 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:auto-battler:s06",
       "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:auto-battler:s06",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:auto-battler:s06",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "split"
     },
     {
       "type": "HAS_SYSTEM",
@@ -13166,6 +14388,11 @@
       "to": "domain:meta-and-live-operations"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:city-builder:s02",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
       "type": "HAS_SYSTEM",
       "from": "genre:city-builder",
       "to": "system:city-builder:s03",
@@ -13212,6 +14439,11 @@
       "to": "domain:content-and-pacing"
     },
     {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:city-builder:s03",
+      "to": "domain:accessibility-and-assistance"
+    },
+    {
       "type": "HAS_SYSTEM",
       "from": "genre:city-builder",
       "to": "system:city-builder:s04",
@@ -13251,6 +14483,11 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:city-builder:s04",
       "to": "domain:information-and-ui"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:city-builder:s04",
+      "to": "domain:accessibility-and-assistance"
     },
     {
       "type": "HAS_PICTOR_VISUAL_CANDIDATE",
@@ -13298,6 +14535,11 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:city-builder:s05",
       "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:city-builder:s05",
+      "to": "domain:network-and-synchronization"
     },
     {
       "type": "HAS_SYSTEM",
@@ -13401,6 +14643,2233 @@
       "type": "USES_DOMAIN_ELEMENT",
       "from": "system:city-builder:s08",
       "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:adventure",
+      "to": "system:adventure:scene-exploration",
+      "order": 1
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:adventure:scene-exploration",
+      "to": "ux:12ace9bbc2050b28"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:adventure:scene-exploration",
+      "to": "ux:7fb4b30947b02823"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:adventure:scene-exploration",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:adventure:scene-exploration",
+      "to": "implementation:pictor:impact-and-postprocess",
+      "assessment": "split"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:adventure:scene-exploration",
+      "to": "system:adventure:object-interaction"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:adventure:object-interaction",
+      "to": "system:adventure:clue-knowledge"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:adventure:clue-knowledge",
+      "to": "system:adventure:puzzle-resolution"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:adventure:puzzle-resolution",
+      "to": "system:adventure:dialogue-choice"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:adventure:dialogue-choice",
+      "to": "system:adventure:save-resume"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:adventure",
+      "to": "system:adventure:object-interaction",
+      "order": 2
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:adventure:object-interaction",
+      "to": "ux:fce17513950e6877"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:adventure:object-interaction",
+      "to": "ux:5d2998518e821199"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:adventure:object-interaction",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:adventure:object-interaction",
+      "to": "domain:resources-and-economy"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:adventure:object-interaction",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:adventure",
+      "to": "system:adventure:clue-knowledge",
+      "order": 3
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:adventure:clue-knowledge",
+      "to": "ux:ac211f0e2999f75c"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:adventure:clue-knowledge",
+      "to": "ux:02953e394be20e0c"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:adventure:clue-knowledge",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:adventure:clue-knowledge",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:adventure",
+      "to": "system:adventure:puzzle-resolution",
+      "order": 4
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:adventure:puzzle-resolution",
+      "to": "ux:19715a5cdc003848"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:adventure:puzzle-resolution",
+      "to": "ux:8a1f3f7a1f65c67f"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:adventure:puzzle-resolution",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:adventure",
+      "to": "system:adventure:dialogue-choice",
+      "order": 5
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:adventure:dialogue-choice",
+      "to": "ux:3a388fbe295034b6"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:adventure:dialogue-choice",
+      "to": "ux:32aa5b6a9c6dca8a"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:adventure:dialogue-choice",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:adventure:dialogue-choice",
+      "to": "domain:information-and-ui"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:adventure:dialogue-choice",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:adventure:dialogue-choice",
+      "to": "implementation:pictor:ui-rendering",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:adventure:dialogue-choice",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:adventure",
+      "to": "system:adventure:save-resume",
+      "order": 6
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:adventure:save-resume",
+      "to": "ux:1be380841e916268"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:adventure:save-resume",
+      "to": "ux:1c3a5a078e3ce5b4"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:adventure:save-resume",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:visual-novel",
+      "to": "system:visual-novel:script-scene",
+      "order": 1
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:visual-novel:script-scene",
+      "to": "ux:9c5693b8049fb14c"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:visual-novel:script-scene",
+      "to": "ux:0c6562e8de5cc039"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:visual-novel:script-scene",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:visual-novel:script-scene",
+      "to": "domain:information-and-ui"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:visual-novel:script-scene",
+      "to": "domain:audio-and-rhythm"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:visual-novel:script-scene",
+      "to": "domain:presentation-and-feedback"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:visual-novel:script-scene",
+      "to": "domain:network-and-synchronization"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:visual-novel:script-scene",
+      "to": "implementation:pictor:ui-rendering",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:visual-novel:script-scene",
+      "to": "implementation:pictor:impact-and-postprocess",
+      "assessment": "split"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:visual-novel:script-scene",
+      "to": "system:visual-novel:choice-route"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:visual-novel:choice-route",
+      "to": "system:visual-novel:flags-relations"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:visual-novel:flags-relations",
+      "to": "system:visual-novel:backlog-skip-auto"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:visual-novel:backlog-skip-auto",
+      "to": "system:visual-novel:text-accessibility"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:visual-novel:text-accessibility",
+      "to": "system:visual-novel:save-load"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:visual-novel",
+      "to": "system:visual-novel:choice-route",
+      "order": 2
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:visual-novel:choice-route",
+      "to": "ux:afd5d3c7460e8707"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:visual-novel:choice-route",
+      "to": "ux:50a4a20a4c68de56"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:visual-novel:choice-route",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:visual-novel:choice-route",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "pictor-visual"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:visual-novel",
+      "to": "system:visual-novel:flags-relations",
+      "order": 3
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:visual-novel:flags-relations",
+      "to": "ux:4eaa9ee71602bc64"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:visual-novel:flags-relations",
+      "to": "ux:c14a58129e045445"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:visual-novel:flags-relations",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:visual-novel:flags-relations",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:visual-novel:flags-relations",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:visual-novel",
+      "to": "system:visual-novel:backlog-skip-auto",
+      "order": 4
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:visual-novel:backlog-skip-auto",
+      "to": "ux:b1e84747ce2e1fb9"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:visual-novel:backlog-skip-auto",
+      "to": "ux:53ecf2ae9d930f87"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:visual-novel:backlog-skip-auto",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:visual-novel:backlog-skip-auto",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:visual-novel:backlog-skip-auto",
+      "to": "domain:accessibility-and-assistance"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:visual-novel:backlog-skip-auto",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:visual-novel",
+      "to": "system:visual-novel:text-accessibility",
+      "order": 5
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:visual-novel:text-accessibility",
+      "to": "ux:0fa71ff85bb71375"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:visual-novel:text-accessibility",
+      "to": "ux:1be380841e916268"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:visual-novel:text-accessibility",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:visual-novel:text-accessibility",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:visual-novel:text-accessibility",
+      "to": "domain:information-and-ui"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:visual-novel:text-accessibility",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:visual-novel:text-accessibility",
+      "to": "domain:accessibility-and-assistance"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:visual-novel:text-accessibility",
+      "to": "implementation:pictor:ui-rendering",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:visual-novel:text-accessibility",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:visual-novel:text-accessibility",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:visual-novel",
+      "to": "system:visual-novel:save-load",
+      "order": 6
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:visual-novel:save-load",
+      "to": "ux:463405847267894f"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:visual-novel:save-load",
+      "to": "ux:1c3a5a078e3ce5b4"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:visual-novel:save-load",
+      "to": "domain:meta-and-live-operations"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:visual-novel:save-load",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:life-sim",
+      "to": "system:life-sim:calendar-time",
+      "order": 1
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:life-sim:calendar-time",
+      "to": "ux:2949ba26bd201d46"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:life-sim:calendar-time",
+      "to": "ux:5cc46986467652bb"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:life-sim:calendar-time",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:life-sim:calendar-time",
+      "to": "domain:audio-and-rhythm"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:life-sim:calendar-time",
+      "to": "system:life-sim:daily-actions"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:life-sim:daily-actions",
+      "to": "system:life-sim:farming-crafting"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:life-sim:farming-crafting",
+      "to": "system:life-sim:relationships-events"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:life-sim:relationships-events",
+      "to": "system:life-sim:home-customization"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:life-sim:home-customization",
+      "to": "system:life-sim:economy-progression"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:life-sim",
+      "to": "system:life-sim:daily-actions",
+      "order": 2
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:life-sim:daily-actions",
+      "to": "ux:e8d8247f8bbbdbe0"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:life-sim:daily-actions",
+      "to": "ux:0bba7c376aacad35"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:life-sim:daily-actions",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:life-sim:daily-actions",
+      "to": "domain:resources-and-economy"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:life-sim:daily-actions",
+      "to": "domain:audio-and-rhythm"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:life-sim:daily-actions",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:life-sim:daily-actions",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "pictor-visual"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:life-sim",
+      "to": "system:life-sim:farming-crafting",
+      "order": 3
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:life-sim:farming-crafting",
+      "to": "ux:7a648c2f31d54947"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:life-sim:farming-crafting",
+      "to": "ux:e5ab05fc98565e60"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:life-sim:farming-crafting",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:life-sim",
+      "to": "system:life-sim:relationships-events",
+      "order": 4
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:life-sim:relationships-events",
+      "to": "ux:ffbe59aeabe088bc"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:life-sim:relationships-events",
+      "to": "ux:32aa5b6a9c6dca8a"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:life-sim:relationships-events",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:life-sim:relationships-events",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "pictor-visual"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:life-sim",
+      "to": "system:life-sim:home-customization",
+      "order": 5
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:life-sim:home-customization",
+      "to": "ux:acdb56909eecad60"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:life-sim:home-customization",
+      "to": "ux:1b83fac88275658c"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:life-sim:home-customization",
+      "to": "domain:meta-and-live-operations"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:life-sim:home-customization",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:life-sim",
+      "to": "system:life-sim:economy-progression",
+      "order": 6
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:life-sim:economy-progression",
+      "to": "ux:4d3da3d46e604332"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:life-sim:economy-progression",
+      "to": "ux:2a19a9655634da2a"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:life-sim:economy-progression",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:life-sim:economy-progression",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:sports",
+      "to": "system:sports:player-team-control",
+      "order": 1
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:sports:player-team-control",
+      "to": "ux:da50318696a92ee0"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:sports:player-team-control",
+      "to": "ux:96f64b2a0f1c2b61"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:sports:player-team-control",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:sports:player-team-control",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:sports:player-team-control",
+      "to": "system:sports:object-physics"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:sports:object-physics",
+      "to": "system:sports:match-rules"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:sports:match-rules",
+      "to": "system:sports:opponent-ai"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:sports:opponent-ai",
+      "to": "system:sports:score-replay"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:sports:score-replay",
+      "to": "system:sports:online-session"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:sports",
+      "to": "system:sports:object-physics",
+      "order": 2
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:sports:object-physics",
+      "to": "ux:daf702a77e8b6d75"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:sports:object-physics",
+      "to": "ux:97930a0c352ea349"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:sports:object-physics",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:sports:object-physics",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:sports",
+      "to": "system:sports:match-rules",
+      "order": 3
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:sports:match-rules",
+      "to": "ux:d3504ee04079ad32"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:sports:match-rules",
+      "to": "ux:761295392476961e"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:sports:match-rules",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:sports:match-rules",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:sports",
+      "to": "system:sports:opponent-ai",
+      "order": 4
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:sports:opponent-ai",
+      "to": "ux:4333f56898c1e87e"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:sports:opponent-ai",
+      "to": "ux:3edd93bc53040a0c"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:sports:opponent-ai",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:sports:opponent-ai",
+      "to": "domain:content-and-pacing"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:sports:opponent-ai",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:sports",
+      "to": "system:sports:score-replay",
+      "order": 5
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:sports:score-replay",
+      "to": "ux:4ce3cf3d58819115"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:sports:score-replay",
+      "to": "ux:6a54b9eecb7483fc"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:sports:score-replay",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:sports:score-replay",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:sports:score-replay",
+      "to": "domain:information-and-ui"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:sports:score-replay",
+      "to": "domain:presentation-and-feedback"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:sports:score-replay",
+      "to": "domain:network-and-synchronization"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:sports:score-replay",
+      "to": "implementation:pictor:camera-presentation",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:sports:score-replay",
+      "to": "implementation:pictor:ui-rendering",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:sports:score-replay",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:sports:score-replay",
+      "to": "implementation:pictor:impact-and-postprocess",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:sports",
+      "to": "system:sports:online-session",
+      "order": 6
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:sports:online-session",
+      "to": "ux:e76757282365a703"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:sports:online-session",
+      "to": "ux:1c3a5a078e3ce5b4"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:sports:online-session",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:sports:online-session",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:sports:online-session",
+      "to": "domain:network-and-synchronization"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:board-card",
+      "to": "system:board-card:setup-information",
+      "order": 1
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:board-card:setup-information",
+      "to": "ux:33bcd68cb98f6ced"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:board-card:setup-information",
+      "to": "ux:91ca175d56b093ef"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:board-card:setup-information",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:board-card:setup-information",
+      "to": "system:board-card:turn-phase"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:board-card:turn-phase",
+      "to": "system:board-card:rule-resolution"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:board-card:rule-resolution",
+      "to": "system:board-card:hand-table-state"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:board-card:hand-table-state",
+      "to": "system:board-card:opponent-assist"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:board-card:opponent-assist",
+      "to": "system:board-card:match-session"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:board-card",
+      "to": "system:board-card:turn-phase",
+      "order": 2
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:board-card:turn-phase",
+      "to": "ux:7fb4b30947b02823"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:board-card:turn-phase",
+      "to": "ux:d3504ee04079ad32"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:board-card:turn-phase",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:board-card",
+      "to": "system:board-card:rule-resolution",
+      "order": 3
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:board-card:rule-resolution",
+      "to": "ux:37ce614903ff205b"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:board-card:rule-resolution",
+      "to": "ux:8ded4fcfb58a7e88"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:board-card:rule-resolution",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:board-card:rule-resolution",
+      "to": "domain:resources-and-economy"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:board-card",
+      "to": "system:board-card:hand-table-state",
+      "order": 4
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:board-card:hand-table-state",
+      "to": "ux:43b64ffb933bcf23"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:board-card:hand-table-state",
+      "to": "ux:1be380841e916268"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:board-card:hand-table-state",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:board-card:hand-table-state",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:board-card:hand-table-state",
+      "to": "domain:resources-and-economy"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:board-card",
+      "to": "system:board-card:opponent-assist",
+      "order": 5
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:board-card:opponent-assist",
+      "to": "ux:b6583c64a32d777f"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:board-card:opponent-assist",
+      "to": "ux:536a13e95e2ecc41"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:board-card:opponent-assist",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:board-card:opponent-assist",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:board-card:opponent-assist",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:board-card:opponent-assist",
+      "to": "domain:accessibility-and-assistance"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:board-card",
+      "to": "system:board-card:match-session",
+      "order": 6
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:board-card:match-session",
+      "to": "ux:1c3a5a078e3ce5b4"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:board-card:match-session",
+      "to": "ux:6a54b9eecb7483fc"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:board-card:match-session",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:board-card:match-session",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:battle-royale",
+      "to": "system:battle-royale:deployment-zone",
+      "order": 1
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:battle-royale:deployment-zone",
+      "to": "ux:d3504ee04079ad32"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:battle-royale:deployment-zone",
+      "to": "ux:10b3229edfeae30f"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:battle-royale:deployment-zone",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:battle-royale:deployment-zone",
+      "to": "system:battle-royale:loot-inventory"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:battle-royale:loot-inventory",
+      "to": "system:battle-royale:combat-survival"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:battle-royale:combat-survival",
+      "to": "system:battle-royale:squad-revive"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:battle-royale:squad-revive",
+      "to": "system:battle-royale:authoritative-sync"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:battle-royale:authoritative-sync",
+      "to": "system:battle-royale:spectate-replay"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:battle-royale",
+      "to": "system:battle-royale:loot-inventory",
+      "order": 2
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:battle-royale:loot-inventory",
+      "to": "ux:84ad0b94100ce6a8"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:battle-royale:loot-inventory",
+      "to": "ux:afd5d3c7460e8707"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:battle-royale:loot-inventory",
+      "to": "domain:resources-and-economy"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:battle-royale",
+      "to": "system:battle-royale:combat-survival",
+      "order": 3
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:battle-royale:combat-survival",
+      "to": "ux:4c64970ac6a535b5"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:battle-royale:combat-survival",
+      "to": "ux:a1c1a67d02963016"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:battle-royale:combat-survival",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:battle-royale:combat-survival",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:battle-royale:combat-survival",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:battle-royale",
+      "to": "system:battle-royale:squad-revive",
+      "order": 4
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:battle-royale:squad-revive",
+      "to": "ux:0b38736654c4c3bc"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:battle-royale:squad-revive",
+      "to": "ux:ab1bb84b02c1f8b7"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:battle-royale:squad-revive",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:battle-royale:squad-revive",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:battle-royale:squad-revive",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:battle-royale:squad-revive",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:battle-royale",
+      "to": "system:battle-royale:authoritative-sync",
+      "order": 5
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:battle-royale:authoritative-sync",
+      "to": "ux:761295392476961e"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:battle-royale:authoritative-sync",
+      "to": "ux:fd4206976feedf11"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:battle-royale:authoritative-sync",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:battle-royale:authoritative-sync",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:battle-royale:authoritative-sync",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:battle-royale:authoritative-sync",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:battle-royale:authoritative-sync",
+      "to": "domain:network-and-synchronization"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:battle-royale:authoritative-sync",
+      "to": "implementation:pictor:impact-and-postprocess",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:battle-royale",
+      "to": "system:battle-royale:spectate-replay",
+      "order": 6
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:battle-royale:spectate-replay",
+      "to": "ux:a9eb6ef8ef7d2f55"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:battle-royale:spectate-replay",
+      "to": "ux:c9c19c2e33fe2358"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:battle-royale:spectate-replay",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:battle-royale:spectate-replay",
+      "to": "domain:network-and-synchronization"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:battle-royale:spectate-replay",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "pictor-visual"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:shmup",
+      "to": "system:shmup:player-control",
+      "order": 1
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:shmup:player-control",
+      "to": "ux:c29909653a961b12"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:shmup:player-control",
+      "to": "ux:1be380841e916268"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:player-control",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:player-control",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:player-control",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:shmup:player-control",
+      "to": "system:shmup:bullet-pattern"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:shmup:bullet-pattern",
+      "to": "system:shmup:enemy-wave"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:shmup:enemy-wave",
+      "to": "system:shmup:score-chain"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:shmup:score-chain",
+      "to": "system:shmup:power-up"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:shmup:power-up",
+      "to": "system:shmup:stage-pacing"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:shmup",
+      "to": "system:shmup:bullet-pattern",
+      "order": 2
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:shmup:bullet-pattern",
+      "to": "ux:dfc6f9307a841d9d"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:shmup:bullet-pattern",
+      "to": "ux:1eb04611b6a60d48"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:bullet-pattern",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:bullet-pattern",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:bullet-pattern",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:shmup",
+      "to": "system:shmup:enemy-wave",
+      "order": 3
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:shmup:enemy-wave",
+      "to": "ux:4ce3cf3d58819115"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:shmup:enemy-wave",
+      "to": "ux:1bc3880db0ad5a3f"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:enemy-wave",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:enemy-wave",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:enemy-wave",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:enemy-wave",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:enemy-wave",
+      "to": "domain:content-and-pacing"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:enemy-wave",
+      "to": "domain:audio-and-rhythm"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:shmup:enemy-wave",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:shmup",
+      "to": "system:shmup:score-chain",
+      "order": 4
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:shmup:score-chain",
+      "to": "ux:3271670179421220"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:shmup:score-chain",
+      "to": "ux:b8acac36166895a6"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:score-chain",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:score-chain",
+      "to": "domain:information-and-ui"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:shmup:score-chain",
+      "to": "implementation:pictor:ui-rendering",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:shmup:score-chain",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:shmup",
+      "to": "system:shmup:power-up",
+      "order": 5
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:shmup:power-up",
+      "to": "ux:a20ec92b8f4e292a"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:shmup:power-up",
+      "to": "ux:8ded4fcfb58a7e88"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:power-up",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:power-up",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:power-up",
+      "to": "domain:resources-and-economy"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:power-up",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:shmup",
+      "to": "system:shmup:stage-pacing",
+      "order": 6
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:shmup:stage-pacing",
+      "to": "ux:0bba7c376aacad35"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:shmup:stage-pacing",
+      "to": "ux:b2b7bb6c504c0c75"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:stage-pacing",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:stage-pacing",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:stage-pacing",
+      "to": "domain:content-and-pacing"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:shmup:stage-pacing",
+      "to": "domain:presentation-and-feedback"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:shmup:stage-pacing",
+      "to": "implementation:pictor:impact-and-postprocess",
+      "assessment": "pictor-visual"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:shmup:stage-pacing",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "pictor-visual"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:open-world",
+      "to": "system:open-world:streaming-traversal",
+      "order": 1
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:open-world:streaming-traversal",
+      "to": "ux:7a4cd99cf95c3f72"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:open-world:streaming-traversal",
+      "to": "ux:3492fbd7b49fd130"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:open-world:streaming-traversal",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:open-world:streaming-traversal",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:open-world:streaming-traversal",
+      "to": "system:open-world:discovery-map"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:open-world:discovery-map",
+      "to": "system:open-world:quest-narrative"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:open-world:quest-narrative",
+      "to": "system:open-world:world-simulation"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:open-world:world-simulation",
+      "to": "system:open-world:fast-travel-save"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:open-world:fast-travel-save",
+      "to": "system:open-world:navigation-accessibility"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:open-world",
+      "to": "system:open-world:discovery-map",
+      "order": 2
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:open-world:discovery-map",
+      "to": "ux:44ebe5a178d52b3e"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:open-world:discovery-map",
+      "to": "ux:02066e07038ecdb2"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:open-world:discovery-map",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:open-world",
+      "to": "system:open-world:quest-narrative",
+      "order": 3
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:open-world:quest-narrative",
+      "to": "ux:38c9858546eb9d22"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:open-world:quest-narrative",
+      "to": "ux:1c3a5a078e3ce5b4"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:open-world:quest-narrative",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:open-world:quest-narrative",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:open-world:quest-narrative",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:open-world:quest-narrative",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "pictor-visual"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:open-world",
+      "to": "system:open-world:world-simulation",
+      "order": 4
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:open-world:world-simulation",
+      "to": "ux:7215d33766b74717"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:open-world:world-simulation",
+      "to": "ux:bb44ac736f9827d2"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:open-world:world-simulation",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:open-world:world-simulation",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:open-world",
+      "to": "system:open-world:fast-travel-save",
+      "order": 5
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:open-world:fast-travel-save",
+      "to": "ux:ede29e6ed2aee238"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:open-world:fast-travel-save",
+      "to": "ux:1c3a5a078e3ce5b4"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:open-world:fast-travel-save",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:open-world:fast-travel-save",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:open-world",
+      "to": "system:open-world:navigation-accessibility",
+      "order": 6
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:open-world:navigation-accessibility",
+      "to": "ux:0fa71ff85bb71375"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:open-world:navigation-accessibility",
+      "to": "ux:1be380841e916268"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:open-world:navigation-accessibility",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:open-world:navigation-accessibility",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:open-world:navigation-accessibility",
+      "to": "domain:accessibility-and-assistance"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:open-world:navigation-accessibility",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:open-world:navigation-accessibility",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:runner",
+      "to": "system:runner:auto-lane-control",
+      "order": 1
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:runner:auto-lane-control",
+      "to": "ux:52d11bf91e4eced8"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:runner:auto-lane-control",
+      "to": "ux:135fe683c520de16"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:runner:auto-lane-control",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:runner:auto-lane-control",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:runner:auto-lane-control",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "split"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:runner:auto-lane-control",
+      "to": "system:runner:obstacle-timing"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:runner:obstacle-timing",
+      "to": "system:runner:pickup-score"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:runner:pickup-score",
+      "to": "system:runner:procedural-track"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:runner:procedural-track",
+      "to": "system:runner:speed-curve"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:runner:speed-curve",
+      "to": "system:runner:retry-loop"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:runner",
+      "to": "system:runner:obstacle-timing",
+      "order": 2
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:runner:obstacle-timing",
+      "to": "ux:9ad9a2421eea5082"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:runner:obstacle-timing",
+      "to": "ux:3edd93bc53040a0c"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:runner:obstacle-timing",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:runner:obstacle-timing",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:runner:obstacle-timing",
+      "to": "domain:audio-and-rhythm"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:runner:obstacle-timing",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:runner",
+      "to": "system:runner:pickup-score",
+      "order": 3
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:runner:pickup-score",
+      "to": "ux:3189d605706334cc"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:runner:pickup-score",
+      "to": "ux:0bba7c376aacad35"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:runner:pickup-score",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:runner:pickup-score",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:runner:pickup-score",
+      "to": "domain:information-and-ui"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:runner:pickup-score",
+      "to": "domain:meta-and-live-operations"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:runner:pickup-score",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:runner",
+      "to": "system:runner:procedural-track",
+      "order": 4
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:runner:procedural-track",
+      "to": "ux:5fac095be655d7fb"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:runner:procedural-track",
+      "to": "ux:761295392476961e"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:runner:procedural-track",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:runner:procedural-track",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:runner:procedural-track",
+      "to": "domain:content-and-pacing"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:runner:procedural-track",
+      "to": "domain:audio-and-rhythm"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:runner:procedural-track",
+      "to": "domain:meta-and-live-operations"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:runner:procedural-track",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:runner",
+      "to": "system:runner:speed-curve",
+      "order": 5
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:runner:speed-curve",
+      "to": "ux:9d6f0ad4816c2116"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:runner:speed-curve",
+      "to": "ux:3271670179421220"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:runner:speed-curve",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:runner",
+      "to": "system:runner:retry-loop",
+      "order": 6
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:runner:retry-loop",
+      "to": "ux:0d7ed44d48b68cdf"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:runner:retry-loop",
+      "to": "ux:a9eb6ef8ef7d2f55"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:runner:retry-loop",
+      "to": "domain:presentation-and-feedback"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:runner:retry-loop",
+      "to": "implementation:pictor:impact-and-postprocess",
+      "assessment": "pictor-visual"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:survivors-like",
+      "to": "system:survivors-like:movement-kiting",
+      "order": 1
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:survivors-like:movement-kiting",
+      "to": "ux:e31532b8102f5ea5"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:survivors-like:movement-kiting",
+      "to": "ux:a24f502c764c34cb"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:movement-kiting",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:movement-kiting",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:movement-kiting",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:movement-kiting",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:movement-kiting",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:survivors-like:movement-kiting",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "split"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:survivors-like:movement-kiting",
+      "to": "system:survivors-like:auto-attack"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:survivors-like:auto-attack",
+      "to": "system:survivors-like:swarm-spawn"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:survivors-like:swarm-spawn",
+      "to": "system:survivors-like:experience-choice"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:survivors-like:experience-choice",
+      "to": "system:survivors-like:build-evolution"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:survivors-like:build-evolution",
+      "to": "system:survivors-like:entity-budget"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:survivors-like",
+      "to": "system:survivors-like:auto-attack",
+      "order": 2
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:survivors-like:auto-attack",
+      "to": "ux:aa5e74ea6c56212d"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:survivors-like:auto-attack",
+      "to": "ux:5cb53e3de202ecbb"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:auto-attack",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:survivors-like:auto-attack",
+      "to": "implementation:pictor:impact-and-postprocess",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:survivors-like",
+      "to": "system:survivors-like:swarm-spawn",
+      "order": 3
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:survivors-like:swarm-spawn",
+      "to": "ux:4ce3cf3d58819115"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:survivors-like:swarm-spawn",
+      "to": "ux:d3504ee04079ad32"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:swarm-spawn",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:swarm-spawn",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:swarm-spawn",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:swarm-spawn",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:swarm-spawn",
+      "to": "domain:content-and-pacing"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:survivors-like:swarm-spawn",
+      "to": "implementation:pictor:impact-and-postprocess",
+      "assessment": "pictor-visual"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:survivors-like",
+      "to": "system:survivors-like:experience-choice",
+      "order": 4
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:survivors-like:experience-choice",
+      "to": "ux:b32ba2c4e5dcb7a3"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:survivors-like:experience-choice",
+      "to": "ux:91ca175d56b093ef"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:experience-choice",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:experience-choice",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:survivors-like:experience-choice",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "pictor-visual"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:survivors-like",
+      "to": "system:survivors-like:build-evolution",
+      "order": 5
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:survivors-like:build-evolution",
+      "to": "ux:d1216983d635067c"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:survivors-like:build-evolution",
+      "to": "ux:acdb56909eecad60"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:build-evolution",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:build-evolution",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:build-evolution",
+      "to": "domain:accessibility-and-assistance"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:survivors-like",
+      "to": "system:survivors-like:entity-budget",
+      "order": 6
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:survivors-like:entity-budget",
+      "to": "ux:b702516fa9d75b7f"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:survivors-like:entity-budget",
+      "to": "ux:188f1b23eb61acd7"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:entity-budget",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:entity-budget",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:entity-budget",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:entity-budget",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:survivors-like:entity-budget",
+      "to": "domain:content-and-pacing"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:survivors-like:entity-budget",
+      "to": "implementation:pictor:impact-and-postprocess",
+      "assessment": "split"
     }
   ]
 }

@@ -17,6 +17,7 @@ import { fileURLToPath } from "node:url";
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const ludusRoot = path.resolve(scriptDirectory, "..");
 const defaultOutput = path.join(ludusRoot, "spec", "data", "okf", "ludus-play");
+const defaultSupplement = path.join(ludusRoot, "spec", "data", "okf", "ludus-play-supplement.json");
 
 const domainElements = [
   {
@@ -84,6 +85,21 @@ const domainElements = [
     title: "メタゲームと運用",
     description: "保存、収集、ガチャ、継続報酬、ライブ運用など、1プレイを越えた関係を作る要素。",
   },
+  {
+    id: "narrative-and-knowledge",
+    title: "物語と知識",
+    description: "会話、選択肢、手がかり、クエスト、世界設定など、理解と意味づけを前進させる要素。",
+  },
+  {
+    id: "network-and-synchronization",
+    title: "ネットワークと同期",
+    description: "マッチメイク、権威サーバー、状態同期、観戦、リプレイなど、複数参加者の一貫性を支える要素。",
+  },
+  {
+    id: "accessibility-and-assistance",
+    title: "アクセシビリティと支援",
+    description: "チュートリアル、入力補助、字幕、色覚配慮、難易度支援など、より多くの人が遊べるようにする要素。",
+  },
 ];
 
 const pictorCandidates = [
@@ -128,15 +144,15 @@ const pictorCandidates = [
 function usage() {
   return [
     "Usage:",
-    "  node tools/import-game-knowledge-graph.mjs --source <game-knowledge-graph-dir> [--output <dir>] [--timestamp <ISO-8601>]",
+    "  node tools/import-game-knowledge-graph.mjs --source <game-knowledge-graph-dir> [--supplement <json-file>] [--output <dir>] [--timestamp <ISO-8601>]",
   ].join("\n");
 }
 
 function parseArgs(argv) {
-  const result = { output: defaultOutput, timestamp: new Date().toISOString() };
+  const result = { output: defaultOutput, supplement: defaultSupplement, timestamp: new Date().toISOString() };
   for (let index = 0; index < argv.length; index += 1) {
     const argument = argv[index];
-    if (argument === "--source" || argument === "--output" || argument === "--timestamp") {
+    if (argument === "--source" || argument === "--supplement" || argument === "--output" || argument === "--timestamp") {
       const value = argv[index + 1];
       if (!value) throw new Error(`Missing value for ${argument}`);
       result[argument.slice(2)] = value;
@@ -203,6 +219,9 @@ function domainIdsFor(system) {
   add("audio-and-rhythm", /音楽|楽曲|リズム|ノーツ|タイミング|音声|拍/);
   add("presentation-and-feedback", /カメラ|演出|視覚|アニメーション|シェイク|フィードバック|エフェクト|恐怖|没入/);
   add("meta-and-live-operations", /セーブ|ロード|ガチャ|収集|継続|ログイン|運用/);
+  add("narrative-and-knowledge", /物語|会話|対話|台詞|選択肢|分岐|手がかり|調査|シナリオ|ストーリー|クエスト/);
+  add("network-and-synchronization", /ネットワーク|同期|サーバー|マッチメイク|リプレイ|観戦|オンライン|権威|マルチプレイヤー/);
+  add("accessibility-and-assistance", /アクセシビリティ|チュートリアル|補助|リマップ|色覚|字幕|スキップ|難易度支援/);
   return matches.length > 0 ? unique(matches) : ["rules-and-state"];
 }
 
@@ -214,7 +233,7 @@ function pictorCandidateIdsFor(system) {
   };
   add("camera-presentation", /カメラ|視点|ロックオン|シェイク/);
   add("ui-rendering", /ui|hud|ゲージ|メニュー|表示|通知|インジケーター/);
-  add("text-vector-motion", /スコア|コンボ|テキスト|通知|チュートリアル/);
+  add("text-vector-motion", /スコア|コンボ|テキスト|通知|チュートリアル|字幕|会話|対話|選択肢|バックログ|リプレイ/);
   add("animation-presentation", /アニメーション|モーション|ダンス|演技|カットシーン/);
   add("impact-and-postprocess", /ヒットストップ|バレットタイム|画面|演出|視覚|シェイク|恐怖|フィードバック|命中|残像/);
   add("scene-rendering", /地形|マップ|ワールド|ステージ|ダンジョン|レーン|グリッド|フィールド|障害物/);
@@ -271,10 +290,17 @@ async function main() {
 
   const sourceRoot = path.resolve(args.source);
   const outputRoot = path.resolve(args.output);
+  const supplementFile = args.supplement ? path.resolve(args.supplement) : null;
   const manifest = await readJson(path.join(sourceRoot, "manifest.json"));
-  const genreEntries = manifest.genres ?? [];
+  const sourceGenreEntries = manifest.genres ?? [];
+  const supplement = supplementFile ? await readJson(supplementFile) : { genres: [] };
+  const supplementalGenreEntries = (supplement.genres ?? []).map((graph) => ({
+    file: `${path.basename(supplementFile)}#${graph.genre?.id ?? "unknown"}`,
+    graph,
+  }));
+  const genreEntries = [...sourceGenreEntries, ...supplementalGenreEntries];
   if (!Array.isArray(genreEntries) || genreEntries.length === 0) {
-    throw new Error("manifest.json does not contain genres[]");
+    throw new Error("No genres found in manifest.json or the supplement file");
   }
 
   await rm(outputRoot, { recursive: true, force: true });
@@ -282,7 +308,7 @@ async function main() {
   const genres = [];
   const systems = [];
   for (const entry of genreEntries) {
-    const graph = await readJson(path.join(sourceRoot, entry.file));
+    const graph = entry.graph ?? await readJson(path.join(sourceRoot, entry.file));
     if (!graph.genre?.id || !Array.isArray(graph.systems)) {
       throw new Error(`Invalid graph document: ${entry.file}`);
     }
@@ -301,6 +327,13 @@ async function main() {
         file: path.join(outputRoot, "systems", genreSlug, `${systemSlug}.md`),
       });
     }
+  }
+
+  if (new Set(genres.map((genre) => genre.genre.id)).size !== genres.length) {
+    throw new Error("Duplicate genre IDs found across source and supplement data");
+  }
+  if (new Set(systems.map((system) => system.id)).size !== systems.length) {
+    throw new Error("Duplicate system IDs found across source and supplement data");
   }
 
   const systemsById = new Map(systems.map((system) => [system.id, system]));
@@ -606,6 +639,7 @@ async function main() {
     "",
     "- 原典: Notion「ゲーム構造一覧 (テンプレート一覧)」 (page id: `30453028-8e8d-805d-a922-f92949ebd575`)",
     "- 変換元: `game-knowledge-graph` の `manifest.json` と `graph/*.json`",
+    `- Ludus補完: \`${path.relative(ludusRoot, supplementFile).split(path.sep).join("/")}\`（原典にない代表ジャンル・横断要素）`,
     "- 生成器: `tools/import-game-knowledge-graph.mjs`",
     "",
   ].join("\n"));
@@ -617,6 +651,7 @@ async function main() {
       generated_at: args.timestamp,
       source_graph_root: sourceRoot,
       source_page_id: "30453028-8e8d-805d-a922-f92949ebd575",
+      supplemental_source: path.relative(ludusRoot, supplementFile).split(path.sep).join("/"),
     },
     nodes: graphNodes,
     edges: unique(graphEdges.map((edge) => JSON.stringify(edge))).map((edge) => JSON.parse(edge)),

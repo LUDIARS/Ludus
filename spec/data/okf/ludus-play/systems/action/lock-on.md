@@ -44,6 +44,7 @@ assessment_basis: "rule-based-v1; manual review required before implementation"
 - [空間と移動](../../domains/space-and-navigation.md)
 - [対立と解決](../../domains/conflict-and-resolution.md)
 - [演出とフィードバック](../../domains/presentation-and-feedback.md)
+- [アクセシビリティと支援](../../domains/accessibility-and-assistance.md)
 
 # 汎用実装の判定
 

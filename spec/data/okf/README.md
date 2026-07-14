@@ -6,7 +6,7 @@ OKFでは、各Markdownファイルを一つの概念とし、YAML frontmatter�
 
 ## `ludus-play/`
 
-Notionの「ゲーム構造一覧 (テンプレート一覧)」を取り込んだ遊びの辞書です。各ジャンルの主要システムに対して、次を明示します。
+Notionの「ゲーム構造一覧 (テンプレート一覧)」を取り込んだ遊びの辞書です。原典に未収録の代表ジャンルと横断要素は、Ludus編集補足の [`ludus-play-supplement.json`](ludus-play-supplement.json) に分離して保持します。各ジャンルの主要システムに対して、次を明示します。
 
 - 目標とするUX成果
 - 取り扱うドメイン要素
@@ -20,7 +20,7 @@ Notionの「ゲーム構造一覧 (テンプレート一覧)」を取り込ん�
 node tools/import-game-knowledge-graph.mjs --source E:\Document\Ars\game-knowledge-graph --timestamp 2026-07-15T00:00:00+09:00
 ```
 
-生成される `ludus-play/exports/property-graph.json` は、OKFリンクを明示的なノード・エッジへ投影したグラフDB投入用データです。接続先のGraphDB製品はまだ決めないため、この段階では製品非依存のProperty Graph JSONを正本とします。
+生成される `ludus-play/exports/property-graph.json` は、OKFリンクを明示的なノード・エッジへ投影した将来のGraphDB投入用データです。接続先のGraphDB製品はまだ決めないため、この段階では製品非依存のProperty Graph JSONを正本とします。
 
 ## 責務境界
 

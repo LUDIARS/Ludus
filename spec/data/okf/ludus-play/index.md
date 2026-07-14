@@ -4,10 +4,10 @@
 
 ## 構成
 
-- ジャンル: 23
-- 主要システム: 192
-- UX成果: 410
-- ドメイン要素: 13
+- ジャンル: 33
+- 主要システム: 252
+- UX成果: 488
+- ドメイン要素: 16
 - Pictor候補: 6
 
 ## 入口
@@ -41,9 +41,20 @@
 - [デッキ構築型カードゲーム](./genres/deckbuilder.md)
 - [オートバトラー](./genres/auto-battler.md)
 - [街づくり/経営シミュレーション](./genres/city-builder.md)
+- [アドベンチャーゲーム](./genres/adventure.md)
+- [ビジュアルノベル／インタラクティブフィクション](./genres/visual-novel.md)
+- [ライフシム／農場シム](./genres/life-sim.md)
+- [スポーツゲーム](./genres/sports.md)
+- [ボードゲーム／カードゲーム](./genres/board-card.md)
+- [バトルロイヤル／エクストラクション](./genres/battle-royale.md)
+- [シューティングゲーム（STG／SHMUP）](./genres/shmup.md)
+- [オープンワールドゲーム](./genres/open-world.md)
+- [ランナー／エンドレスラン](./genres/runner.md)
+- [サバイバーライク](./genres/survivors-like.md)
 
 ## 生成元
 
 - 原典: Notion「ゲーム構造一覧 (テンプレート一覧)」 (page id: `30453028-8e8d-805d-a922-f92949ebd575`)
 - 変換元: `game-knowledge-graph` の `manifest.json` と `graph/*.json`
+- Ludus補完: `spec/data/okf/ludus-play-supplement.json`（原典にない代表ジャンル・横断要素）
 - 生成器: `tools/import-game-knowledge-graph.mjs`

@@ -1,0 +1,19 @@
+---
+type: "Ludus UX Outcome"
+title: "理解"
+description: "ゲームシステムが提供するUX効果「理解」。"
+tags:
+  - "ludus"
+  - "ux"
+timestamp: "2026-07-15T00:00:00+09:00"
+---
+
+# 原文由来の効果
+
+- 理解: ビルドの効果を視覚で読める
+- 理解: 味方構成を把握できる
+
+# 接続元
+
+- [ヒーロー名簿と役割](../systems/hero-shooter/hero-roster.md)
+- [自動攻撃と武器挙動](../systems/survivors-like/auto-attack.md)

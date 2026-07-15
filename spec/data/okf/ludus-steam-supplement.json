@@ -1,0 +1,198 @@
+{
+  "version": "1.0.0",
+  "title": "Steam人気タグ・トップセラー補完",
+  "source_snapshot": "spec/data/steam-crawl-2026-07-15.json",
+  "editorial_policy": "Steamタグはジャンル、テーマ、属性を混在させるため、販売属性を除外し、仕様へ展開できる反復的なゲームプレイ構造だけを独立ジャンルとして採用する。",
+  "genres": [
+    {
+      "genre": {"id":"genre:tactical-shooter","type":"Genre","name":"タクティカルシューター","summary":"精密な射撃に、役割分担、情報戦、ラウンド目標、装備経済を重ねる競技型シューター。個人の照準だけでなく、チームの意思決定と再現可能な公平性を中核に置く。"},
+      "import_id":"ludus_steam_20260715","source_page_id":"steam-popular-tags-20260715",
+      "systems":[
+        {"id":"system:tactical-shooter:round-objective","type":"System","name":"ラウンド目標と勝敗","order":1,"purpose":"攻防目標、制限時間、生存状態からラウンドの勝敗を一意に決定する。","features":["攻守交代","目標達成判定","ラウンド状態機械"],"ux_effects":["緊張: 一手の重みを明確にする","納得感: 勝敗理由を追跡できる"],"design_principle":"勝敗条件を表示とサーバー判定で共有する。"},
+        {"id":"system:tactical-shooter:precision-gunplay","type":"System","name":"精密射撃と姿勢制御","order":2,"purpose":"移動、姿勢、反動、拡散を照準精度へ反映する。","features":["反動パターン","移動精度ペナルティ","部位命中"],"ux_effects":["熟達: 操作精度の上達を感じる","手応え: 命中の理由を理解できる"],"design_principle":"乱数だけでなく制御可能な誤差を残す。"},
+        {"id":"system:tactical-shooter:information-utility","type":"System","name":"索敵とユーティリティ","order":3,"purpose":"視界、音、煙、投擲物を通じて不完全情報を更新する。","features":["可視性遮断","足音伝播","索敵効果"],"ux_effects":["読み合い: 相手の位置を推測する","連携: 情報を味方と共有する"],"design_principle":"情報の発生源と有効期限を明示する。"},
+        {"id":"system:tactical-shooter:team-economy","type":"System","name":"装備購入とチーム経済","order":4,"purpose":"ラウンド間の通貨と装備選択で短期リスクと試合全体の計画を結ぶ。","features":["購入フェーズ","敗北補償","装備共有"],"ux_effects":["戦略性: 次ラウンドまで含めて投資する","連帯感: チーム資源を融通する"],"design_principle":"経済差からの回復経路を残す。"},
+        {"id":"system:tactical-shooter:authoritative-hit","type":"System","name":"権威命中判定と補償","order":5,"purpose":"遅延下でも命中、被弾、死亡の一貫した結果を確定する。","features":["権威サーバー","遅延補償","不正検知"],"ux_effects":["公平感: 判定を信頼できる","応答性: 入力結果を素早く確認できる"],"design_principle":"体感応答と最終権威を分離する。"},
+        {"id":"system:tactical-shooter:competitive-match","type":"System","name":"競技マッチと評価","order":6,"purpose":"実力推定、チーム編成、再接続、試合記録を管理する。","features":["レーティング","役割を考慮した編成","リプレイ"],"ux_effects":["成長実感: 実力変化を追える","公平感: 近い条件で競える"],"design_principle":"評価値と報酬を同一視しない。"}
+      ],
+      "implementation_order":["ラウンド目標と勝敗","精密射撃と姿勢制御","索敵とユーティリティ","装備購入とチーム経済","権威命中判定と補償","競技マッチと評価"],
+      "edges":{"PRECEDES":[["system:tactical-shooter:round-objective","system:tactical-shooter:precision-gunplay"],["system:tactical-shooter:precision-gunplay","system:tactical-shooter:information-utility"],["system:tactical-shooter:information-utility","system:tactical-shooter:team-economy"],["system:tactical-shooter:team-economy","system:tactical-shooter:authoritative-hit"],["system:tactical-shooter:authoritative-hit","system:tactical-shooter:competitive-match"]]}
+    },
+    {
+      "genre":{"id":"genre:hero-shooter","type":"Genre","name":"ヒーローシューター","summary":"固有の武器と能力を持つヒーローを選び、役割構成と能力連携でチーム目標を争うシューター。射撃性能とアビリティの可読性、構成変更、継続的なバランス調整が核になる。"},
+      "import_id":"ludus_steam_20260715","source_page_id":"steam-popular-tags-20260715",
+      "systems":[
+        {"id":"system:hero-shooter:hero-roster","type":"System","name":"ヒーロー名簿と役割","order":1,"purpose":"固有キャラクターを役割、難度、得意距離で選択可能にする。","features":["役割分類","選択と交代","アンロック状態"],"ux_effects":["自己表現: 得意な役割を選べる","理解: 味方構成を把握できる"],"design_principle":"外見差とゲーム上の役割差を一致させる。"},
+        {"id":"system:hero-shooter:ability-kit","type":"System","name":"固有アビリティキット","order":2,"purpose":"通常攻撃、移動、防御、支援能力を一つの役割ループにまとめる。","features":["クールダウン","リソース消費","状態効果"],"ux_effects":["個性: ヒーロー固有の手触りを得る","熟達: 能力の組み合わせを学ぶ"],"design_principle":"各能力の反撃可能性を残す。"},
+        {"id":"system:hero-shooter:composition-synergy","type":"System","name":"構成とシナジー","order":3,"purpose":"役割の補完、能力コンボ、カウンター選択を成立させる。","features":["役割充足","連携効果","交代判断"],"ux_effects":["連携: 仲間の強みを増幅する","戦略性: 相手に合わせて構成を変える"],"design_principle":"単一の必須構成へ固定しない。"},
+        {"id":"system:hero-shooter:objective-combat","type":"System","name":"チーム目標戦闘","order":4,"purpose":"拠点、護衛、進行目標によって交戦場所と再集合のテンポを作る。","features":["目標進行","復帰地点","延長判定"],"ux_effects":["焦点: 戦う理由が明確になる","逆転期待: 最後まで争える"],"design_principle":"撃破数だけでなく目標貢献を可視化する。"},
+        {"id":"system:hero-shooter:ultimate-economy","type":"System","name":"必殺技ゲージと交戦計画","order":5,"purpose":"強力な能力の蓄積と使用タイミングをチーム戦略へ結び付ける。","features":["ゲージ蓄積","使用通知","持ち越し規則"],"ux_effects":["期待感: 大きな見せ場を準備する","読み合い: 相手の切り札を推測する"],"design_principle":"発動前兆と対処時間を保証する。"},
+        {"id":"system:hero-shooter:live-balance","type":"System","name":"ライブバランスとテレメトリ","order":6,"purpose":"利用率、勝率、編成別成績から継続的に調整する。","features":["ヒーロー別指標","設定配信","段階的ロールアウト"],"ux_effects":["信頼: 調整意図を理解できる","多様性: 選択肢が循環する"],"design_principle":"全体平均だけでなく熟練度帯と編成を分けて評価する。"}
+      ],
+      "implementation_order":["ヒーロー名簿と役割","固有アビリティキット","構成とシナジー","チーム目標戦闘","必殺技ゲージと交戦計画","ライブバランスとテレメトリ"],
+      "edges":{"PRECEDES":[["system:hero-shooter:hero-roster","system:hero-shooter:ability-kit"],["system:hero-shooter:ability-kit","system:hero-shooter:composition-synergy"],["system:hero-shooter:composition-synergy","system:hero-shooter:objective-combat"],["system:hero-shooter:objective-combat","system:hero-shooter:ultimate-economy"],["system:hero-shooter:ultimate-economy","system:hero-shooter:live-balance"]]}
+    },
+    {
+      "genre":{"id":"genre:creature-collector","type":"Genre","name":"クリーチャー収集","summary":"生物との遭遇、獲得、育成、編成を繰り返し、収集した個体を戦闘・生産・探索へ活用する遊び。発見の驚きと長期的な名簿管理を接続する。"},
+      "import_id":"ludus_steam_20260715","source_page_id":"steam-popular-tags-20260715",
+      "systems":[
+        {"id":"system:creature-collector:encounter-capture","type":"System","name":"遭遇と獲得","order":1,"purpose":"環境条件と個体状態に応じてクリーチャーを発見、勧誘、捕獲する。","features":["出現条件","捕獲確率","失敗と逃走"],"ux_effects":["発見: 未知の個体に出会う","緊張: 獲得成否を見守る"],"design_principle":"希少性の根拠を環境と行動から推測可能にする。"},
+        {"id":"system:creature-collector:roster-storage","type":"System","name":"名簿と保管","order":2,"purpose":"多数の個体を種、能力、役割、履歴で整理する。","features":["個体識別","検索と絞り込み","保管上限"],"ux_effects":["愛着: 個体の履歴を残す","見通し: 編成候補を探せる"],"design_principle":"収集量が増えても比較操作を破綻させない。"},
+        {"id":"system:creature-collector:party-composition","type":"System","name":"パーティ編成と相性","order":3,"purpose":"属性、役割、能力の組み合わせで出撃編成を作る。","features":["編成枠","属性相性","交代規則"],"ux_effects":["戦略性: 課題に合う組み合わせを考える","個性: 好みの個体を活躍させる"],"design_principle":"単一の数値最適化以外の編成理由を作る。"},
+        {"id":"system:creature-collector:growth-evolution","type":"System","name":"育成と進化","order":4,"purpose":"経験、訓練、条件達成で能力や形態を変化させる。","features":["レベル成長","能力習得","分岐進化"],"ux_effects":["成長実感: 継続した世話が形になる","選択の重み: 育成方針を決める"],"design_principle":"不可逆選択には事前情報か回復手段を用意する。"},
+        {"id":"system:creature-collector:habitat-work","type":"System","name":"配置と生活利用","order":5,"purpose":"拠点、生産、移動へ個体の特性を割り当てる。","features":["適性配置","作業キュー","休息と状態"],"ux_effects":["共生感: 戦闘外でも仲間と暮らす","効率化: 特性を活かして環境を整える"],"design_principle":"個体を単なる数値装置にせず状態を可視化する。"},
+        {"id":"system:creature-collector:breeding-trade","type":"System","name":"繁殖・交換と継承","order":6,"purpose":"個体差を次世代や他プレイヤーへ継承する。","features":["特性継承","交換条件","重複価値"],"ux_effects":["探究: 組み合わせを試す","交流: 収集成果を交換する"],"design_principle":"希少性と倫理表現を世界設定に整合させる。"}
+      ],
+      "implementation_order":["遭遇と獲得","名簿と保管","パーティ編成と相性","育成と進化","配置と生活利用","繁殖・交換と継承"],
+      "edges":{"PRECEDES":[["system:creature-collector:encounter-capture","system:creature-collector:roster-storage"],["system:creature-collector:roster-storage","system:creature-collector:party-composition"],["system:creature-collector:party-composition","system:creature-collector:growth-evolution"],["system:creature-collector:growth-evolution","system:creature-collector:habitat-work"],["system:creature-collector:habitat-work","system:creature-collector:breeding-trade"]]}
+    },
+    {
+      "genre":{"id":"genre:stealth","type":"Genre","name":"ステルス","summary":"敵の知覚、遮蔽、音、警戒状態を読み、発見されない経路と介入方法を選ぶ遊び。完全な不可視ではなく、情報の不確実性と発見後の回復可能性を設計する。"},
+      "import_id":"ludus_steam_20260715","source_page_id":"steam-popular-tags-20260715",
+      "systems":[
+        {"id":"system:stealth:perception-model","type":"System","name":"知覚モデル","order":1,"purpose":"視野、距離、音、注意方向からNPCが得る証拠を計算する。","features":["視野角","聴覚範囲","知覚記憶"],"ux_effects":["読み合い: 敵が何を知るか予測する","公平感: 発見理由を理解する"],"design_principle":"知覚規則を一貫させ例外を表示する。"},
+        {"id":"system:stealth:visibility-noise","type":"System","name":"可視性と騒音","order":2,"purpose":"照明、姿勢、移動速度、素材から露見リスクを決める。","features":["光量評価","足音強度","遮蔽判定"],"ux_effects":["緊張: 行動の危険度を測る","熟達: 環境を静かに使う"],"design_principle":"危険度を複数感覚でフィードバックする。"},
+        {"id":"system:stealth:suspicion-alert","type":"System","name":"疑念と警戒状態","order":3,"purpose":"小さな証拠を蓄積し、平常、捜索、戦闘へ段階遷移させる。","features":["疑念メーター","共有警戒","時間減衰"],"ux_effects":["猶予: 小さな失敗から立て直す","緊張: 警戒上昇を察知する"],"design_principle":"即時失敗を避け中間状態をプレイ可能にする。"},
+        {"id":"system:stealth:cover-traversal","type":"System","name":"遮蔽と潜入経路","order":4,"purpose":"隠れ場所、高低差、迂回路、侵入口を組み合わせる。","features":["遮蔽移動","縦方向経路","環境操作"],"ux_effects":["発見: 自分だけの侵入路を見つける","主導権: 交戦条件を選ぶ"],"design_principle":"正解経路を一つに固定しない。"},
+        {"id":"system:stealth:intervention-choice","type":"System","name":"介入手段の選択","order":5,"purpose":"回避、撹乱、気絶、排除のコストと痕跡を差別化する。","features":["注意誘導","非致死手段","痕跡処理"],"ux_effects":["自己表現: 方針を選べる","因果感: 選択が後続警戒へ影響する"],"design_principle":"各手段に短期と長期の代償を持たせる。"},
+        {"id":"system:stealth:detection-recovery","type":"System","name":"発見後の逃走と再潜伏","order":6,"purpose":"発見、追跡、遮断、再潜伏を連続した状態として扱う。","features":["最終確認位置","追跡解除","再探索"],"ux_effects":["逆転感: 発見されても回復できる","駆け引き: 追跡者の予測を外す"],"design_principle":"検知を即ゲームオーバーにしない。"}
+      ],
+      "implementation_order":["知覚モデル","可視性と騒音","疑念と警戒状態","遮蔽と潜入経路","介入手段の選択","発見後の逃走と再潜伏"],
+      "edges":{"PRECEDES":[["system:stealth:perception-model","system:stealth:visibility-noise"],["system:stealth:visibility-noise","system:stealth:suspicion-alert"],["system:stealth:suspicion-alert","system:stealth:cover-traversal"],["system:stealth:cover-traversal","system:stealth:intervention-choice"],["system:stealth:intervention-choice","system:stealth:detection-recovery"]]}
+    },
+    {
+      "genre":{"id":"genre:looter-shooter","type":"Genre","name":"ルーターシューター","summary":"反復可能な射撃ミッションから装備を獲得し、ビルドを更新してより高い難度へ進む遊び。瞬間的な戦闘と長期のアイテム経済を一つの循環として扱う。"},
+      "import_id":"ludus_steam_20260715","source_page_id":"steam-popular-tags-20260715",
+      "systems":[
+        {"id":"system:looter-shooter:combat-loot-loop","type":"System","name":"戦闘・戦利品循環","order":1,"purpose":"敵撃破、報酬提示、装備更新、再出撃を短い循環にする。","features":["ドロップ表","報酬回収","再出撃"],"ux_effects":["期待感: 次の報酬を待つ","成長実感: 戦闘力が更新される"],"design_principle":"戦利品確認で戦闘テンポを過度に止めない。"},
+        {"id":"system:looter-shooter:procedural-affix","type":"System","name":"装備品質と特性","order":2,"purpose":"基礎型、希少度、特性の組み合わせで装備差を作る。","features":["アイテムレベル","ランダム特性","比較表示"],"ux_effects":["発見: 予想外の組み合わせに出会う","判断: 現在装備と比較する"],"design_principle":"数値差とプレイスタイル差を区別する。"},
+        {"id":"system:looter-shooter:loadout-build","type":"System","name":"ロードアウトとビルド","order":3,"purpose":"武器、防具、能力、補助効果を相乗する構成として保存する。","features":["装備枠","相乗効果","プリセット"],"ux_effects":["創造性: 独自の構成を試す","見通し: 効果の由来を追える"],"design_principle":"複雑な効果計算を説明可能にする。"},
+        {"id":"system:looter-shooter:mission-instance","type":"System","name":"ミッションインスタンス","order":4,"purpose":"目標、遭遇、難度補正、報酬を一つの再参加可能な単位にする。","features":["目標列","難度修飾","チェックポイント"],"ux_effects":["区切り: 遊ぶ時間を見積もれる","再挑戦: 条件を変えて反復できる"],"design_principle":"所要時間と期待報酬を事前に示す。"},
+        {"id":"system:looter-shooter:cooperative-session","type":"System","name":"協力セッションと分配","order":5,"purpose":"途中参加、復帰、報酬分配を含む協力プレイを成立させる。","features":["マッチメイク","蘇生","個別戦利品"],"ux_effects":["協力感: 仲間を支援する","安心感: 報酬競合を避ける"],"design_principle":"参加タイミングで報酬格差を不当に作らない。"},
+        {"id":"system:looter-shooter:endgame-progression","type":"System","name":"エンドゲーム進行","order":6,"purpose":"装備が揃った後も難度、目標、収集の横方向進行を提供する。","features":["難度階層","週次目標","装備更新上限"],"ux_effects":["継続目標: 次の挑戦を選べる","熟達: 高難度で構成を試す"],"design_principle":"更新を強制する陳腐化速度を抑える。"}
+      ],
+      "implementation_order":["戦闘・戦利品循環","装備品質と特性","ロードアウトとビルド","ミッションインスタンス","協力セッションと分配","エンドゲーム進行"],
+      "edges":{"PRECEDES":[["system:looter-shooter:combat-loot-loop","system:looter-shooter:procedural-affix"],["system:looter-shooter:procedural-affix","system:looter-shooter:loadout-build"],["system:looter-shooter:loadout-build","system:looter-shooter:mission-instance"],["system:looter-shooter:mission-instance","system:looter-shooter:cooperative-session"],["system:looter-shooter:cooperative-session","system:looter-shooter:endgame-progression"]]}
+    },
+    {
+      "genre":{"id":"genre:asymmetric-multiplayer","type":"Genre","name":"非対称マルチプレイ","summary":"参加者ごとに能力、情報、目的、人数が異なる対戦・協力セッション。異なる役割同士が同じ勝敗を理解できる情報設計と、役割別の公平性評価を要する。"},
+      "import_id":"ludus_steam_20260715","source_page_id":"steam-popular-tags-20260715",
+      "systems":[
+        {"id":"system:asymmetric-multiplayer:role-asymmetry","type":"System","name":"非対称役割と能力","order":1,"purpose":"陣営ごとに異なる操作、能力、人数、目標を定義する。","features":["陣営別ルール","能力差","人数差"],"ux_effects":["役割没入: 異なる立場を演じる","再遊性: 陣営を変えて学ぶ"],"design_principle":"各役割に独立した成功体験を与える。"},
+        {"id":"system:asymmetric-multiplayer:hidden-information","type":"System","name":"陣営別の不完全情報","order":2,"purpose":"可視範囲、痕跡、通信権限を役割ごとに変える。","features":["情報権限","痕跡","限定通信"],"ux_effects":["推理: 相手の意図を読む","緊張: 見えていない脅威を意識する"],"design_principle":"知らないことと説明不足を混同させない。"},
+        {"id":"system:asymmetric-multiplayer:pursuit-evasion","type":"System","name":"追跡と逃走","order":3,"purpose":"移動能力、障害物、痕跡、距離回復から追跡循環を作る。","features":["追跡状態","逃走経路","位置推定"],"ux_effects":["緊張: 距離の変化を感じる","逆転感: 経路選択で逃げ切る"],"design_principle":"一度の接触で結果を固定しない。"},
+        {"id":"system:asymmetric-multiplayer:objective-pressure","type":"System","name":"複数目標と時間圧","order":4,"purpose":"一方の集中を別目標で崩し、停滞しない試合を作る。","features":["並行目標","進捗公開","制限時間"],"ux_effects":["判断: 追跡と防衛を選ぶ","焦燥感: 試合が収束へ向かう"],"design_principle":"キャンプ行動に機会費用を与える。"},
+        {"id":"system:asymmetric-multiplayer:elimination-rescue","type":"System","name":"無力化・救助・離脱","order":5,"purpose":"敗北を段階化し、味方の介入と早期離脱を扱う。","features":["無力化状態","救助","観戦と退出"],"ux_effects":["協力感: 仲間を救う","継続性: 待ち時間を選べる"],"design_principle":"脱落者の拘束時間を最小化する。"},
+        {"id":"system:asymmetric-multiplayer:role-balance","type":"System","name":"役割別マッチングと評価","order":6,"purpose":"陣営別の熟練度、待ち時間、勝率を分けて編成と調整を行う。","features":["役割別評価","希望役割","陣営別テレメトリ"],"ux_effects":["公平感: 経験に近い相手と遊ぶ","信頼: 調整根拠が明確になる"],"design_principle":"全体勝率だけで非対称性を評価しない。"}
+      ],
+      "implementation_order":["非対称役割と能力","陣営別の不完全情報","追跡と逃走","複数目標と時間圧","無力化・救助・離脱","役割別マッチングと評価"],
+      "edges":{"PRECEDES":[["system:asymmetric-multiplayer:role-asymmetry","system:asymmetric-multiplayer:hidden-information"],["system:asymmetric-multiplayer:hidden-information","system:asymmetric-multiplayer:pursuit-evasion"],["system:asymmetric-multiplayer:pursuit-evasion","system:asymmetric-multiplayer:objective-pressure"],["system:asymmetric-multiplayer:objective-pressure","system:asymmetric-multiplayer:elimination-rescue"],["system:asymmetric-multiplayer:elimination-rescue","system:asymmetric-multiplayer:role-balance"]]}
+    },
+    {
+      "genre":{"id":"genre:mmorpg","type":"Genre","name":"MMORPG","summary":"多数の参加者が共有する永続世界で、アバターを長期育成し、クエスト、集団戦、経済、社会組織へ参加するRPG。セッションを越える状態と運用変更が仕様の中心になる。"},
+      "import_id":"ludus_steam_20260715","source_page_id":"steam-popular-tags-20260715",
+      "systems":[
+        {"id":"system:mmorpg:persistent-world","type":"System","name":"永続世界とシャード","order":1,"purpose":"多数の参加者が共有する世界状態を分割、保存、復旧する。","features":["シャード","永続状態","混雑制御"],"ux_effects":["世界感: ログアウト中も世界が続く","安心感: 状態が失われない"],"design_principle":"技術的な分割が社会関係を壊さないようにする。"},
+        {"id":"system:mmorpg:avatar-progression","type":"System","name":"アバター長期成長","order":2,"purpose":"レベル、装備、技能、実績をセッション横断で蓄積する。","features":["レベル成長","装備更新","複数ビルド"],"ux_effects":["成長実感: 長期の履歴が能力になる","自己表現: 役割を選ぶ"],"design_principle":"復帰者が現行遊びへ追いつく経路を持つ。"},
+        {"id":"system:mmorpg:quest-content","type":"System","name":"クエストと世界コンテンツ","order":3,"purpose":"物語、探索、戦闘、反復目標を世界上の活動として配信する。","features":["クエスト状態","公開イベント","インスタンス"],"ux_effects":["目的感: 世界で何をするか選べる","物語没入: 行動に意味を持つ"],"design_principle":"共有世界と個別進行の矛盾を定義する。"},
+        {"id":"system:mmorpg:group-roles","type":"System","name":"パーティ役割と大規模協力","order":4,"purpose":"役割構成、募集、戦闘責任、戦利品分配を管理する。","features":["パーティ募集","役割マッチング","集団戦"],"ux_effects":["協力感: 固有の役割で貢献する","達成感: 集団で難所を越える"],"design_principle":"失敗原因を役割間で診断可能にする。"},
+        {"id":"system:mmorpg:social-guild","type":"System","name":"ギルドと社会関係","order":5,"purpose":"継続的な所属、権限、通信、共同目標を提供する。","features":["ギルド権限","チャット","共同資産"],"ux_effects":["所属感: 継続する仲間を持つ","信頼: 共同資産を安全に扱う"],"design_principle":"権限変更と監査履歴を明確にする。"},
+        {"id":"system:mmorpg:economy-liveops","type":"System","name":"経済とライブ運用","order":6,"purpose":"生産、取引、通貨供給、イベント、更新を長期的に管理する。","features":["市場取引","通貨シンク","設定配信"],"ux_effects":["活気: 他者の活動を経済で感じる","期待感: 世界が更新される"],"design_principle":"インフレ、供給独占、更新格差を観測可能にする。"}
+      ],
+      "implementation_order":["永続世界とシャード","アバター長期成長","クエストと世界コンテンツ","パーティ役割と大規模協力","ギルドと社会関係","経済とライブ運用"],
+      "edges":{"PRECEDES":[["system:mmorpg:persistent-world","system:mmorpg:avatar-progression"],["system:mmorpg:avatar-progression","system:mmorpg:quest-content"],["system:mmorpg:quest-content","system:mmorpg:group-roles"],["system:mmorpg:group-roles","system:mmorpg:social-guild"],["system:mmorpg:social-guild","system:mmorpg:economy-liveops"]]}
+    }
+  ],
+  "case_studies": [
+    {
+      "id":"case:counter-strike-2","slug":"counter-strike-2","title":"Counter-Strike 2","summary":"短い攻防ラウンドに精密射撃、ユーティリティによる情報戦、装備経済、権威命中判定を結合したタクティカルシューターの基準事例。",
+      "source_kind":"steam-top-seller-snapshot","market":{"steam_app_id":730,"rank":1,"locale":"english/US","captured_at":"2026-07-15T05:37:38.191Z","snapshot":"spec/data/steam-crawl-2026-07-15.json"},
+      "classifications":[{"genre_id":"genre:tactical-shooter","role":"主ジャンル","rationale":"ラウンド目標、情報戦、経済、競技判定が中核。"},{"genre_id":"genre:shooter","role":"操作層","rationale":"照準、反動、弾道、投擲を用いる。"}],
+      "system_ids":["system:tactical-shooter:round-objective","system:tactical-shooter:precision-gunplay","system:tactical-shooter:information-utility","system:tactical-shooter:team-economy","system:tactical-shooter:authoritative-hit","system:shooter:s01","system:shooter:s02"],
+      "domain_ids":["input-and-control","conflict-and-resolution","rules-and-state","resources-and-economy","social-and-session","network-and-synchronization"],"pictor_candidate_ids":["scene-rendering","ui-rendering","impact-and-postprocess"],
+      "ux_focus":["一手の重さと判定の公平性","音・視界・投擲物から位置を読む情報戦","ラウンド間の投資判断"],"implementation_boundaries":["命中、経済、勝敗はゲーム権威が所有し、Pictorは照準・煙・命中結果を表現する。"],
+      "sources":[{"title":"Steam Top Sellers","url":"https://store.steampowered.com/search/?filter=topsellers&ignore_preferences=1&l=english&cc=us","note":"取得時のゲーム順位1位。"},{"title":"Counter-Strike 2 on Steam","url":"https://store.steampowered.com/app/730/","note":"公式説明と製品分類。"}]
+    },
+    {
+      "id":"case:apex-legends","slug":"apex-legends","title":"Apex Legends","summary":"固有能力を持つレジェンドの分隊構成と、降下、戦利品、縮小区域、復活を結ぶヒーローシューター型バトルロイヤル。",
+      "source_kind":"steam-top-seller-snapshot","market":{"steam_app_id":1172470,"rank":2,"locale":"english/US","captured_at":"2026-07-15T05:37:38.191Z","snapshot":"spec/data/steam-crawl-2026-07-15.json"},
+      "classifications":[{"genre_id":"genre:hero-shooter","role":"キャラクター層","rationale":"役割別能力と分隊シナジーを持つ。"},{"genre_id":"genre:battle-royale","role":"試合構造","rationale":"降下、収集、区域、生存で試合が進む。"}],
+      "system_ids":["system:hero-shooter:hero-roster","system:hero-shooter:ability-kit","system:hero-shooter:composition-synergy","system:battle-royale:deployment-zone","system:battle-royale:loot-inventory","system:battle-royale:squad-revive"],
+      "domain_ids":["actors","input-and-control","space-and-navigation","conflict-and-resolution","social-and-session","network-and-synchronization"],"pictor_candidate_ids":["scene-rendering","ui-rendering","animation-presentation","impact-and-postprocess"],
+      "ux_focus":["能力の役割理解と分隊連携","区域と戦利品が作る移動判断","救助による逆転期待"],"implementation_boundaries":["能力、区域、戦利品、復活はゲーム状態として所有し、Pictorは可読性を担う。"],
+      "sources":[{"title":"Steam Top Sellers","url":"https://store.steampowered.com/search/?filter=topsellers&ignore_preferences=1&l=english&cc=us","note":"取得時のゲーム順位2位。"},{"title":"Apex Legends on Steam","url":"https://store.steampowered.com/app/1172470/","note":"公式説明と製品分類。"}]
+    },
+    {
+      "id":"case:palworld","slug":"palworld","title":"Palworld","summary":"オープンワールドの採取・建築・生存に、クリーチャーの捕獲、編成、育成、拠点作業を統合した収集型サバイバル。",
+      "source_kind":"steam-top-seller-snapshot","market":{"steam_app_id":1623730,"rank":3,"locale":"english/US","captured_at":"2026-07-15T05:37:38.191Z","snapshot":"spec/data/steam-crawl-2026-07-15.json"},
+      "classifications":[{"genre_id":"genre:creature-collector","role":"主循環","rationale":"遭遇、捕獲、名簿、配置が中心。"},{"genre_id":"genre:survival","role":"世界活動","rationale":"採取、クラフト、建築を行う。"},{"genre_id":"genre:open-world","role":"空間構造","rationale":"広い世界を探索する。"}],
+      "system_ids":["system:creature-collector:encounter-capture","system:creature-collector:roster-storage","system:creature-collector:party-composition","system:creature-collector:habitat-work","system:survival:gathering","system:survival:building","system:open-world:streaming-traversal"],
+      "domain_ids":["actors","space-and-navigation","resources-and-economy","objectives-and-progression","content-and-pacing"],"pictor_candidate_ids":["scene-rendering","ui-rendering","animation-presentation"],
+      "ux_focus":["未知の生物との発見と獲得","仲間を戦闘と生活の双方で活用する共生感","探索・生産・育成の循環"],"implementation_boundaries":["出現、捕獲、個体状態、作業割当はゲームロジックが所有する。"],
+      "sources":[{"title":"Steam Top Sellers","url":"https://store.steampowered.com/search/?filter=topsellers&ignore_preferences=1&l=english&cc=us","note":"取得時のゲーム順位3位。"},{"title":"Palworld on Steam","url":"https://store.steampowered.com/app/1623730/","note":"公式説明と製品分類。"}]
+    },
+    {
+      "id":"case:assassins-creed-black-flag-resynced","slug":"assassins-creed-black-flag-resynced","title":"Assassin's Creed Black Flag Resynced","summary":"海賊のオープンワールド探索、海戦、パルクールに、知覚と警戒を読む潜入経路選択を重ねたアクションアドベンチャー。",
+      "source_kind":"steam-top-seller-snapshot","market":{"steam_app_id":3751950,"rank":4,"locale":"english/US","captured_at":"2026-07-15T05:37:38.191Z","snapshot":"spec/data/steam-crawl-2026-07-15.json"},
+      "classifications":[{"genre_id":"genre:stealth","role":"潜入層","rationale":"知覚、警戒、遮蔽、介入手段を扱う。"},{"genre_id":"genre:open-world","role":"空間構造","rationale":"探索と移動の自由度を持つ。"},{"genre_id":"genre:adventure","role":"進行層","rationale":"探索と物語導線を持つ。"}],
+      "system_ids":["system:stealth:perception-model","system:stealth:suspicion-alert","system:stealth:cover-traversal","system:stealth:intervention-choice","system:open-world:discovery-map","system:adventure:scene-exploration"],
+      "domain_ids":["actors","input-and-control","space-and-navigation","narrative-and-knowledge"],"pictor_candidate_ids":["scene-rendering","camera-presentation","animation-presentation"],
+      "ux_focus":["陸海を横断する探索","敵の知覚を読んだ潜入","戦闘と回避の方針選択"],"implementation_boundaries":["NPC知覚と警戒はゲーム状態、可視化とカメラはPictor境界に分離する。"],
+      "sources":[{"title":"Steam Top Sellers","url":"https://store.steampowered.com/search/?filter=topsellers&ignore_preferences=1&l=english&cc=us","note":"取得時のゲーム順位4位。"},{"title":"Assassin's Creed Black Flag Resynced on Steam","url":"https://store.steampowered.com/app/3751950/","note":"公式説明と製品分類。"}]
+    },
+    {
+      "id":"case:marvel-rivals","slug":"marvel-rivals","title":"Marvel Rivals","summary":"Marvelヒーローの固有能力、チームアップ、役割構成、破壊可能な戦場をチーム目標戦へ統合した三人称ヒーローシューター。",
+      "source_kind":"steam-top-seller-snapshot","market":{"steam_app_id":2767030,"rank":5,"locale":"english/US","captured_at":"2026-07-15T05:37:38.191Z","snapshot":"spec/data/steam-crawl-2026-07-15.json"},
+      "classifications":[{"genre_id":"genre:hero-shooter","role":"主ジャンル","rationale":"ヒーロー能力、シナジー、チーム目標が中核。"},{"genre_id":"genre:shooter","role":"操作層","rationale":"三人称射撃を用いる。"}],
+      "system_ids":["system:hero-shooter:hero-roster","system:hero-shooter:ability-kit","system:hero-shooter:composition-synergy","system:hero-shooter:objective-combat","system:hero-shooter:ultimate-economy","system:shooter:s01"],
+      "domain_ids":["actors","conflict-and-resolution","space-and-navigation","social-and-session","presentation-and-feedback"],"pictor_candidate_ids":["scene-rendering","animation-presentation","impact-and-postprocess","ui-rendering"],
+      "ux_focus":["既知のヒーロー役割への没入","能力コンボの連携感","破壊で変わる交戦空間"],"implementation_boundaries":["能力と破壊状態はゲーム権威が所有し、Pictorは明瞭なチーム識別と効果を描画する。"],
+      "sources":[{"title":"Steam Top Sellers","url":"https://store.steampowered.com/search/?filter=topsellers&ignore_preferences=1&l=english&cc=us","note":"取得時のゲーム順位5位。"},{"title":"Marvel Rivals on Steam","url":"https://store.steampowered.com/app/2767030/","note":"公式説明と製品分類。"}]
+    },
+    {
+      "id":"case:overwatch","slug":"overwatch","title":"Overwatch","summary":"役割別ヒーロー、固有能力、交代可能な構成、目標進行、必殺技経済を高速なチーム戦へまとめたヒーローシューター。",
+      "source_kind":"steam-top-seller-snapshot","market":{"steam_app_id":2357570,"rank":6,"locale":"english/US","captured_at":"2026-07-15T05:37:38.191Z","snapshot":"spec/data/steam-crawl-2026-07-15.json"},
+      "classifications":[{"genre_id":"genre:hero-shooter","role":"主ジャンル","rationale":"役割、能力、構成変更、目標戦が中心。"},{"genre_id":"genre:shooter","role":"操作層","rationale":"射撃と照準を基本操作に含む。"}],
+      "system_ids":["system:hero-shooter:hero-roster","system:hero-shooter:ability-kit","system:hero-shooter:composition-synergy","system:hero-shooter:objective-combat","system:hero-shooter:ultimate-economy","system:hero-shooter:live-balance"],
+      "domain_ids":["actors","input-and-control","conflict-and-resolution","social-and-session","meta-and-live-operations"],"pictor_candidate_ids":["ui-rendering","animation-presentation","impact-and-postprocess"],
+      "ux_focus":["役割別の貢献と構成変更","読みやすい能力の応酬","必殺技を巡る交戦計画"],"implementation_boundaries":["能力状態、目標、評価はゲーム層、シルエット・効果・HUDは表現層が所有する。"],
+      "sources":[{"title":"Steam Top Sellers","url":"https://store.steampowered.com/search/?filter=topsellers&ignore_preferences=1&l=english&cc=us","note":"取得時のゲーム順位6位。"},{"title":"Overwatch on Steam","url":"https://store.steampowered.com/app/2357570/","note":"公式説明と製品分類。"}]
+    },
+    {
+      "id":"case:meccha-chameleon","slug":"meccha-chameleon","title":"MECCHA CHAMELEON","summary":"身体の色を舞台へ合わせて隠れる側と、それを見破る側の情報差を、短い対戦と配信向けの観戦性へまとめた非対称パーティゲーム。",
+      "source_kind":"steam-top-seller-snapshot","market":{"steam_app_id":4704690,"rank":7,"locale":"english/US","captured_at":"2026-07-15T05:37:38.191Z","snapshot":"spec/data/steam-crawl-2026-07-15.json"},
+      "classifications":[{"genre_id":"genre:asymmetric-multiplayer","role":"試合構造","rationale":"隠れる側と探す側で情報と目標が異なる。"},{"genre_id":"genre:stealth","role":"隠密層","rationale":"外見と環境を合わせ発見を避ける。"}],
+      "system_ids":["system:asymmetric-multiplayer:role-asymmetry","system:asymmetric-multiplayer:hidden-information","system:asymmetric-multiplayer:pursuit-evasion","system:stealth:visibility-noise","system:stealth:suspicion-alert"],
+      "domain_ids":["actors","space-and-navigation","information-and-ui","social-and-session","presentation-and-feedback"],"pictor_candidate_ids":["scene-rendering","ui-rendering","text-vector-motion"],
+      "ux_focus":["環境へ同化する創意工夫","見破る側との情報差","観戦者にも分かる発見の瞬間"],"implementation_boundaries":["同化判定と陣営情報はゲーム層、素材・色・観戦UIはPictor候補とする。"],
+      "sources":[{"title":"Steam Top Sellers","url":"https://store.steampowered.com/search/?filter=topsellers&ignore_preferences=1&l=english&cc=us","note":"取得時のゲーム順位7位。"},{"title":"MECCHA CHAMELEON on Steam","url":"https://store.steampowered.com/app/4704690/","note":"公式説明と製品分類。"}]
+    },
+    {
+      "id":"case:warframe","slug":"warframe","title":"Warframe","summary":"高速な三人称射撃と近接戦闘、反復ミッション、ランダム性を持つ装備獲得、ビルド更新、協力セッションを長期進行へ結ぶルーターシューター。",
+      "source_kind":"steam-top-seller-snapshot","market":{"steam_app_id":230410,"rank":8,"locale":"english/US","captured_at":"2026-07-15T05:37:38.191Z","snapshot":"spec/data/steam-crawl-2026-07-15.json"},
+      "classifications":[{"genre_id":"genre:looter-shooter","role":"主循環","rationale":"戦闘、戦利品、ビルド、再出撃が中核。"},{"genre_id":"genre:hack-and-slash","role":"近接・装備層","rationale":"群衆戦と装備特性を持つ。"},{"genre_id":"genre:rpg","role":"成長層","rationale":"能力と装備を長期育成する。"}],
+      "system_ids":["system:looter-shooter:combat-loot-loop","system:looter-shooter:procedural-affix","system:looter-shooter:loadout-build","system:looter-shooter:mission-instance","system:looter-shooter:cooperative-session","system:hack-and-slash:s04","system:rpg:s03"],
+      "domain_ids":["input-and-control","conflict-and-resolution","resources-and-economy","objectives-and-progression","social-and-session","meta-and-live-operations"],"pictor_candidate_ids":["scene-rendering","animation-presentation","impact-and-postprocess","ui-rendering"],
+      "ux_focus":["高速移動と群衆戦の爽快感","戦利品から構成を発見する楽しさ","協力と長期育成"],"implementation_boundaries":["ミッション、ドロップ、ビルド効果はゲーム層、戦闘の視覚効果と比較UIは表現境界。"],
+      "sources":[{"title":"Steam Top Sellers","url":"https://store.steampowered.com/search/?filter=topsellers&ignore_preferences=1&l=english&cc=us","note":"取得時のゲーム順位8位。"},{"title":"Warframe on Steam","url":"https://store.steampowered.com/app/230410/","note":"公式説明と製品分類。"}]
+    },
+    {
+      "id":"case:dead-by-daylight","slug":"dead-by-daylight","title":"Dead by Daylight","summary":"一人の殺人鬼と四人の生存者に異なる能力と情報を与え、追跡、修理目標、無力化、救助、脱出を同じ試合へ組み込む非対称ホラー。",
+      "source_kind":"steam-top-seller-snapshot","market":{"steam_app_id":381210,"rank":9,"locale":"english/US","captured_at":"2026-07-15T05:37:38.191Z","snapshot":"spec/data/steam-crawl-2026-07-15.json"},
+      "classifications":[{"genre_id":"genre:asymmetric-multiplayer","role":"主構造","rationale":"人数、能力、情報、目標が陣営で異なる。"},{"genre_id":"genre:horror","role":"感情層","rationale":"追跡者、音、視界制限で恐怖を作る。"},{"genre_id":"genre:stealth","role":"生存者行動","rationale":"知覚を避けて目標を進める。"}],
+      "system_ids":["system:asymmetric-multiplayer:role-asymmetry","system:asymmetric-multiplayer:hidden-information","system:asymmetric-multiplayer:pursuit-evasion","system:asymmetric-multiplayer:objective-pressure","system:asymmetric-multiplayer:elimination-rescue","system:horror:s03","system:stealth:detection-recovery"],
+      "domain_ids":["actors","space-and-navigation","conflict-and-resolution","objectives-and-progression","social-and-session","audio-and-rhythm"],"pictor_candidate_ids":["scene-rendering","animation-presentation","impact-and-postprocess","ui-rendering"],
+      "ux_focus":["追う側と逃げる側の異なる緊張","救助と目標進行のリスク判断","発見後も続く追跡の駆け引き"],"implementation_boundaries":["知覚、追跡、目標、無力化は権威状態として同期し、恐怖表現はPictorへ分離する。"],
+      "sources":[{"title":"Steam Top Sellers","url":"https://store.steampowered.com/search/?filter=topsellers&ignore_preferences=1&l=english&cc=us","note":"取得時のゲーム順位9位。"},{"title":"Dead by Daylight on Steam","url":"https://store.steampowered.com/app/381210/","note":"公式説明と製品分類。"}]
+    },
+    {
+      "id":"case:college-football-27","slug":"college-football-27","title":"EA SPORTS College Football 27","summary":"選手・チーム操作、競技規則、相手AI、戦術選択、スコアとリプレイ、オンライン対戦を大学フットボールとして統合するスポーツシミュレーション。",
+      "source_kind":"steam-top-seller-snapshot","market":{"steam_app_id":4032350,"rank":10,"locale":"english/US","captured_at":"2026-07-15T05:37:38.191Z","snapshot":"spec/data/steam-crawl-2026-07-15.json"},
+      "classifications":[{"genre_id":"genre:sports","role":"主ジャンル","rationale":"競技規則、チーム操作、試合進行を再現する。"}],
+      "system_ids":["system:sports:player-team-control","system:sports:object-physics","system:sports:match-rules","system:sports:opponent-ai","system:sports:score-replay","system:sports:online-session"],
+      "domain_ids":["actors","input-and-control","conflict-and-resolution","rules-and-state","social-and-session","presentation-and-feedback"],"pictor_candidate_ids":["scene-rendering","camera-presentation","ui-rendering","animation-presentation"],
+      "ux_focus":["競技規則に沿う判断と操作","戦術と選手能力の組み合わせ","中継的なスコア・リプレイ表現"],"implementation_boundaries":["競技規則、物理、AI、同期はゲーム層、スタジアム・中継UI・リプレイ演出はPictor候補。"],
+      "sources":[{"title":"Steam Top Sellers","url":"https://store.steampowered.com/search/?filter=topsellers&ignore_preferences=1&l=english&cc=us","note":"取得時のゲーム順位10位。"},{"title":"EA SPORTS College Football 27 on Steam","url":"https://store.steampowered.com/app/4032350/","note":"公式説明と製品分類。"}]
+    }
+  ]
+}

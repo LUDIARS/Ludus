@@ -294,6 +294,7 @@ async function main() {
   const manifest = await readJson(path.join(sourceRoot, "manifest.json"));
   const sourceGenreEntries = manifest.genres ?? [];
   const supplement = supplementFile ? await readJson(supplementFile) : { genres: [] };
+  const caseStudies = supplement.case_studies ?? [];
   const supplementalGenreEntries = (supplement.genres ?? []).map((graph) => ({
     file: `${path.basename(supplementFile)}#${graph.genre?.id ?? "unknown"}`,
     graph,
@@ -301,6 +302,9 @@ async function main() {
   const genreEntries = [...sourceGenreEntries, ...supplementalGenreEntries];
   if (!Array.isArray(genreEntries) || genreEntries.length === 0) {
     throw new Error("No genres found in manifest.json or the supplement file");
+  }
+  if (!Array.isArray(caseStudies)) {
+    throw new Error("supplement.case_studies must be an array when present");
   }
 
   await rm(outputRoot, { recursive: true, force: true });
@@ -335,7 +339,11 @@ async function main() {
   if (new Set(systems.map((system) => system.id)).size !== systems.length) {
     throw new Error("Duplicate system IDs found across source and supplement data");
   }
+  if (new Set(caseStudies.map((caseStudy) => caseStudy.id)).size !== caseStudies.length) {
+    throw new Error("Duplicate case study IDs found in supplement data");
+  }
 
+  const genresById = new Map(genres.map((genre) => [genre.genre.id, genre]));
   const systemsById = new Map(systems.map((system) => [system.id, system]));
   const uxByLabel = new Map();
   for (const system of systems) {
@@ -574,6 +582,88 @@ async function main() {
     ].join("\n"));
   }
 
+  const caseStudyFiles = [];
+  for (const caseStudy of caseStudies) {
+    if (!caseStudy.id || !caseStudy.slug || !caseStudy.title || !Array.isArray(caseStudy.classifications)) {
+      throw new Error(`Invalid case study: ${caseStudy.id ?? "unknown"}`);
+    }
+    const file = path.join(outputRoot, "cases", `${caseStudy.slug}.md`);
+    const classifications = caseStudy.classifications.map((classification) => {
+      const genre = genresById.get(classification.genre_id);
+      if (!genre) throw new Error(`Case study ${caseStudy.id} references unknown genre ${classification.genre_id}`);
+      return { ...classification, genre };
+    });
+    const caseSystems = (caseStudy.system_ids ?? []).map((systemId) => {
+      const system = systemsById.get(systemId);
+      if (!system) throw new Error(`Case study ${caseStudy.id} references unknown system ${systemId}`);
+      return system;
+    });
+    const caseDomains = (caseStudy.domain_ids ?? []).map((domainId) => {
+      const domain = domainById.get(domainId);
+      if (!domain) throw new Error(`Case study ${caseStudy.id} references unknown domain ${domainId}`);
+      return domain;
+    });
+    const caseCandidates = (caseStudy.pictor_candidate_ids ?? []).map((candidateId) => {
+      const candidate = pictorById.get(candidateId);
+      if (!candidate) throw new Error(`Case study ${caseStudy.id} references unknown Pictor candidate ${candidateId}`);
+      return candidate;
+    });
+
+    addNode({ id: caseStudy.id, type: "Ludus Game Case Study", title: caseStudy.title, path: path.relative(outputRoot, file).split(path.sep).join("/") });
+    for (const classification of classifications) {
+      addEdge("CLASSIFIED_AS", caseStudy.id, classification.genre_id, { role: classification.role ?? "related" });
+    }
+    for (const system of caseSystems) addEdge("EXEMPLIFIES_SYSTEM", caseStudy.id, system.id);
+    for (const domain of caseDomains) addEdge("USES_DOMAIN_ELEMENT", caseStudy.id, `domain:${domain.id}`);
+    for (const candidate of caseCandidates) addEdge("HAS_PICTOR_VISUAL_CANDIDATE", caseStudy.id, `implementation:pictor:${candidate.id}`, { assessment: "case-study" });
+
+    await writeConcept(file, [
+      frontmatter({
+        type: "Ludus Game Case Study",
+        title: caseStudy.title,
+        description: caseStudy.summary,
+        tags: ["ludus", "case-study", caseStudy.slug],
+        timestamp: args.timestamp,
+        extra: { case_study_id: caseStudy.id, source_kind: caseStudy.source_kind ?? "public-product-documentation" },
+      }),
+      "# 結論",
+      "",
+      caseStudy.summary,
+      "",
+      "# ジャンル分解",
+      "",
+      ...classifications.map((classification) => `- **${classification.role ?? "関連"}**: ${relativeLink(file, classification.genre.file, classification.genre.genre.name)} — ${classification.rationale ?? ""}`),
+      "",
+      "# 主要システム",
+      "",
+      ...caseSystems.map((system) => `- ${relativeLink(file, system.file, system.name)}`),
+      "",
+      "# UXの核",
+      "",
+      ...(caseStudy.ux_focus ?? []).map((item) => `- ${item}`),
+      "",
+      "# ドメイン要素",
+      "",
+      ...caseDomains.map((domain) => `- ${relativeLink(file, path.join(outputRoot, "domains", `${domain.id}.md`), domain.title)}`),
+      "",
+      "# 汎用実装とPictor境界",
+      "",
+      ...(caseStudy.implementation_boundaries ?? []).map((item) => `- ${item}`),
+      "",
+      "# Pictor候補",
+      "",
+      ...(caseCandidates.length > 0
+        ? caseCandidates.map((candidate) => `- ${relativeLink(file, path.join(outputRoot, "pictor", `${candidate.id}.md`), candidate.title)}`)
+        : ["- なし。視覚表現の要件が具体化した時点で再評価する。"]),
+      "",
+      "# 根拠",
+      "",
+      ...(caseStudy.sources ?? []).map((source) => `- [${source.title}](${source.url})${source.note ? ` — ${source.note}` : ""}`),
+      "",
+    ].join("\n"));
+    caseStudyFiles.push({ ...caseStudy, file });
+  }
+
   const schemaFile = path.join(outputRoot, "graph-schema.md");
   await writeConcept(schemaFile, [
     frontmatter({
@@ -588,6 +678,7 @@ async function main() {
     "| 型 | 説明 |",
     "| --- | --- |",
     "| `Ludus Game Genre` | 遊びのジャンル。主要システムの根。 |",
+    "| `Ludus Game Case Study` | 実在タイトルを辞書の概念へ対応付けた分析。 |",
     "| `Ludus Gameplay System` | ジャンルを構成する主要要素。 |",
     "| `Ludus UX Outcome` | システムが届ける体験上の効果。 |",
     "| `Ludus Domain Element` | システムが扱うドメインの横断的な構成要素。 |",
@@ -599,6 +690,8 @@ async function main() {
     "| エッジ | 向き | 意味 |",
     "| --- | --- | --- |",
     "| `HAS_SYSTEM` | Genre → System | ジャンルがそのシステムを主要要素として持つ。 |",
+    "| `CLASSIFIED_AS` | Case Study → Genre | タイトル事例をジャンルとして分類する。 |",
+    "| `EXEMPLIFIES_SYSTEM` | Case Study → System | タイトル事例がシステムを具体例として持つ。 |",
     "| `DELIVERS_UX` | System → UX Outcome | システムが目標とする体験効果。 |",
     "| `USES_DOMAIN_ELEMENT` | System → Domain Element | システムが主に扱うドメイン要素。 |",
     "| `HAS_PICTOR_VISUAL_CANDIDATE` | System → Pictor Candidate | 視覚表現をPictorへ切り出せる候補。 |",
@@ -620,6 +713,7 @@ async function main() {
     "## 構成",
     "",
     `- ジャンル: ${genres.length}`,
+    `- タイトル事例: ${caseStudyFiles.length}`,
     `- 主要システム: ${systems.length}`,
     `- UX成果: ${uxByLabel.size}`,
     `- ドメイン要素: ${domainElements.length}`,
@@ -634,6 +728,12 @@ async function main() {
     "## ジャンル",
     "",
     ...genres.map((genre) => `- ${relativeLink(indexFile, genre.file, genre.genre.name)}`),
+    "",
+    "## タイトル事例",
+    "",
+    ...(caseStudyFiles.length > 0
+      ? caseStudyFiles.map((caseStudy) => `- ${relativeLink(indexFile, caseStudy.file, caseStudy.title)}`)
+      : ["- 登録なし。"]),
     "",
     "## 生成元",
     "",

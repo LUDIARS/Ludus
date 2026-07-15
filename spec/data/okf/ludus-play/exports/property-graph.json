@@ -3075,6 +3075,60 @@
       "path": "ux/188f1b23eb61acd7.md"
     },
     {
+      "id": "ux:d83c66391e8e7b74",
+      "type": "Ludus UX Outcome",
+      "title": "直感的な狙い",
+      "path": "ux/d83c66391e8e7b74.md"
+    },
+    {
+      "id": "ux:36a259ee799f6e3e",
+      "type": "Ludus UX Outcome",
+      "title": "一手の緊張",
+      "path": "ux/36a259ee799f6e3e.md"
+    },
+    {
+      "id": "ux:3593b47de923195b",
+      "type": "Ludus UX Outcome",
+      "title": "軌道攻略",
+      "path": "ux/3593b47de923195b.md"
+    },
+    {
+      "id": "ux:dc9bc245aa183dc0",
+      "type": "Ludus UX Outcome",
+      "title": "連鎖の快感",
+      "path": "ux/dc9bc245aa183dc0.md"
+    },
+    {
+      "id": "ux:a50b1e5f417407f1",
+      "type": "Ludus UX Outcome",
+      "title": "編成の意味",
+      "path": "ux/a50b1e5f417407f1.md"
+    },
+    {
+      "id": "ux:c572507cce921353",
+      "type": "Ludus UX Outcome",
+      "title": "個性の愛着",
+      "path": "ux/c572507cce921353.md"
+    },
+    {
+      "id": "ux:cb70cb2e2b41d0d1",
+      "type": "Ludus UX Outcome",
+      "title": "攻略の発見",
+      "path": "ux/cb70cb2e2b41d0d1.md"
+    },
+    {
+      "id": "ux:05d7e1e365a85deb",
+      "type": "Ludus UX Outcome",
+      "title": "編成の戦術性",
+      "path": "ux/05d7e1e365a85deb.md"
+    },
+    {
+      "id": "ux:de525c1734c05328",
+      "type": "Ludus UX Outcome",
+      "title": "共有の高揚",
+      "path": "ux/de525c1734c05328.md"
+    },
+    {
       "id": "genre:action",
       "type": "Ludus Game Genre",
       "title": "アクションゲーム",
@@ -3271,6 +3325,12 @@
       "type": "Ludus Game Genre",
       "title": "サバイバーライク",
       "path": "genres/survivors-like.md"
+    },
+    {
+      "id": "genre:pull-and-strike-rpg",
+      "type": "Ludus Game Genre",
+      "title": "弾きアクションRPG",
+      "path": "genres/pull-and-strike-rpg.md"
     },
     {
       "id": "system:action:character-controller",
@@ -4783,6 +4843,54 @@
       "type": "Ludus Gameplay System",
       "title": "大量エンティティ予算",
       "path": "systems/survivors-like/entity-budget.md"
+    },
+    {
+      "id": "system:pull-and-strike-rpg:aim-and-release",
+      "type": "Ludus Gameplay System",
+      "title": "照準入力とショット解放",
+      "path": "systems/pull-and-strike-rpg/aim-and-release.md"
+    },
+    {
+      "id": "system:pull-and-strike-rpg:collision-and-reflection",
+      "type": "Ludus Gameplay System",
+      "title": "衝突・反射・貫通の解決",
+      "path": "systems/pull-and-strike-rpg/collision-and-reflection.md"
+    },
+    {
+      "id": "system:pull-and-strike-rpg:turn-resolution",
+      "type": "Ludus Gameplay System",
+      "title": "ターン進行とショット解決",
+      "path": "systems/pull-and-strike-rpg/turn-resolution.md"
+    },
+    {
+      "id": "system:pull-and-strike-rpg:ally-combo-trigger",
+      "type": "Ludus Gameplay System",
+      "title": "味方接触コンボ",
+      "path": "systems/pull-and-strike-rpg/ally-combo-trigger.md"
+    },
+    {
+      "id": "system:pull-and-strike-rpg:special-shot",
+      "type": "Ludus Gameplay System",
+      "title": "必殺ショットと使用機会",
+      "path": "systems/pull-and-strike-rpg/special-shot.md"
+    },
+    {
+      "id": "system:pull-and-strike-rpg:stage-gimmick-routing",
+      "type": "Ludus Gameplay System",
+      "title": "ステージギミックと経路攻略",
+      "path": "systems/pull-and-strike-rpg/stage-gimmick-routing.md"
+    },
+    {
+      "id": "system:pull-and-strike-rpg:cooperative-turn-session",
+      "type": "Ludus Gameplay System",
+      "title": "協力ターンセッション",
+      "path": "systems/pull-and-strike-rpg/cooperative-turn-session.md"
+    },
+    {
+      "id": "case:monster-strike",
+      "type": "Ludus Game Case Study",
+      "title": "モンスターストライク",
+      "path": "cases/monster-strike.md"
     }
   ],
   "edges": [
@@ -16870,6 +16978,482 @@
       "from": "system:survivors-like:entity-budget",
       "to": "implementation:pictor:impact-and-postprocess",
       "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:pull-and-strike-rpg",
+      "to": "system:pull-and-strike-rpg:aim-and-release",
+      "order": 1
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:pull-and-strike-rpg:aim-and-release",
+      "to": "ux:d83c66391e8e7b74"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:pull-and-strike-rpg:aim-and-release",
+      "to": "ux:36a259ee799f6e3e"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:aim-and-release",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:aim-and-release",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:aim-and-release",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:aim-and-release",
+      "to": "domain:accessibility-and-assistance"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:pull-and-strike-rpg:aim-and-release",
+      "to": "system:pull-and-strike-rpg:collision-and-reflection"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:pull-and-strike-rpg:collision-and-reflection",
+      "to": "system:pull-and-strike-rpg:turn-resolution"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:pull-and-strike-rpg:turn-resolution",
+      "to": "system:pull-and-strike-rpg:ally-combo-trigger"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:pull-and-strike-rpg:ally-combo-trigger",
+      "to": "system:pull-and-strike-rpg:special-shot"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:pull-and-strike-rpg:special-shot",
+      "to": "system:pull-and-strike-rpg:stage-gimmick-routing"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:pull-and-strike-rpg:stage-gimmick-routing",
+      "to": "system:pull-and-strike-rpg:cooperative-turn-session"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:pull-and-strike-rpg",
+      "to": "system:pull-and-strike-rpg:collision-and-reflection",
+      "order": 2
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:pull-and-strike-rpg:collision-and-reflection",
+      "to": "ux:3593b47de923195b"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:pull-and-strike-rpg:collision-and-reflection",
+      "to": "ux:aa5e74ea6c56212d"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:collision-and-reflection",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:collision-and-reflection",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:collision-and-reflection",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:pull-and-strike-rpg:collision-and-reflection",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:pull-and-strike-rpg",
+      "to": "system:pull-and-strike-rpg:turn-resolution",
+      "order": 3
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:pull-and-strike-rpg:turn-resolution",
+      "to": "ux:7fb4b30947b02823"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:pull-and-strike-rpg:turn-resolution",
+      "to": "ux:8ded4fcfb58a7e88"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:turn-resolution",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:turn-resolution",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:turn-resolution",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:pull-and-strike-rpg",
+      "to": "system:pull-and-strike-rpg:ally-combo-trigger",
+      "order": 4
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:pull-and-strike-rpg:ally-combo-trigger",
+      "to": "ux:dc9bc245aa183dc0"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:pull-and-strike-rpg:ally-combo-trigger",
+      "to": "ux:a50b1e5f417407f1"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:ally-combo-trigger",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:ally-combo-trigger",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:ally-combo-trigger",
+      "to": "domain:information-and-ui"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:ally-combo-trigger",
+      "to": "domain:presentation-and-feedback"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:ally-combo-trigger",
+      "to": "domain:accessibility-and-assistance"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:pull-and-strike-rpg:ally-combo-trigger",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:pull-and-strike-rpg",
+      "to": "system:pull-and-strike-rpg:special-shot",
+      "order": 5
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:pull-and-strike-rpg:special-shot",
+      "to": "ux:ab1bb84b02c1f8b7"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:pull-and-strike-rpg:special-shot",
+      "to": "ux:c572507cce921353"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:special-shot",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:special-shot",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:special-shot",
+      "to": "domain:presentation-and-feedback"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:special-shot",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:pull-and-strike-rpg:special-shot",
+      "to": "implementation:pictor:impact-and-postprocess",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:pull-and-strike-rpg",
+      "to": "system:pull-and-strike-rpg:stage-gimmick-routing",
+      "order": 6
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:pull-and-strike-rpg:stage-gimmick-routing",
+      "to": "ux:cb70cb2e2b41d0d1"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:pull-and-strike-rpg:stage-gimmick-routing",
+      "to": "ux:05d7e1e365a85deb"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:stage-gimmick-routing",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:stage-gimmick-routing",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:stage-gimmick-routing",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:stage-gimmick-routing",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:stage-gimmick-routing",
+      "to": "domain:content-and-pacing"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:pull-and-strike-rpg:stage-gimmick-routing",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:pull-and-strike-rpg",
+      "to": "system:pull-and-strike-rpg:cooperative-turn-session",
+      "order": 7
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:pull-and-strike-rpg:cooperative-turn-session",
+      "to": "ux:0b38736654c4c3bc"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:pull-and-strike-rpg:cooperative-turn-session",
+      "to": "ux:de525c1734c05328"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:cooperative-turn-session",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:cooperative-turn-session",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:cooperative-turn-session",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:cooperative-turn-session",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:cooperative-turn-session",
+      "to": "domain:content-and-pacing"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:cooperative-turn-session",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:pull-and-strike-rpg:cooperative-turn-session",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:pull-and-strike-rpg:cooperative-turn-session",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "split"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:monster-strike",
+      "to": "genre:pull-and-strike-rpg",
+      "role": "主ジャンル"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:monster-strike",
+      "to": "genre:action",
+      "role": "操作層"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:monster-strike",
+      "to": "genre:gacha-rpg",
+      "role": "収集・育成層"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:monster-strike",
+      "to": "genre:board-card",
+      "role": "協力セッション層"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:monster-strike",
+      "to": "system:pull-and-strike-rpg:aim-and-release"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:monster-strike",
+      "to": "system:pull-and-strike-rpg:collision-and-reflection"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:monster-strike",
+      "to": "system:pull-and-strike-rpg:turn-resolution"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:monster-strike",
+      "to": "system:pull-and-strike-rpg:ally-combo-trigger"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:monster-strike",
+      "to": "system:pull-and-strike-rpg:special-shot"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:monster-strike",
+      "to": "system:pull-and-strike-rpg:stage-gimmick-routing"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:monster-strike",
+      "to": "system:pull-and-strike-rpg:cooperative-turn-session"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:monster-strike",
+      "to": "system:gacha-rpg:s02"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:monster-strike",
+      "to": "system:gacha-rpg:s03"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:monster-strike",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:monster-strike",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:monster-strike",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:monster-strike",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:monster-strike",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:monster-strike",
+      "to": "domain:resources-and-economy"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:monster-strike",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:monster-strike",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:monster-strike",
+      "to": "domain:presentation-and-feedback"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:monster-strike",
+      "to": "domain:network-and-synchronization"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:monster-strike",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:monster-strike",
+      "to": "implementation:pictor:ui-rendering",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:monster-strike",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:monster-strike",
+      "to": "implementation:pictor:animation-presentation",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:monster-strike",
+      "to": "implementation:pictor:impact-and-postprocess",
+      "assessment": "case-study"
     }
   ]
 }

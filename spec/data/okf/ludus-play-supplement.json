@@ -148,6 +148,57 @@
       ],
       "implementation_order":["移動とカイティング","自動攻撃と武器挙動","敵群生成と圧力制御","経験値とレベルアップ選択","ビルド相乗と進化","大量エンティティ予算"],
       "edges":{"PRECEDES":[["system:survivors-like:movement-kiting","system:survivors-like:auto-attack"],["system:survivors-like:auto-attack","system:survivors-like:swarm-spawn"],["system:survivors-like:swarm-spawn","system:survivors-like:experience-choice"],["system:survivors-like:experience-choice","system:survivors-like:build-evolution"],["system:survivors-like:build-evolution","system:survivors-like:entity-budget"]]}
+    },
+    {
+      "genre":{"id":"genre:pull-and-strike-rpg","type":"Genre","name":"弾きアクションRPG","summary":"ターンごとにユニットを引いて放ち、壁・敵・味方との物理的な接触から攻撃と連鎖を生むアクションRPG。軌道を読む一手と、編成・育成による長期戦略を重ねる。"},
+      "import_id":"ludus_supplement_20260715","source_page_id":"ludus-editorial-supplement-20260715",
+      "systems":[
+        {"id":"system:pull-and-strike-rpg:aim-and-release","type":"System","name":"照準入力とショット解放","order":1,"purpose":"ユニットを引く方向と強さを入力として受け取り、一手の軌道を決定する。","features":["ドラッグ方向と距離","解放によるショット確定","入力中の照準補助"],"ux_effects":["直感的な狙い: 指先の動きが攻撃方向になる","一手の緊張: 放す前に結果を考える"],"design_principle":"操作の単純さを保ちつつ、軌道を読む余地を残す。"},
+        {"id":"system:pull-and-strike-rpg:collision-and-reflection","type":"System","name":"衝突・反射・貫通の解決","order":2,"purpose":"壁、敵、味方との接触を一貫して解決し、1ショットから複数の結果を生む。","features":["壁反射","敵との接触ダメージ","反射・貫通などの移動特性"],"ux_effects":["軌道攻略: 地形を使って最適な経路を探せる","爽快感: 一手が連続して成果を生む"],"design_principle":"物理の正確さより、軌道の予測可能性と接触の気持ちよさを優先する。"},
+        {"id":"system:pull-and-strike-rpg:turn-resolution","type":"System","name":"ターン進行とショット解決","order":3,"purpose":"手番、ショット後の状態変化、敵行動、勝敗を順序どおりに解決する。","features":["手番順","ショット後の状態更新","敵行動と勝敗判定"],"ux_effects":["見通し: 次に誰が何をするか理解できる","戦略性: 現在の一手を次の局面へつなげられる"],"design_principle":"リアルタイム反射ではなく、考える時間を持つアクションにする。"},
+        {"id":"system:pull-and-strike-rpg:ally-combo-trigger","type":"System","name":"味方接触コンボ","order":4,"purpose":"味方ユニットへの接触で固有の補助攻撃や効果を発火させ、軌道と編成を結び付ける。","features":["接触トリガー","固有コンボ効果","発火条件の可視化"],"ux_effects":["連鎖の快感: 狙いどおりに仲間の力を引き出せる","編成の意味: 組み合わせが戦場で働く"],"design_principle":"接触を偶発的な演出にせず、意図して設計できる連鎖にする。"},
+        {"id":"system:pull-and-strike-rpg:special-shot","type":"System","name":"必殺ショットと使用機会","order":5,"purpose":"個別ユニットの強力な能力を、使用可能な機会とコストのもとで戦術判断に変える。","features":["ユニット固有能力","使用可能ターン・条件","発動結果の演出"],"ux_effects":["逆転の期待: 苦境を変える選択を持てる","個性の愛着: ユニットごとの役割を感じる"],"design_principle":"単なる高火力ではなく、局面を読み替える選択肢として扱う。"},
+        {"id":"system:pull-and-strike-rpg:stage-gimmick-routing","type":"System","name":"ステージギミックと経路攻略","order":6,"purpose":"障害、減速、状態変化、目標条件を配置し、ユニット特性と経路選択を要求する。","features":["地形・障害ギミック","特性による対策","敵配置と優先目標"],"ux_effects":["攻略の発見: ギミックに合う解法を見つける","編成の戦術性: 挑戦前の準備が一手に反映される"],"design_principle":"特定の解だけを強制せず、複数の通し方を残す。"},
+        {"id":"system:pull-and-strike-rpg:cooperative-turn-session","type":"System","name":"協力ターンセッション","order":7,"purpose":"複数人が同じ盤面と手番を共有し、順番にショットして共同でクエストを進める。","features":["共有ステージ状態","参加者ごとの手番","協力報酬と再参加"],"ux_effects":["協力感: 仲間の一手を活かして突破できる","共有の高揚: 難所を一緒に乗り越えられる"],"design_principle":"同時入力の速さより、次の人に残す盤面を考える協力にする。"}
+      ],
+      "implementation_order":["照準入力とショット解放","衝突・反射・貫通の解決","ターン進行とショット解決","味方接触コンボ","必殺ショットと使用機会","ステージギミックと経路攻略","協力ターンセッション"],
+      "edges":{"PRECEDES":[["system:pull-and-strike-rpg:aim-and-release","system:pull-and-strike-rpg:collision-and-reflection"],["system:pull-and-strike-rpg:collision-and-reflection","system:pull-and-strike-rpg:turn-resolution"],["system:pull-and-strike-rpg:turn-resolution","system:pull-and-strike-rpg:ally-combo-trigger"],["system:pull-and-strike-rpg:ally-combo-trigger","system:pull-and-strike-rpg:special-shot"],["system:pull-and-strike-rpg:special-shot","system:pull-and-strike-rpg:stage-gimmick-routing"],["system:pull-and-strike-rpg:stage-gimmick-routing","system:pull-and-strike-rpg:cooperative-turn-session"]]}
+    }
+  ],
+  "case_studies":[
+    {
+      "id":"case:monster-strike",
+      "slug":"monster-strike",
+      "title":"モンスターストライク",
+      "summary":"モンスターストライクは、引いて放つショット、壁・敵・味方との接触連鎖、ターン制ステージ攻略を核に、モンスター育成と最大4人の協力プレイを重ねた弾きアクションRPGの代表例である。既存のパズルRPGに近い編成・育成層を持つが、盤面のマッチングではなく物理的な軌道と接触を戦闘の中心に置く。",
+      "source_kind":"official-product-documentation",
+      "classifications":[
+        {"genre_id":"genre:pull-and-strike-rpg","role":"主ジャンル","rationale":"引いて放つ操作、壁反射、味方接触、ターン制のショット解決が戦闘核である。"},
+        {"genre_id":"genre:action","role":"操作層","rationale":"入力に対する即時の軌道・衝突フィードバックを扱う。"},
+        {"genre_id":"genre:gacha-rpg","role":"収集・育成層","rationale":"モンスターの強化・進化と編成が長期的な攻略選択を作る。"},
+        {"genre_id":"genre:board-card","role":"協力セッション層","rationale":"共有盤面で順番に一手を解決し、参加者間で局面を引き継ぐ。"}
+      ],
+      "system_ids":[
+        "system:pull-and-strike-rpg:aim-and-release",
+        "system:pull-and-strike-rpg:collision-and-reflection",
+        "system:pull-and-strike-rpg:turn-resolution",
+        "system:pull-and-strike-rpg:ally-combo-trigger",
+        "system:pull-and-strike-rpg:special-shot",
+        "system:pull-and-strike-rpg:stage-gimmick-routing",
+        "system:pull-and-strike-rpg:cooperative-turn-session",
+        "system:gacha-rpg:s02",
+        "system:gacha-rpg:s03"
+      ],
+      "domain_ids":["actors","input-and-control","space-and-navigation","conflict-and-resolution","rules-and-state","resources-and-economy","objectives-and-progression","social-and-session","presentation-and-feedback","network-and-synchronization"],
+      "pictor_candidate_ids":["scene-rendering","ui-rendering","text-vector-motion","animation-presentation","impact-and-postprocess"],
+      "ux_focus":["狙いの納得感: 引く方向と距離から一手の軌道を読む。","連鎖の爽快感: 反射と味方接触が一手を複数の攻撃へ増幅する。","攻略の発見: 敵・ギミック・ユニット特性を照合して経路と編成を選ぶ。","協力の手応え: 参加者が同じ盤面を引き継ぎ、次の一手を残す。","長期的な愛着: 育成・進化したユニットが攻略の選択肢を広げる。"],
+      "implementation_boundaries":["照準、軌道、衝突、手番、ダメージ、ギミック、協力状態はErgo/Ars側のゲームロジックとして所有する。","軌道ガイド、盤面・ユニット表示、ダメージ数値、連鎖演出、ヒット時の画面効果はPictorへ切り出せる表現候補である。","収集・育成・編成は弾きアクションの必須ロジックではないため、ガチャ/収集型RPGの横断システムとして独立して扱う。"],
+      "sources":[
+        {"title":"モンスターストライク公式サイト: 遊び方","url":"https://www.monster-strike.com/howto/","note":"引いて放つ操作、壁反射、友情コンボ、ストライクショット、最大4人協力の根拠。"},
+        {"title":"モンスターの進化/神化/獣神化/獣神化・改について","url":"https://support.monster-strike.com/hc/ja/articles/14268700650393-%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC%E3%81%AE%E9%80%B2%E5%8C%96-%E7%A5%9E%E5%8C%96-%E7%8D%A3%E7%A5%9E%E5%8C%96-%E7%8D%A3%E7%A5%9E%E5%8C%96-%E6%94%B9%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6","note":"進化段階と素材・ゴールド条件の根拠。"},
+        {"title":"「運極」について","url":"https://support.monster-strike.com/hc/ja/articles/26289236694681--%E9%81%8B%E6%A5%B5-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6","note":"同種合成によるラック成長と報酬・解放の根拠。"},
+        {"title":"覇者の塔 25階を攻略しよう","url":"https://support.monster-strike.com/hc/ja/articles/40931340224921-%E8%A6%87%E8%80%85%E3%81%AE%E5%A1%94-25%E9%9A%8E%E3%82%92%E6%94%BB%E7%95%A5%E3%81%97%E3%82%88","note":"反射・貫通の特性とステージギミックに応じた編成・攻略の根拠。"}
+      ]
     }
   ]
 }

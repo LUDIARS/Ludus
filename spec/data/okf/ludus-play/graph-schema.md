@@ -15,6 +15,7 @@ timestamp: "2026-07-15T00:00:00+09:00"
 | 型 | 説明 |
 | --- | --- |
 | `Ludus Game Genre` | 遊びのジャンル。主要システムの根。 |
+| `Ludus Game Case Study` | 実在タイトルを辞書の概念へ対応付けた分析。 |
 | `Ludus Gameplay System` | ジャンルを構成する主要要素。 |
 | `Ludus UX Outcome` | システムが届ける体験上の効果。 |
 | `Ludus Domain Element` | システムが扱うドメインの横断的な構成要素。 |
@@ -26,6 +27,8 @@ timestamp: "2026-07-15T00:00:00+09:00"
 | エッジ | 向き | 意味 |
 | --- | --- | --- |
 | `HAS_SYSTEM` | Genre → System | ジャンルがそのシステムを主要要素として持つ。 |
+| `CLASSIFIED_AS` | Case Study → Genre | タイトル事例をジャンルとして分類する。 |
+| `EXEMPLIFIES_SYSTEM` | Case Study → System | タイトル事例がシステムを具体例として持つ。 |
 | `DELIVERS_UX` | System → UX Outcome | システムが目標とする体験効果。 |
 | `USES_DOMAIN_ELEMENT` | System → Domain Element | システムが主に扱うドメイン要素。 |
 | `HAS_PICTOR_VISUAL_CANDIDATE` | System → Pictor Candidate | 視覚表現をPictorへ切り出せる候補。 |

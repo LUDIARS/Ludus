@@ -4,9 +4,10 @@
 
 ## 構成
 
-- ジャンル: 33
-- 主要システム: 252
-- UX成果: 488
+- ジャンル: 34
+- タイトル事例: 1
+- 主要システム: 259
+- UX成果: 497
 - ドメイン要素: 16
 - Pictor候補: 6
 
@@ -51,6 +52,11 @@
 - [オープンワールドゲーム](./genres/open-world.md)
 - [ランナー／エンドレスラン](./genres/runner.md)
 - [サバイバーライク](./genres/survivors-like.md)
+- [弾きアクションRPG](./genres/pull-and-strike-rpg.md)
+
+## タイトル事例
+
+- [モンスターストライク](./cases/monster-strike.md)
 
 ## 生成元
 

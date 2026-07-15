@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "locale": {
+    "language": "english",
+    "country": "US"
+  },
+  "popular_tags_url": "https://store.steampowered.com/tag/browse/en/?l=english&cc=us",
+  "top_sellers_url": "https://store.steampowered.com/search/?filter=topsellers&ignore_preferences=1&l=english&cc=us",
+  "appdetails_url": "https://store.steampowered.com/api/appdetails",
+  "game_limit": 10,
+  "candidate_limit": 30,
+  "popular_tag_limit": 100
+}

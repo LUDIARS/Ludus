@@ -18,6 +18,7 @@ const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const ludusRoot = path.resolve(scriptDirectory, "..");
 const defaultOutput = path.join(ludusRoot, "spec", "data", "okf", "ludus-play");
 const defaultSupplement = path.join(ludusRoot, "spec", "data", "okf", "ludus-play-supplement.json");
+const defaultSteamSupplement = path.join(ludusRoot, "spec", "data", "okf", "ludus-steam-supplement.json");
 
 const domainElements = [
   {
@@ -144,15 +145,20 @@ const pictorCandidates = [
 function usage() {
   return [
     "Usage:",
-    "  node tools/import-game-knowledge-graph.mjs --source <game-knowledge-graph-dir> [--supplement <json-file>] [--output <dir>] [--timestamp <ISO-8601>]",
+    "  node tools/import-game-knowledge-graph.mjs --source <game-knowledge-graph-dir> [--supplement <json-file>] [--steam-supplement <json-file>] [--output <dir>] [--timestamp <ISO-8601>]",
   ].join("\n");
 }
 
 function parseArgs(argv) {
-  const result = { output: defaultOutput, supplement: defaultSupplement, timestamp: new Date().toISOString() };
+  const result = {
+    output: defaultOutput,
+    supplement: defaultSupplement,
+    "steam-supplement": defaultSteamSupplement,
+    timestamp: new Date().toISOString(),
+  };
   for (let index = 0; index < argv.length; index += 1) {
     const argument = argv[index];
-    if (argument === "--source" || argument === "--supplement" || argument === "--output" || argument === "--timestamp") {
+    if (argument === "--source" || argument === "--supplement" || argument === "--steam-supplement" || argument === "--output" || argument === "--timestamp") {
       const value = argv[index + 1];
       if (!value) throw new Error(`Missing value for ${argument}`);
       result[argument.slice(2)] = value;
@@ -291,14 +297,18 @@ async function main() {
   const sourceRoot = path.resolve(args.source);
   const outputRoot = path.resolve(args.output);
   const supplementFile = args.supplement ? path.resolve(args.supplement) : null;
+  const steamSupplementFile = args["steam-supplement"] ? path.resolve(args["steam-supplement"]) : null;
   const manifest = await readJson(path.join(sourceRoot, "manifest.json"));
   const sourceGenreEntries = manifest.genres ?? [];
-  const supplement = supplementFile ? await readJson(supplementFile) : { genres: [] };
-  const caseStudies = supplement.case_studies ?? [];
-  const supplementalGenreEntries = (supplement.genres ?? []).map((graph) => ({
-    file: `${path.basename(supplementFile)}#${graph.genre?.id ?? "unknown"}`,
-    graph,
-  }));
+  const supplementFiles = [supplementFile, steamSupplementFile].filter(Boolean);
+  const supplements = await Promise.all(supplementFiles.map(async (file) => ({ file, data: await readJson(file) })));
+  const caseStudies = supplements.flatMap(({ data }) => data.case_studies ?? []);
+  const supplementalGenreEntries = supplements.flatMap(({ file, data }) =>
+    (data.genres ?? []).map((graph) => ({
+      file: `${path.basename(file)}#${graph.genre?.id ?? "unknown"}`,
+      graph,
+    })),
+  );
   const genreEntries = [...sourceGenreEntries, ...supplementalGenreEntries];
   if (!Array.isArray(genreEntries) || genreEntries.length === 0) {
     throw new Error("No genres found in manifest.json or the supplement file");
@@ -609,7 +619,17 @@ async function main() {
       return candidate;
     });
 
-    addNode({ id: caseStudy.id, type: "Ludus Game Case Study", title: caseStudy.title, path: path.relative(outputRoot, file).split(path.sep).join("/") });
+    addNode({
+      id: caseStudy.id,
+      type: "Ludus Game Case Study",
+      title: caseStudy.title,
+      path: path.relative(outputRoot, file).split(path.sep).join("/"),
+      ...(caseStudy.market ? {
+        steam_app_id: caseStudy.market.steam_app_id,
+        market_rank: caseStudy.market.rank,
+        market_captured_at: caseStudy.market.captured_at,
+      } : {}),
+    });
     for (const classification of classifications) {
       addEdge("CLASSIFIED_AS", caseStudy.id, classification.genre_id, { role: classification.role ?? "related" });
     }
@@ -624,12 +644,28 @@ async function main() {
         description: caseStudy.summary,
         tags: ["ludus", "case-study", caseStudy.slug],
         timestamp: args.timestamp,
-        extra: { case_study_id: caseStudy.id, source_kind: caseStudy.source_kind ?? "public-product-documentation" },
+        extra: {
+          case_study_id: caseStudy.id,
+          source_kind: caseStudy.source_kind ?? "public-product-documentation",
+          ...(caseStudy.market ? {
+            steam_app_id: caseStudy.market.steam_app_id,
+            market_rank: caseStudy.market.rank,
+            market_captured_at: caseStudy.market.captured_at,
+          } : {}),
+        },
       }),
       "# 結論",
       "",
       caseStudy.summary,
       "",
+      ...(caseStudy.market ? [
+        "# 市場スナップショット",
+        "",
+        `- Steam Top Sellers順位: ${caseStudy.market.rank}位（${caseStudy.market.locale}、${caseStudy.market.captured_at}）`,
+        `- Steam App ID: \`${caseStudy.market.steam_app_id}\``,
+        `- 取得データ: \`${caseStudy.market.snapshot}\``,
+        "",
+      ] : []),
       "# ジャンル分解",
       "",
       ...classifications.map((classification) => `- **${classification.role ?? "関連"}**: ${relativeLink(file, classification.genre.file, classification.genre.genre.name)} — ${classification.rationale ?? ""}`),
@@ -689,7 +725,7 @@ async function main() {
     "",
     "| エッジ | 向き | 意味 |",
     "| --- | --- | --- |",
-    "| `HAS_SYSTEM` | Genre → System | ジャンルがそのシステムを主要要素として持つ。 |",
+    "| `HAS_SYSTEM` | Genre → System | ジャンルがそのシステムを主要要素として持つ。`order` は実装順を示す任意の整数で、順序不明なら `null`。 |",
     "| `CLASSIFIED_AS` | Case Study → Genre | タイトル事例をジャンルとして分類する。 |",
     "| `EXEMPLIFIES_SYSTEM` | Case Study → System | タイトル事例がシステムを具体例として持つ。 |",
     "| `DELIVERS_UX` | System → UX Outcome | システムが目標とする体験効果。 |",
@@ -701,6 +737,8 @@ async function main() {
     "# 投影データ",
     "",
     "[`exports/property-graph.json`](exports/property-graph.json) は、このOKF bundleをグラフDBへ投入するための損失のないノード・エッジ投影である。",
+    "",
+    "`path` はこのbundleルートからの相対パスである。利用側はルートへ安全に解決し、ルート外を指す絶対パスまたは `..` を含む逸脱パスを拒否しなければならない。",
     "",
   ].join("\n"));
 
@@ -739,7 +777,7 @@ async function main() {
     "",
     "- 原典: Notion「ゲーム構造一覧 (テンプレート一覧)」 (page id: `30453028-8e8d-805d-a922-f92949ebd575`)",
     "- 変換元: `game-knowledge-graph` の `manifest.json` と `graph/*.json`",
-    `- Ludus補完: \`${path.relative(ludusRoot, supplementFile).split(path.sep).join("/")}\`（原典にない代表ジャンル・横断要素）`,
+    ...supplementFiles.map((file) => `- Ludus補完: \`${path.relative(ludusRoot, file).split(path.sep).join("/")}\``),
     "- 生成器: `tools/import-game-knowledge-graph.mjs`",
     "",
   ].join("\n"));
@@ -749,9 +787,11 @@ async function main() {
     source: {
       format: "OKF v0.1 projection",
       generated_at: args.timestamp,
-      source_graph_root: sourceRoot,
+      // Keep generated artifacts portable and avoid publishing the caller's local filesystem path.
+      source_graph: "game-knowledge-graph",
       source_page_id: "30453028-8e8d-805d-a922-f92949ebd575",
       supplemental_source: path.relative(ludusRoot, supplementFile).split(path.sep).join("/"),
+      supplemental_sources: supplementFiles.map((file) => path.relative(ludusRoot, file).split(path.sep).join("/")),
     },
     nodes: graphNodes,
     edges: unique(graphEdges.map((edge) => JSON.stringify(edge))).map((edge) => JSON.parse(edge)),

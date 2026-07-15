@@ -3,9 +3,13 @@
   "source": {
     "format": "OKF v0.1 projection",
     "generated_at": "2026-07-15T00:00:00+09:00",
-    "source_graph_root": "E:\\Document\\Ars\\game-knowledge-graph",
+    "source_graph": "game-knowledge-graph",
     "source_page_id": "30453028-8e8d-805d-a922-f92949ebd575",
-    "supplemental_source": "spec/data/okf/ludus-play-supplement.json"
+    "supplemental_source": "spec/data/okf/ludus-play-supplement.json",
+    "supplemental_sources": [
+      "spec/data/okf/ludus-play-supplement.json",
+      "spec/data/okf/ludus-steam-supplement.json"
+    ]
   },
   "nodes": [
     {
@@ -3129,6 +3133,204 @@
       "path": "ux/de525c1734c05328.md"
     },
     {
+      "id": "ux:a1ffa9bbe49f610d",
+      "type": "Ludus UX Outcome",
+      "title": "緊張",
+      "path": "ux/a1ffa9bbe49f610d.md"
+    },
+    {
+      "id": "ux:79dca58dcb75a487",
+      "type": "Ludus UX Outcome",
+      "title": "熟達",
+      "path": "ux/79dca58dcb75a487.md"
+    },
+    {
+      "id": "ux:b92b10932b0a2ba1",
+      "type": "Ludus UX Outcome",
+      "title": "手応え",
+      "path": "ux/b92b10932b0a2ba1.md"
+    },
+    {
+      "id": "ux:e73b7be6f0d5c286",
+      "type": "Ludus UX Outcome",
+      "title": "連携",
+      "path": "ux/e73b7be6f0d5c286.md"
+    },
+    {
+      "id": "ux:d28e662e13e642e4",
+      "type": "Ludus UX Outcome",
+      "title": "連帯感",
+      "path": "ux/d28e662e13e642e4.md"
+    },
+    {
+      "id": "ux:ae21574ac088130c",
+      "type": "Ludus UX Outcome",
+      "title": "応答性",
+      "path": "ux/ae21574ac088130c.md"
+    },
+    {
+      "id": "ux:24fad9433dbd0365",
+      "type": "Ludus UX Outcome",
+      "title": "成長実感",
+      "path": "ux/24fad9433dbd0365.md"
+    },
+    {
+      "id": "ux:5bb32ea5a1a87ed3",
+      "type": "Ludus UX Outcome",
+      "title": "個性",
+      "path": "ux/5bb32ea5a1a87ed3.md"
+    },
+    {
+      "id": "ux:b4929391ad6fe5d6",
+      "type": "Ludus UX Outcome",
+      "title": "焦点",
+      "path": "ux/b4929391ad6fe5d6.md"
+    },
+    {
+      "id": "ux:30187d8150b0e07a",
+      "type": "Ludus UX Outcome",
+      "title": "逆転期待",
+      "path": "ux/30187d8150b0e07a.md"
+    },
+    {
+      "id": "ux:2411804b4d413030",
+      "type": "Ludus UX Outcome",
+      "title": "信頼",
+      "path": "ux/2411804b4d413030.md"
+    },
+    {
+      "id": "ux:eff44e759df967c5",
+      "type": "Ludus UX Outcome",
+      "title": "発見",
+      "path": "ux/eff44e759df967c5.md"
+    },
+    {
+      "id": "ux:3a2d4cfad3d4c2b4",
+      "type": "Ludus UX Outcome",
+      "title": "共生感",
+      "path": "ux/3a2d4cfad3d4c2b4.md"
+    },
+    {
+      "id": "ux:42ccb3c44f64ce49",
+      "type": "Ludus UX Outcome",
+      "title": "探究",
+      "path": "ux/42ccb3c44f64ce49.md"
+    },
+    {
+      "id": "ux:bed1d122224afad1",
+      "type": "Ludus UX Outcome",
+      "title": "交流",
+      "path": "ux/bed1d122224afad1.md"
+    },
+    {
+      "id": "ux:ff330fa401eb300e",
+      "type": "Ludus UX Outcome",
+      "title": "猶予",
+      "path": "ux/ff330fa401eb300e.md"
+    },
+    {
+      "id": "ux:e3ba7ec86611ca92",
+      "type": "Ludus UX Outcome",
+      "title": "主導権",
+      "path": "ux/e3ba7ec86611ca92.md"
+    },
+    {
+      "id": "ux:427fbf43f2d5dd88",
+      "type": "Ludus UX Outcome",
+      "title": "因果感",
+      "path": "ux/427fbf43f2d5dd88.md"
+    },
+    {
+      "id": "ux:d46d3b5804ac1d54",
+      "type": "Ludus UX Outcome",
+      "title": "逆転感",
+      "path": "ux/d46d3b5804ac1d54.md"
+    },
+    {
+      "id": "ux:22899353e77ad6ec",
+      "type": "Ludus UX Outcome",
+      "title": "駆け引き",
+      "path": "ux/22899353e77ad6ec.md"
+    },
+    {
+      "id": "ux:65ae7e60a3f2eb10",
+      "type": "Ludus UX Outcome",
+      "title": "判断",
+      "path": "ux/65ae7e60a3f2eb10.md"
+    },
+    {
+      "id": "ux:2999742a6b03605a",
+      "type": "Ludus UX Outcome",
+      "title": "区切り",
+      "path": "ux/2999742a6b03605a.md"
+    },
+    {
+      "id": "ux:1b63b66107b9eccc",
+      "type": "Ludus UX Outcome",
+      "title": "再挑戦",
+      "path": "ux/1b63b66107b9eccc.md"
+    },
+    {
+      "id": "ux:d92aebe834a48ae8",
+      "type": "Ludus UX Outcome",
+      "title": "継続目標",
+      "path": "ux/d92aebe834a48ae8.md"
+    },
+    {
+      "id": "ux:f09ce87e7188f26a",
+      "type": "Ludus UX Outcome",
+      "title": "役割没入",
+      "path": "ux/f09ce87e7188f26a.md"
+    },
+    {
+      "id": "ux:19fb6b3cbc7ad2e6",
+      "type": "Ludus UX Outcome",
+      "title": "再遊性",
+      "path": "ux/19fb6b3cbc7ad2e6.md"
+    },
+    {
+      "id": "ux:132411ba41da7354",
+      "type": "Ludus UX Outcome",
+      "title": "推理",
+      "path": "ux/132411ba41da7354.md"
+    },
+    {
+      "id": "ux:0f8a05a9724e61ac",
+      "type": "Ludus UX Outcome",
+      "title": "焦燥感",
+      "path": "ux/0f8a05a9724e61ac.md"
+    },
+    {
+      "id": "ux:b61a2d148fc730d3",
+      "type": "Ludus UX Outcome",
+      "title": "世界感",
+      "path": "ux/b61a2d148fc730d3.md"
+    },
+    {
+      "id": "ux:0a5be462c231210c",
+      "type": "Ludus UX Outcome",
+      "title": "目的感",
+      "path": "ux/0a5be462c231210c.md"
+    },
+    {
+      "id": "ux:590972386b14f267",
+      "type": "Ludus UX Outcome",
+      "title": "物語没入",
+      "path": "ux/590972386b14f267.md"
+    },
+    {
+      "id": "ux:23a18028ec1f824d",
+      "type": "Ludus UX Outcome",
+      "title": "所属感",
+      "path": "ux/23a18028ec1f824d.md"
+    },
+    {
+      "id": "ux:258a8124758e3d6e",
+      "type": "Ludus UX Outcome",
+      "title": "活気",
+      "path": "ux/258a8124758e3d6e.md"
+    },
+    {
       "id": "genre:action",
       "type": "Ludus Game Genre",
       "title": "アクションゲーム",
@@ -3331,6 +3533,48 @@
       "type": "Ludus Game Genre",
       "title": "弾きアクションRPG",
       "path": "genres/pull-and-strike-rpg.md"
+    },
+    {
+      "id": "genre:tactical-shooter",
+      "type": "Ludus Game Genre",
+      "title": "タクティカルシューター",
+      "path": "genres/tactical-shooter.md"
+    },
+    {
+      "id": "genre:hero-shooter",
+      "type": "Ludus Game Genre",
+      "title": "ヒーローシューター",
+      "path": "genres/hero-shooter.md"
+    },
+    {
+      "id": "genre:creature-collector",
+      "type": "Ludus Game Genre",
+      "title": "クリーチャー収集",
+      "path": "genres/creature-collector.md"
+    },
+    {
+      "id": "genre:stealth",
+      "type": "Ludus Game Genre",
+      "title": "ステルス",
+      "path": "genres/stealth.md"
+    },
+    {
+      "id": "genre:looter-shooter",
+      "type": "Ludus Game Genre",
+      "title": "ルーターシューター",
+      "path": "genres/looter-shooter.md"
+    },
+    {
+      "id": "genre:asymmetric-multiplayer",
+      "type": "Ludus Game Genre",
+      "title": "非対称マルチプレイ",
+      "path": "genres/asymmetric-multiplayer.md"
+    },
+    {
+      "id": "genre:mmorpg",
+      "type": "Ludus Game Genre",
+      "title": "MMORPG",
+      "path": "genres/mmorpg.md"
     },
     {
       "id": "system:action:character-controller",
@@ -4887,10 +5131,352 @@
       "path": "systems/pull-and-strike-rpg/cooperative-turn-session.md"
     },
     {
+      "id": "system:tactical-shooter:round-objective",
+      "type": "Ludus Gameplay System",
+      "title": "ラウンド目標と勝敗",
+      "path": "systems/tactical-shooter/round-objective.md"
+    },
+    {
+      "id": "system:tactical-shooter:precision-gunplay",
+      "type": "Ludus Gameplay System",
+      "title": "精密射撃と姿勢制御",
+      "path": "systems/tactical-shooter/precision-gunplay.md"
+    },
+    {
+      "id": "system:tactical-shooter:information-utility",
+      "type": "Ludus Gameplay System",
+      "title": "索敵とユーティリティ",
+      "path": "systems/tactical-shooter/information-utility.md"
+    },
+    {
+      "id": "system:tactical-shooter:team-economy",
+      "type": "Ludus Gameplay System",
+      "title": "装備購入とチーム経済",
+      "path": "systems/tactical-shooter/team-economy.md"
+    },
+    {
+      "id": "system:tactical-shooter:authoritative-hit",
+      "type": "Ludus Gameplay System",
+      "title": "権威命中判定と補償",
+      "path": "systems/tactical-shooter/authoritative-hit.md"
+    },
+    {
+      "id": "system:tactical-shooter:competitive-match",
+      "type": "Ludus Gameplay System",
+      "title": "競技マッチと評価",
+      "path": "systems/tactical-shooter/competitive-match.md"
+    },
+    {
+      "id": "system:hero-shooter:hero-roster",
+      "type": "Ludus Gameplay System",
+      "title": "ヒーロー名簿と役割",
+      "path": "systems/hero-shooter/hero-roster.md"
+    },
+    {
+      "id": "system:hero-shooter:ability-kit",
+      "type": "Ludus Gameplay System",
+      "title": "固有アビリティキット",
+      "path": "systems/hero-shooter/ability-kit.md"
+    },
+    {
+      "id": "system:hero-shooter:composition-synergy",
+      "type": "Ludus Gameplay System",
+      "title": "構成とシナジー",
+      "path": "systems/hero-shooter/composition-synergy.md"
+    },
+    {
+      "id": "system:hero-shooter:objective-combat",
+      "type": "Ludus Gameplay System",
+      "title": "チーム目標戦闘",
+      "path": "systems/hero-shooter/objective-combat.md"
+    },
+    {
+      "id": "system:hero-shooter:ultimate-economy",
+      "type": "Ludus Gameplay System",
+      "title": "必殺技ゲージと交戦計画",
+      "path": "systems/hero-shooter/ultimate-economy.md"
+    },
+    {
+      "id": "system:hero-shooter:live-balance",
+      "type": "Ludus Gameplay System",
+      "title": "ライブバランスとテレメトリ",
+      "path": "systems/hero-shooter/live-balance.md"
+    },
+    {
+      "id": "system:creature-collector:encounter-capture",
+      "type": "Ludus Gameplay System",
+      "title": "遭遇と獲得",
+      "path": "systems/creature-collector/encounter-capture.md"
+    },
+    {
+      "id": "system:creature-collector:roster-storage",
+      "type": "Ludus Gameplay System",
+      "title": "名簿と保管",
+      "path": "systems/creature-collector/roster-storage.md"
+    },
+    {
+      "id": "system:creature-collector:party-composition",
+      "type": "Ludus Gameplay System",
+      "title": "パーティ編成と相性",
+      "path": "systems/creature-collector/party-composition.md"
+    },
+    {
+      "id": "system:creature-collector:growth-evolution",
+      "type": "Ludus Gameplay System",
+      "title": "育成と進化",
+      "path": "systems/creature-collector/growth-evolution.md"
+    },
+    {
+      "id": "system:creature-collector:habitat-work",
+      "type": "Ludus Gameplay System",
+      "title": "配置と生活利用",
+      "path": "systems/creature-collector/habitat-work.md"
+    },
+    {
+      "id": "system:creature-collector:breeding-trade",
+      "type": "Ludus Gameplay System",
+      "title": "繁殖・交換と継承",
+      "path": "systems/creature-collector/breeding-trade.md"
+    },
+    {
+      "id": "system:stealth:perception-model",
+      "type": "Ludus Gameplay System",
+      "title": "知覚モデル",
+      "path": "systems/stealth/perception-model.md"
+    },
+    {
+      "id": "system:stealth:visibility-noise",
+      "type": "Ludus Gameplay System",
+      "title": "可視性と騒音",
+      "path": "systems/stealth/visibility-noise.md"
+    },
+    {
+      "id": "system:stealth:suspicion-alert",
+      "type": "Ludus Gameplay System",
+      "title": "疑念と警戒状態",
+      "path": "systems/stealth/suspicion-alert.md"
+    },
+    {
+      "id": "system:stealth:cover-traversal",
+      "type": "Ludus Gameplay System",
+      "title": "遮蔽と潜入経路",
+      "path": "systems/stealth/cover-traversal.md"
+    },
+    {
+      "id": "system:stealth:intervention-choice",
+      "type": "Ludus Gameplay System",
+      "title": "介入手段の選択",
+      "path": "systems/stealth/intervention-choice.md"
+    },
+    {
+      "id": "system:stealth:detection-recovery",
+      "type": "Ludus Gameplay System",
+      "title": "発見後の逃走と再潜伏",
+      "path": "systems/stealth/detection-recovery.md"
+    },
+    {
+      "id": "system:looter-shooter:combat-loot-loop",
+      "type": "Ludus Gameplay System",
+      "title": "戦闘・戦利品循環",
+      "path": "systems/looter-shooter/combat-loot-loop.md"
+    },
+    {
+      "id": "system:looter-shooter:procedural-affix",
+      "type": "Ludus Gameplay System",
+      "title": "装備品質と特性",
+      "path": "systems/looter-shooter/procedural-affix.md"
+    },
+    {
+      "id": "system:looter-shooter:loadout-build",
+      "type": "Ludus Gameplay System",
+      "title": "ロードアウトとビルド",
+      "path": "systems/looter-shooter/loadout-build.md"
+    },
+    {
+      "id": "system:looter-shooter:mission-instance",
+      "type": "Ludus Gameplay System",
+      "title": "ミッションインスタンス",
+      "path": "systems/looter-shooter/mission-instance.md"
+    },
+    {
+      "id": "system:looter-shooter:cooperative-session",
+      "type": "Ludus Gameplay System",
+      "title": "協力セッションと分配",
+      "path": "systems/looter-shooter/cooperative-session.md"
+    },
+    {
+      "id": "system:looter-shooter:endgame-progression",
+      "type": "Ludus Gameplay System",
+      "title": "エンドゲーム進行",
+      "path": "systems/looter-shooter/endgame-progression.md"
+    },
+    {
+      "id": "system:asymmetric-multiplayer:role-asymmetry",
+      "type": "Ludus Gameplay System",
+      "title": "非対称役割と能力",
+      "path": "systems/asymmetric-multiplayer/role-asymmetry.md"
+    },
+    {
+      "id": "system:asymmetric-multiplayer:hidden-information",
+      "type": "Ludus Gameplay System",
+      "title": "陣営別の不完全情報",
+      "path": "systems/asymmetric-multiplayer/hidden-information.md"
+    },
+    {
+      "id": "system:asymmetric-multiplayer:pursuit-evasion",
+      "type": "Ludus Gameplay System",
+      "title": "追跡と逃走",
+      "path": "systems/asymmetric-multiplayer/pursuit-evasion.md"
+    },
+    {
+      "id": "system:asymmetric-multiplayer:objective-pressure",
+      "type": "Ludus Gameplay System",
+      "title": "複数目標と時間圧",
+      "path": "systems/asymmetric-multiplayer/objective-pressure.md"
+    },
+    {
+      "id": "system:asymmetric-multiplayer:elimination-rescue",
+      "type": "Ludus Gameplay System",
+      "title": "無力化・救助・離脱",
+      "path": "systems/asymmetric-multiplayer/elimination-rescue.md"
+    },
+    {
+      "id": "system:asymmetric-multiplayer:role-balance",
+      "type": "Ludus Gameplay System",
+      "title": "役割別マッチングと評価",
+      "path": "systems/asymmetric-multiplayer/role-balance.md"
+    },
+    {
+      "id": "system:mmorpg:persistent-world",
+      "type": "Ludus Gameplay System",
+      "title": "永続世界とシャード",
+      "path": "systems/mmorpg/persistent-world.md"
+    },
+    {
+      "id": "system:mmorpg:avatar-progression",
+      "type": "Ludus Gameplay System",
+      "title": "アバター長期成長",
+      "path": "systems/mmorpg/avatar-progression.md"
+    },
+    {
+      "id": "system:mmorpg:quest-content",
+      "type": "Ludus Gameplay System",
+      "title": "クエストと世界コンテンツ",
+      "path": "systems/mmorpg/quest-content.md"
+    },
+    {
+      "id": "system:mmorpg:group-roles",
+      "type": "Ludus Gameplay System",
+      "title": "パーティ役割と大規模協力",
+      "path": "systems/mmorpg/group-roles.md"
+    },
+    {
+      "id": "system:mmorpg:social-guild",
+      "type": "Ludus Gameplay System",
+      "title": "ギルドと社会関係",
+      "path": "systems/mmorpg/social-guild.md"
+    },
+    {
+      "id": "system:mmorpg:economy-liveops",
+      "type": "Ludus Gameplay System",
+      "title": "経済とライブ運用",
+      "path": "systems/mmorpg/economy-liveops.md"
+    },
+    {
       "id": "case:monster-strike",
       "type": "Ludus Game Case Study",
       "title": "モンスターストライク",
       "path": "cases/monster-strike.md"
+    },
+    {
+      "id": "case:counter-strike-2",
+      "type": "Ludus Game Case Study",
+      "title": "Counter-Strike 2",
+      "path": "cases/counter-strike-2.md",
+      "steam_app_id": 730,
+      "market_rank": 1,
+      "market_captured_at": "2026-07-15T05:37:38.191Z"
+    },
+    {
+      "id": "case:apex-legends",
+      "type": "Ludus Game Case Study",
+      "title": "Apex Legends",
+      "path": "cases/apex-legends.md",
+      "steam_app_id": 1172470,
+      "market_rank": 2,
+      "market_captured_at": "2026-07-15T05:37:38.191Z"
+    },
+    {
+      "id": "case:palworld",
+      "type": "Ludus Game Case Study",
+      "title": "Palworld",
+      "path": "cases/palworld.md",
+      "steam_app_id": 1623730,
+      "market_rank": 3,
+      "market_captured_at": "2026-07-15T05:37:38.191Z"
+    },
+    {
+      "id": "case:assassins-creed-black-flag-resynced",
+      "type": "Ludus Game Case Study",
+      "title": "Assassin's Creed Black Flag Resynced",
+      "path": "cases/assassins-creed-black-flag-resynced.md",
+      "steam_app_id": 3751950,
+      "market_rank": 4,
+      "market_captured_at": "2026-07-15T05:37:38.191Z"
+    },
+    {
+      "id": "case:marvel-rivals",
+      "type": "Ludus Game Case Study",
+      "title": "Marvel Rivals",
+      "path": "cases/marvel-rivals.md",
+      "steam_app_id": 2767030,
+      "market_rank": 5,
+      "market_captured_at": "2026-07-15T05:37:38.191Z"
+    },
+    {
+      "id": "case:overwatch",
+      "type": "Ludus Game Case Study",
+      "title": "Overwatch",
+      "path": "cases/overwatch.md",
+      "steam_app_id": 2357570,
+      "market_rank": 6,
+      "market_captured_at": "2026-07-15T05:37:38.191Z"
+    },
+    {
+      "id": "case:meccha-chameleon",
+      "type": "Ludus Game Case Study",
+      "title": "MECCHA CHAMELEON",
+      "path": "cases/meccha-chameleon.md",
+      "steam_app_id": 4704690,
+      "market_rank": 7,
+      "market_captured_at": "2026-07-15T05:37:38.191Z"
+    },
+    {
+      "id": "case:warframe",
+      "type": "Ludus Game Case Study",
+      "title": "Warframe",
+      "path": "cases/warframe.md",
+      "steam_app_id": 230410,
+      "market_rank": 8,
+      "market_captured_at": "2026-07-15T05:37:38.191Z"
+    },
+    {
+      "id": "case:dead-by-daylight",
+      "type": "Ludus Game Case Study",
+      "title": "Dead by Daylight",
+      "path": "cases/dead-by-daylight.md",
+      "steam_app_id": 381210,
+      "market_rank": 9,
+      "market_captured_at": "2026-07-15T05:37:38.191Z"
+    },
+    {
+      "id": "case:college-football-27",
+      "type": "Ludus Game Case Study",
+      "title": "EA SPORTS College Football 27",
+      "path": "cases/college-football-27.md",
+      "steam_app_id": 4032350,
+      "market_rank": 10,
+      "market_captured_at": "2026-07-15T05:37:38.191Z"
     }
   ],
   "edges": [
@@ -17307,6 +17893,1392 @@
       "assessment": "split"
     },
     {
+      "type": "HAS_SYSTEM",
+      "from": "genre:tactical-shooter",
+      "to": "system:tactical-shooter:round-objective",
+      "order": 1
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:tactical-shooter:round-objective",
+      "to": "ux:a1ffa9bbe49f610d"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:tactical-shooter:round-objective",
+      "to": "ux:daf702a77e8b6d75"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:tactical-shooter:round-objective",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:tactical-shooter:round-objective",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:tactical-shooter:round-objective",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:tactical-shooter:round-objective",
+      "to": "domain:information-and-ui"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:tactical-shooter:round-objective",
+      "to": "domain:network-and-synchronization"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:tactical-shooter:round-objective",
+      "to": "system:tactical-shooter:precision-gunplay"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:tactical-shooter:precision-gunplay",
+      "to": "system:tactical-shooter:information-utility"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:tactical-shooter:information-utility",
+      "to": "system:tactical-shooter:team-economy"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:tactical-shooter:team-economy",
+      "to": "system:tactical-shooter:authoritative-hit"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:tactical-shooter:authoritative-hit",
+      "to": "system:tactical-shooter:competitive-match"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:tactical-shooter",
+      "to": "system:tactical-shooter:precision-gunplay",
+      "order": 2
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:tactical-shooter:precision-gunplay",
+      "to": "ux:79dca58dcb75a487"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:tactical-shooter:precision-gunplay",
+      "to": "ux:b92b10932b0a2ba1"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:tactical-shooter:precision-gunplay",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:tactical-shooter:precision-gunplay",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:tactical-shooter:precision-gunplay",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:tactical-shooter:precision-gunplay",
+      "to": "implementation:pictor:impact-and-postprocess",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:tactical-shooter",
+      "to": "system:tactical-shooter:information-utility",
+      "order": 3
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:tactical-shooter:information-utility",
+      "to": "ux:4333f56898c1e87e"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:tactical-shooter:information-utility",
+      "to": "ux:e73b7be6f0d5c286"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:tactical-shooter:information-utility",
+      "to": "domain:actors"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:tactical-shooter",
+      "to": "system:tactical-shooter:team-economy",
+      "order": 4
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:tactical-shooter:team-economy",
+      "to": "ux:8ded4fcfb58a7e88"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:tactical-shooter:team-economy",
+      "to": "ux:d28e662e13e642e4"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:tactical-shooter:team-economy",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:tactical-shooter:team-economy",
+      "to": "domain:resources-and-economy"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:tactical-shooter:team-economy",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:tactical-shooter",
+      "to": "system:tactical-shooter:authoritative-hit",
+      "order": 5
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:tactical-shooter:authoritative-hit",
+      "to": "ux:761295392476961e"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:tactical-shooter:authoritative-hit",
+      "to": "ux:ae21574ac088130c"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:tactical-shooter:authoritative-hit",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:tactical-shooter:authoritative-hit",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:tactical-shooter:authoritative-hit",
+      "to": "domain:network-and-synchronization"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:tactical-shooter:authoritative-hit",
+      "to": "implementation:pictor:impact-and-postprocess",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:tactical-shooter",
+      "to": "system:tactical-shooter:competitive-match",
+      "order": 6
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:tactical-shooter:competitive-match",
+      "to": "ux:24fad9433dbd0365"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:tactical-shooter:competitive-match",
+      "to": "ux:761295392476961e"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:tactical-shooter:competitive-match",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:tactical-shooter:competitive-match",
+      "to": "domain:network-and-synchronization"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:tactical-shooter:competitive-match",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "pictor-visual"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:hero-shooter",
+      "to": "system:hero-shooter:hero-roster",
+      "order": 1
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:hero-shooter:hero-roster",
+      "to": "ux:acdb56909eecad60"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:hero-shooter:hero-roster",
+      "to": "ux:5cb53e3de202ecbb"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:hero-shooter:hero-roster",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:hero-shooter:hero-roster",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:hero-shooter:hero-roster",
+      "to": "system:hero-shooter:ability-kit"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:hero-shooter:ability-kit",
+      "to": "system:hero-shooter:composition-synergy"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:hero-shooter:composition-synergy",
+      "to": "system:hero-shooter:objective-combat"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:hero-shooter:objective-combat",
+      "to": "system:hero-shooter:ultimate-economy"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:hero-shooter:ultimate-economy",
+      "to": "system:hero-shooter:live-balance"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:hero-shooter",
+      "to": "system:hero-shooter:ability-kit",
+      "order": 2
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:hero-shooter:ability-kit",
+      "to": "ux:5bb32ea5a1a87ed3"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:hero-shooter:ability-kit",
+      "to": "ux:79dca58dcb75a487"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:hero-shooter:ability-kit",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:hero-shooter:ability-kit",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:hero-shooter:ability-kit",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:hero-shooter:ability-kit",
+      "to": "domain:resources-and-economy"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:hero-shooter",
+      "to": "system:hero-shooter:composition-synergy",
+      "order": 3
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:hero-shooter:composition-synergy",
+      "to": "ux:e73b7be6f0d5c286"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:hero-shooter:composition-synergy",
+      "to": "ux:8ded4fcfb58a7e88"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:hero-shooter:composition-synergy",
+      "to": "domain:information-and-ui"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:hero-shooter:composition-synergy",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:hero-shooter",
+      "to": "system:hero-shooter:objective-combat",
+      "order": 4
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:hero-shooter:objective-combat",
+      "to": "ux:b4929391ad6fe5d6"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:hero-shooter:objective-combat",
+      "to": "ux:30187d8150b0e07a"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:hero-shooter:objective-combat",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:hero-shooter:objective-combat",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:hero-shooter:objective-combat",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:hero-shooter:objective-combat",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:hero-shooter",
+      "to": "system:hero-shooter:ultimate-economy",
+      "order": 5
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:hero-shooter:ultimate-economy",
+      "to": "ux:91ca175d56b093ef"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:hero-shooter:ultimate-economy",
+      "to": "ux:4333f56898c1e87e"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:hero-shooter:ultimate-economy",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:hero-shooter:ultimate-economy",
+      "to": "domain:information-and-ui"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:hero-shooter:ultimate-economy",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:hero-shooter:ultimate-economy",
+      "to": "domain:audio-and-rhythm"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:hero-shooter:ultimate-economy",
+      "to": "implementation:pictor:ui-rendering",
+      "assessment": "pictor-visual"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:hero-shooter:ultimate-economy",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "pictor-visual"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:hero-shooter",
+      "to": "system:hero-shooter:live-balance",
+      "order": 6
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:hero-shooter:live-balance",
+      "to": "ux:2411804b4d413030"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:hero-shooter:live-balance",
+      "to": "ux:f655c736189ce4ed"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:hero-shooter:live-balance",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:hero-shooter:live-balance",
+      "to": "domain:meta-and-live-operations"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:hero-shooter:live-balance",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "pictor-visual"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:creature-collector",
+      "to": "system:creature-collector:encounter-capture",
+      "order": 1
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:creature-collector:encounter-capture",
+      "to": "ux:eff44e759df967c5"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:creature-collector:encounter-capture",
+      "to": "ux:a1ffa9bbe49f610d"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:creature-collector:encounter-capture",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:creature-collector:encounter-capture",
+      "to": "domain:content-and-pacing"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:creature-collector:encounter-capture",
+      "to": "system:creature-collector:roster-storage"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:creature-collector:roster-storage",
+      "to": "system:creature-collector:party-composition"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:creature-collector:party-composition",
+      "to": "system:creature-collector:growth-evolution"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:creature-collector:growth-evolution",
+      "to": "system:creature-collector:habitat-work"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:creature-collector:habitat-work",
+      "to": "system:creature-collector:breeding-trade"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:creature-collector",
+      "to": "system:creature-collector:roster-storage",
+      "order": 2
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:creature-collector:roster-storage",
+      "to": "ux:1b83fac88275658c"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:creature-collector:roster-storage",
+      "to": "ux:7fb4b30947b02823"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:creature-collector:roster-storage",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:creature-collector:roster-storage",
+      "to": "domain:meta-and-live-operations"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:creature-collector",
+      "to": "system:creature-collector:party-composition",
+      "order": 3
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:creature-collector:party-composition",
+      "to": "ux:8ded4fcfb58a7e88"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:creature-collector:party-composition",
+      "to": "ux:5bb32ea5a1a87ed3"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:creature-collector:party-composition",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:creature-collector",
+      "to": "system:creature-collector:growth-evolution",
+      "order": 4
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:creature-collector:growth-evolution",
+      "to": "ux:24fad9433dbd0365"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:creature-collector:growth-evolution",
+      "to": "ux:afd5d3c7460e8707"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:creature-collector:growth-evolution",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:creature-collector:growth-evolution",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:creature-collector",
+      "to": "system:creature-collector:habitat-work",
+      "order": 5
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:creature-collector:habitat-work",
+      "to": "ux:3a2d4cfad3d4c2b4"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:creature-collector:habitat-work",
+      "to": "ux:b8b89a59307d671e"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:creature-collector:habitat-work",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:creature-collector:habitat-work",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:creature-collector",
+      "to": "system:creature-collector:breeding-trade",
+      "order": 6
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:creature-collector:breeding-trade",
+      "to": "ux:42ccb3c44f64ce49"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:creature-collector:breeding-trade",
+      "to": "ux:bed1d122224afad1"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:creature-collector:breeding-trade",
+      "to": "domain:actors"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:stealth",
+      "to": "system:stealth:perception-model",
+      "order": 1
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:stealth:perception-model",
+      "to": "ux:4333f56898c1e87e"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:stealth:perception-model",
+      "to": "ux:761295392476961e"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:stealth:perception-model",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:stealth:perception-model",
+      "to": "domain:information-and-ui"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:stealth:perception-model",
+      "to": "system:stealth:visibility-noise"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:stealth:visibility-noise",
+      "to": "system:stealth:suspicion-alert"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:stealth:suspicion-alert",
+      "to": "system:stealth:cover-traversal"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:stealth:cover-traversal",
+      "to": "system:stealth:intervention-choice"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:stealth:intervention-choice",
+      "to": "system:stealth:detection-recovery"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:stealth",
+      "to": "system:stealth:visibility-noise",
+      "order": 2
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:stealth:visibility-noise",
+      "to": "ux:a1ffa9bbe49f610d"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:stealth:visibility-noise",
+      "to": "ux:79dca58dcb75a487"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:stealth:visibility-noise",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:stealth:visibility-noise",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:stealth:visibility-noise",
+      "to": "domain:presentation-and-feedback"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:stealth",
+      "to": "system:stealth:suspicion-alert",
+      "order": 3
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:stealth:suspicion-alert",
+      "to": "ux:ff330fa401eb300e"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:stealth:suspicion-alert",
+      "to": "ux:a1ffa9bbe49f610d"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:stealth:suspicion-alert",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:stealth:suspicion-alert",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:stealth",
+      "to": "system:stealth:cover-traversal",
+      "order": 4
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:stealth:cover-traversal",
+      "to": "ux:eff44e759df967c5"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:stealth:cover-traversal",
+      "to": "ux:e3ba7ec86611ca92"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:stealth:cover-traversal",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:stealth:cover-traversal",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:stealth",
+      "to": "system:stealth:intervention-choice",
+      "order": 5
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:stealth:intervention-choice",
+      "to": "ux:acdb56909eecad60"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:stealth:intervention-choice",
+      "to": "ux:427fbf43f2d5dd88"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:stealth:intervention-choice",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:stealth",
+      "to": "system:stealth:detection-recovery",
+      "order": 6
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:stealth:detection-recovery",
+      "to": "ux:d46d3b5804ac1d54"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:stealth:detection-recovery",
+      "to": "ux:22899353e77ad6ec"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:stealth:detection-recovery",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:stealth:detection-recovery",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:looter-shooter",
+      "to": "system:looter-shooter:combat-loot-loop",
+      "order": 1
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:looter-shooter:combat-loot-loop",
+      "to": "ux:91ca175d56b093ef"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:looter-shooter:combat-loot-loop",
+      "to": "ux:24fad9433dbd0365"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:looter-shooter:combat-loot-loop",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:looter-shooter:combat-loot-loop",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:looter-shooter:combat-loot-loop",
+      "to": "system:looter-shooter:procedural-affix"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:looter-shooter:procedural-affix",
+      "to": "system:looter-shooter:loadout-build"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:looter-shooter:loadout-build",
+      "to": "system:looter-shooter:mission-instance"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:looter-shooter:mission-instance",
+      "to": "system:looter-shooter:cooperative-session"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:looter-shooter:cooperative-session",
+      "to": "system:looter-shooter:endgame-progression"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:looter-shooter",
+      "to": "system:looter-shooter:procedural-affix",
+      "order": 2
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:looter-shooter:procedural-affix",
+      "to": "ux:eff44e759df967c5"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:looter-shooter:procedural-affix",
+      "to": "ux:65ae7e60a3f2eb10"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:looter-shooter:procedural-affix",
+      "to": "domain:resources-and-economy"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:looter-shooter:procedural-affix",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:looter-shooter:procedural-affix",
+      "to": "domain:information-and-ui"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:looter-shooter:procedural-affix",
+      "to": "implementation:pictor:ui-rendering",
+      "assessment": "pictor-visual"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:looter-shooter",
+      "to": "system:looter-shooter:loadout-build",
+      "order": 3
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:looter-shooter:loadout-build",
+      "to": "ux:8f90c76d051ae071"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:looter-shooter:loadout-build",
+      "to": "ux:7fb4b30947b02823"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:looter-shooter:loadout-build",
+      "to": "domain:meta-and-live-operations"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:looter-shooter:loadout-build",
+      "to": "domain:accessibility-and-assistance"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:looter-shooter",
+      "to": "system:looter-shooter:mission-instance",
+      "order": 4
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:looter-shooter:mission-instance",
+      "to": "ux:2999742a6b03605a"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:looter-shooter:mission-instance",
+      "to": "ux:1b63b66107b9eccc"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:looter-shooter:mission-instance",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:looter-shooter:mission-instance",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:looter-shooter:mission-instance",
+      "to": "domain:content-and-pacing"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:looter-shooter",
+      "to": "system:looter-shooter:cooperative-session",
+      "order": 5
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:looter-shooter:cooperative-session",
+      "to": "ux:0b38736654c4c3bc"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:looter-shooter:cooperative-session",
+      "to": "ux:1be380841e916268"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:looter-shooter:cooperative-session",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:looter-shooter:cooperative-session",
+      "to": "domain:audio-and-rhythm"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:looter-shooter:cooperative-session",
+      "to": "domain:network-and-synchronization"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:looter-shooter",
+      "to": "system:looter-shooter:endgame-progression",
+      "order": 6
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:looter-shooter:endgame-progression",
+      "to": "ux:d92aebe834a48ae8"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:looter-shooter:endgame-progression",
+      "to": "ux:79dca58dcb75a487"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:looter-shooter:endgame-progression",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:looter-shooter:endgame-progression",
+      "to": "domain:meta-and-live-operations"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:asymmetric-multiplayer",
+      "to": "system:asymmetric-multiplayer:role-asymmetry",
+      "order": 1
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:asymmetric-multiplayer:role-asymmetry",
+      "to": "ux:f09ce87e7188f26a"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:asymmetric-multiplayer:role-asymmetry",
+      "to": "ux:19fb6b3cbc7ad2e6"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:asymmetric-multiplayer:role-asymmetry",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:asymmetric-multiplayer:role-asymmetry",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:asymmetric-multiplayer:role-asymmetry",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:asymmetric-multiplayer:role-asymmetry",
+      "to": "system:asymmetric-multiplayer:hidden-information"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:asymmetric-multiplayer:hidden-information",
+      "to": "system:asymmetric-multiplayer:pursuit-evasion"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:asymmetric-multiplayer:pursuit-evasion",
+      "to": "system:asymmetric-multiplayer:objective-pressure"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:asymmetric-multiplayer:objective-pressure",
+      "to": "system:asymmetric-multiplayer:elimination-rescue"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:asymmetric-multiplayer:elimination-rescue",
+      "to": "system:asymmetric-multiplayer:role-balance"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:asymmetric-multiplayer",
+      "to": "system:asymmetric-multiplayer:hidden-information",
+      "order": 2
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:asymmetric-multiplayer:hidden-information",
+      "to": "ux:132411ba41da7354"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:asymmetric-multiplayer:hidden-information",
+      "to": "ux:a1ffa9bbe49f610d"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:asymmetric-multiplayer:hidden-information",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:asymmetric-multiplayer",
+      "to": "system:asymmetric-multiplayer:pursuit-evasion",
+      "order": 3
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:asymmetric-multiplayer:pursuit-evasion",
+      "to": "ux:a1ffa9bbe49f610d"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:asymmetric-multiplayer:pursuit-evasion",
+      "to": "ux:d46d3b5804ac1d54"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:asymmetric-multiplayer:pursuit-evasion",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:asymmetric-multiplayer:pursuit-evasion",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:asymmetric-multiplayer:pursuit-evasion",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "system:asymmetric-multiplayer:pursuit-evasion",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "split"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:asymmetric-multiplayer",
+      "to": "system:asymmetric-multiplayer:objective-pressure",
+      "order": 4
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:asymmetric-multiplayer:objective-pressure",
+      "to": "ux:65ae7e60a3f2eb10"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:asymmetric-multiplayer:objective-pressure",
+      "to": "ux:0f8a05a9724e61ac"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:asymmetric-multiplayer:objective-pressure",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:asymmetric-multiplayer:objective-pressure",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:asymmetric-multiplayer",
+      "to": "system:asymmetric-multiplayer:elimination-rescue",
+      "order": 5
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:asymmetric-multiplayer:elimination-rescue",
+      "to": "ux:0b38736654c4c3bc"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:asymmetric-multiplayer:elimination-rescue",
+      "to": "ux:1c3a5a078e3ce5b4"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:asymmetric-multiplayer:elimination-rescue",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:asymmetric-multiplayer:elimination-rescue",
+      "to": "domain:network-and-synchronization"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:asymmetric-multiplayer",
+      "to": "system:asymmetric-multiplayer:role-balance",
+      "order": 6
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:asymmetric-multiplayer:role-balance",
+      "to": "ux:761295392476961e"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:asymmetric-multiplayer:role-balance",
+      "to": "ux:2411804b4d413030"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:asymmetric-multiplayer:role-balance",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:asymmetric-multiplayer:role-balance",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:mmorpg",
+      "to": "system:mmorpg:persistent-world",
+      "order": 1
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:mmorpg:persistent-world",
+      "to": "ux:b61a2d148fc730d3"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:mmorpg:persistent-world",
+      "to": "ux:1be380841e916268"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:mmorpg:persistent-world",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:mmorpg:persistent-world",
+      "to": "system:mmorpg:avatar-progression"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:mmorpg:avatar-progression",
+      "to": "system:mmorpg:quest-content"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:mmorpg:quest-content",
+      "to": "system:mmorpg:group-roles"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:mmorpg:group-roles",
+      "to": "system:mmorpg:social-guild"
+    },
+    {
+      "type": "PRECEDES",
+      "from": "system:mmorpg:social-guild",
+      "to": "system:mmorpg:economy-liveops"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:mmorpg",
+      "to": "system:mmorpg:avatar-progression",
+      "order": 2
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:mmorpg:avatar-progression",
+      "to": "ux:24fad9433dbd0365"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:mmorpg:avatar-progression",
+      "to": "ux:acdb56909eecad60"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:mmorpg:avatar-progression",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:mmorpg:avatar-progression",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:mmorpg",
+      "to": "system:mmorpg:quest-content",
+      "order": 3
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:mmorpg:quest-content",
+      "to": "ux:0a5be462c231210c"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:mmorpg:quest-content",
+      "to": "ux:590972386b14f267"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:mmorpg:quest-content",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:mmorpg:quest-content",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:mmorpg:quest-content",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:mmorpg:quest-content",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:mmorpg",
+      "to": "system:mmorpg:group-roles",
+      "order": 4
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:mmorpg:group-roles",
+      "to": "ux:0b38736654c4c3bc"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:mmorpg:group-roles",
+      "to": "ux:0bba7c376aacad35"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:mmorpg:group-roles",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:mmorpg:group-roles",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:mmorpg",
+      "to": "system:mmorpg:social-guild",
+      "order": 5
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:mmorpg:social-guild",
+      "to": "ux:23a18028ec1f824d"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:mmorpg:social-guild",
+      "to": "ux:2411804b4d413030"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:mmorpg:social-guild",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:mmorpg:social-guild",
+      "to": "domain:meta-and-live-operations"
+    },
+    {
+      "type": "HAS_SYSTEM",
+      "from": "genre:mmorpg",
+      "to": "system:mmorpg:economy-liveops",
+      "order": 6
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:mmorpg:economy-liveops",
+      "to": "ux:258a8124758e3d6e"
+    },
+    {
+      "type": "DELIVERS_UX",
+      "from": "system:mmorpg:economy-liveops",
+      "to": "ux:91ca175d56b093ef"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:mmorpg:economy-liveops",
+      "to": "domain:resources-and-economy"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "system:mmorpg:economy-liveops",
+      "to": "domain:meta-and-live-operations"
+    },
+    {
       "type": "CLASSIFIED_AS",
       "from": "case:monster-strike",
       "to": "genre:pull-and-strike-rpg",
@@ -17453,6 +19425,939 @@
       "type": "HAS_PICTOR_VISUAL_CANDIDATE",
       "from": "case:monster-strike",
       "to": "implementation:pictor:impact-and-postprocess",
+      "assessment": "case-study"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:counter-strike-2",
+      "to": "genre:tactical-shooter",
+      "role": "主ジャンル"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:counter-strike-2",
+      "to": "genre:shooter",
+      "role": "操作層"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:counter-strike-2",
+      "to": "system:tactical-shooter:round-objective"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:counter-strike-2",
+      "to": "system:tactical-shooter:precision-gunplay"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:counter-strike-2",
+      "to": "system:tactical-shooter:information-utility"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:counter-strike-2",
+      "to": "system:tactical-shooter:team-economy"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:counter-strike-2",
+      "to": "system:tactical-shooter:authoritative-hit"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:counter-strike-2",
+      "to": "system:shooter:s01"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:counter-strike-2",
+      "to": "system:shooter:s02"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:counter-strike-2",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:counter-strike-2",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:counter-strike-2",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:counter-strike-2",
+      "to": "domain:resources-and-economy"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:counter-strike-2",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:counter-strike-2",
+      "to": "domain:network-and-synchronization"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:counter-strike-2",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:counter-strike-2",
+      "to": "implementation:pictor:ui-rendering",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:counter-strike-2",
+      "to": "implementation:pictor:impact-and-postprocess",
+      "assessment": "case-study"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:apex-legends",
+      "to": "genre:hero-shooter",
+      "role": "キャラクター層"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:apex-legends",
+      "to": "genre:battle-royale",
+      "role": "試合構造"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:apex-legends",
+      "to": "system:hero-shooter:hero-roster"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:apex-legends",
+      "to": "system:hero-shooter:ability-kit"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:apex-legends",
+      "to": "system:hero-shooter:composition-synergy"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:apex-legends",
+      "to": "system:battle-royale:deployment-zone"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:apex-legends",
+      "to": "system:battle-royale:loot-inventory"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:apex-legends",
+      "to": "system:battle-royale:squad-revive"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:apex-legends",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:apex-legends",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:apex-legends",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:apex-legends",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:apex-legends",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:apex-legends",
+      "to": "domain:network-and-synchronization"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:apex-legends",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:apex-legends",
+      "to": "implementation:pictor:ui-rendering",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:apex-legends",
+      "to": "implementation:pictor:animation-presentation",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:apex-legends",
+      "to": "implementation:pictor:impact-and-postprocess",
+      "assessment": "case-study"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:palworld",
+      "to": "genre:creature-collector",
+      "role": "主循環"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:palworld",
+      "to": "genre:survival",
+      "role": "世界活動"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:palworld",
+      "to": "genre:open-world",
+      "role": "空間構造"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:palworld",
+      "to": "system:creature-collector:encounter-capture"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:palworld",
+      "to": "system:creature-collector:roster-storage"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:palworld",
+      "to": "system:creature-collector:party-composition"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:palworld",
+      "to": "system:creature-collector:habitat-work"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:palworld",
+      "to": "system:survival:gathering"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:palworld",
+      "to": "system:survival:building"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:palworld",
+      "to": "system:open-world:streaming-traversal"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:palworld",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:palworld",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:palworld",
+      "to": "domain:resources-and-economy"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:palworld",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:palworld",
+      "to": "domain:content-and-pacing"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:palworld",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:palworld",
+      "to": "implementation:pictor:ui-rendering",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:palworld",
+      "to": "implementation:pictor:animation-presentation",
+      "assessment": "case-study"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:assassins-creed-black-flag-resynced",
+      "to": "genre:stealth",
+      "role": "潜入層"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:assassins-creed-black-flag-resynced",
+      "to": "genre:open-world",
+      "role": "空間構造"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:assassins-creed-black-flag-resynced",
+      "to": "genre:adventure",
+      "role": "進行層"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:assassins-creed-black-flag-resynced",
+      "to": "system:stealth:perception-model"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:assassins-creed-black-flag-resynced",
+      "to": "system:stealth:suspicion-alert"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:assassins-creed-black-flag-resynced",
+      "to": "system:stealth:cover-traversal"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:assassins-creed-black-flag-resynced",
+      "to": "system:stealth:intervention-choice"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:assassins-creed-black-flag-resynced",
+      "to": "system:open-world:discovery-map"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:assassins-creed-black-flag-resynced",
+      "to": "system:adventure:scene-exploration"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:assassins-creed-black-flag-resynced",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:assassins-creed-black-flag-resynced",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:assassins-creed-black-flag-resynced",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:assassins-creed-black-flag-resynced",
+      "to": "domain:narrative-and-knowledge"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:assassins-creed-black-flag-resynced",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:assassins-creed-black-flag-resynced",
+      "to": "implementation:pictor:camera-presentation",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:assassins-creed-black-flag-resynced",
+      "to": "implementation:pictor:animation-presentation",
+      "assessment": "case-study"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:marvel-rivals",
+      "to": "genre:hero-shooter",
+      "role": "主ジャンル"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:marvel-rivals",
+      "to": "genre:shooter",
+      "role": "操作層"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:marvel-rivals",
+      "to": "system:hero-shooter:hero-roster"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:marvel-rivals",
+      "to": "system:hero-shooter:ability-kit"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:marvel-rivals",
+      "to": "system:hero-shooter:composition-synergy"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:marvel-rivals",
+      "to": "system:hero-shooter:objective-combat"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:marvel-rivals",
+      "to": "system:hero-shooter:ultimate-economy"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:marvel-rivals",
+      "to": "system:shooter:s01"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:marvel-rivals",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:marvel-rivals",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:marvel-rivals",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:marvel-rivals",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:marvel-rivals",
+      "to": "domain:presentation-and-feedback"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:marvel-rivals",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:marvel-rivals",
+      "to": "implementation:pictor:animation-presentation",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:marvel-rivals",
+      "to": "implementation:pictor:impact-and-postprocess",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:marvel-rivals",
+      "to": "implementation:pictor:ui-rendering",
+      "assessment": "case-study"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:overwatch",
+      "to": "genre:hero-shooter",
+      "role": "主ジャンル"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:overwatch",
+      "to": "genre:shooter",
+      "role": "操作層"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:overwatch",
+      "to": "system:hero-shooter:hero-roster"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:overwatch",
+      "to": "system:hero-shooter:ability-kit"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:overwatch",
+      "to": "system:hero-shooter:composition-synergy"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:overwatch",
+      "to": "system:hero-shooter:objective-combat"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:overwatch",
+      "to": "system:hero-shooter:ultimate-economy"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:overwatch",
+      "to": "system:hero-shooter:live-balance"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:overwatch",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:overwatch",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:overwatch",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:overwatch",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:overwatch",
+      "to": "domain:meta-and-live-operations"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:overwatch",
+      "to": "implementation:pictor:ui-rendering",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:overwatch",
+      "to": "implementation:pictor:animation-presentation",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:overwatch",
+      "to": "implementation:pictor:impact-and-postprocess",
+      "assessment": "case-study"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:meccha-chameleon",
+      "to": "genre:asymmetric-multiplayer",
+      "role": "試合構造"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:meccha-chameleon",
+      "to": "genre:stealth",
+      "role": "隠密層"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:meccha-chameleon",
+      "to": "system:asymmetric-multiplayer:role-asymmetry"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:meccha-chameleon",
+      "to": "system:asymmetric-multiplayer:hidden-information"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:meccha-chameleon",
+      "to": "system:asymmetric-multiplayer:pursuit-evasion"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:meccha-chameleon",
+      "to": "system:stealth:visibility-noise"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:meccha-chameleon",
+      "to": "system:stealth:suspicion-alert"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:meccha-chameleon",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:meccha-chameleon",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:meccha-chameleon",
+      "to": "domain:information-and-ui"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:meccha-chameleon",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:meccha-chameleon",
+      "to": "domain:presentation-and-feedback"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:meccha-chameleon",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:meccha-chameleon",
+      "to": "implementation:pictor:ui-rendering",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:meccha-chameleon",
+      "to": "implementation:pictor:text-vector-motion",
+      "assessment": "case-study"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:warframe",
+      "to": "genre:looter-shooter",
+      "role": "主循環"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:warframe",
+      "to": "genre:hack-and-slash",
+      "role": "近接・装備層"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:warframe",
+      "to": "genre:rpg",
+      "role": "成長層"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:warframe",
+      "to": "system:looter-shooter:combat-loot-loop"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:warframe",
+      "to": "system:looter-shooter:procedural-affix"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:warframe",
+      "to": "system:looter-shooter:loadout-build"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:warframe",
+      "to": "system:looter-shooter:mission-instance"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:warframe",
+      "to": "system:looter-shooter:cooperative-session"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:warframe",
+      "to": "system:hack-and-slash:s04"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:warframe",
+      "to": "system:rpg:s03"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:warframe",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:warframe",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:warframe",
+      "to": "domain:resources-and-economy"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:warframe",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:warframe",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:warframe",
+      "to": "domain:meta-and-live-operations"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:warframe",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:warframe",
+      "to": "implementation:pictor:animation-presentation",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:warframe",
+      "to": "implementation:pictor:impact-and-postprocess",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:warframe",
+      "to": "implementation:pictor:ui-rendering",
+      "assessment": "case-study"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:dead-by-daylight",
+      "to": "genre:asymmetric-multiplayer",
+      "role": "主構造"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:dead-by-daylight",
+      "to": "genre:horror",
+      "role": "感情層"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:dead-by-daylight",
+      "to": "genre:stealth",
+      "role": "生存者行動"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:dead-by-daylight",
+      "to": "system:asymmetric-multiplayer:role-asymmetry"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:dead-by-daylight",
+      "to": "system:asymmetric-multiplayer:hidden-information"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:dead-by-daylight",
+      "to": "system:asymmetric-multiplayer:pursuit-evasion"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:dead-by-daylight",
+      "to": "system:asymmetric-multiplayer:objective-pressure"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:dead-by-daylight",
+      "to": "system:asymmetric-multiplayer:elimination-rescue"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:dead-by-daylight",
+      "to": "system:horror:s03"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:dead-by-daylight",
+      "to": "system:stealth:detection-recovery"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:dead-by-daylight",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:dead-by-daylight",
+      "to": "domain:space-and-navigation"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:dead-by-daylight",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:dead-by-daylight",
+      "to": "domain:objectives-and-progression"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:dead-by-daylight",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:dead-by-daylight",
+      "to": "domain:audio-and-rhythm"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:dead-by-daylight",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:dead-by-daylight",
+      "to": "implementation:pictor:animation-presentation",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:dead-by-daylight",
+      "to": "implementation:pictor:impact-and-postprocess",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:dead-by-daylight",
+      "to": "implementation:pictor:ui-rendering",
+      "assessment": "case-study"
+    },
+    {
+      "type": "CLASSIFIED_AS",
+      "from": "case:college-football-27",
+      "to": "genre:sports",
+      "role": "主ジャンル"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:college-football-27",
+      "to": "system:sports:player-team-control"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:college-football-27",
+      "to": "system:sports:object-physics"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:college-football-27",
+      "to": "system:sports:match-rules"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:college-football-27",
+      "to": "system:sports:opponent-ai"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:college-football-27",
+      "to": "system:sports:score-replay"
+    },
+    {
+      "type": "EXEMPLIFIES_SYSTEM",
+      "from": "case:college-football-27",
+      "to": "system:sports:online-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:college-football-27",
+      "to": "domain:actors"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:college-football-27",
+      "to": "domain:input-and-control"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:college-football-27",
+      "to": "domain:conflict-and-resolution"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:college-football-27",
+      "to": "domain:rules-and-state"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:college-football-27",
+      "to": "domain:social-and-session"
+    },
+    {
+      "type": "USES_DOMAIN_ELEMENT",
+      "from": "case:college-football-27",
+      "to": "domain:presentation-and-feedback"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:college-football-27",
+      "to": "implementation:pictor:scene-rendering",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:college-football-27",
+      "to": "implementation:pictor:camera-presentation",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:college-football-27",
+      "to": "implementation:pictor:ui-rendering",
+      "assessment": "case-study"
+    },
+    {
+      "type": "HAS_PICTOR_VISUAL_CANDIDATE",
+      "from": "case:college-football-27",
+      "to": "implementation:pictor:animation-presentation",
       "assessment": "case-study"
     }
   ]

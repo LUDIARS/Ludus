@@ -25,6 +25,7 @@ timestamp: "2026-07-15T00:00:00+09:00"
 - 達成感: 簡単なタスクの完了
 - 達成感: 解けた時の安堵
 - 達成感: 走りの精度を数値で確かめられる
+- 達成感: 集団で難所を越える
 - 達成感: 高コンボ成功の喜び
 
 # 接続元
@@ -36,6 +37,7 @@ timestamp: "2026-07-15T00:00:00+09:00"
 - [日課と行動力](../systems/life-sim/daily-actions.md)
 - [ボス戦/チャレンジ](../systems/metroidvania/s07.md)
 - [マップシステム/ナビゲーション](../systems/metroidvania/s08.md)
+- [パーティ役割と大規模協力](../systems/mmorpg/group-roles.md)
 - [コンボシステム/倍率計算](../systems/puzzle-rpg/s02.md)
 - [制限/目標システム](../systems/puzzle/s05.md)
 - [ノーツ/判定システム](../systems/rhythm/s01.md)

@@ -4,10 +4,10 @@
 
 ## 構成
 
-- ジャンル: 34
-- タイトル事例: 1
-- 主要システム: 259
-- UX成果: 497
+- ジャンル: 41
+- タイトル事例: 11
+- 主要システム: 301
+- UX成果: 530
 - ドメイン要素: 16
 - Pictor候補: 6
 
@@ -53,14 +53,32 @@
 - [ランナー／エンドレスラン](./genres/runner.md)
 - [サバイバーライク](./genres/survivors-like.md)
 - [弾きアクションRPG](./genres/pull-and-strike-rpg.md)
+- [タクティカルシューター](./genres/tactical-shooter.md)
+- [ヒーローシューター](./genres/hero-shooter.md)
+- [クリーチャー収集](./genres/creature-collector.md)
+- [ステルス](./genres/stealth.md)
+- [ルーターシューター](./genres/looter-shooter.md)
+- [非対称マルチプレイ](./genres/asymmetric-multiplayer.md)
+- [MMORPG](./genres/mmorpg.md)
 
 ## タイトル事例
 
 - [モンスターストライク](./cases/monster-strike.md)
+- [Counter-Strike 2](./cases/counter-strike-2.md)
+- [Apex Legends](./cases/apex-legends.md)
+- [Palworld](./cases/palworld.md)
+- [Assassin's Creed Black Flag Resynced](./cases/assassins-creed-black-flag-resynced.md)
+- [Marvel Rivals](./cases/marvel-rivals.md)
+- [Overwatch](./cases/overwatch.md)
+- [MECCHA CHAMELEON](./cases/meccha-chameleon.md)
+- [Warframe](./cases/warframe.md)
+- [Dead by Daylight](./cases/dead-by-daylight.md)
+- [EA SPORTS College Football 27](./cases/college-football-27.md)
 
 ## 生成元
 
 - 原典: Notion「ゲーム構造一覧 (テンプレート一覧)」 (page id: `30453028-8e8d-805d-a922-f92949ebd575`)
 - 変換元: `game-knowledge-graph` の `manifest.json` と `graph/*.json`
-- Ludus補完: `spec/data/okf/ludus-play-supplement.json`（原典にない代表ジャンル・横断要素）
+- Ludus補完: `spec/data/okf/ludus-play-supplement.json`
+- Ludus補完: `spec/data/okf/ludus-steam-supplement.json`
 - 生成器: `tools/import-game-knowledge-graph.mjs`

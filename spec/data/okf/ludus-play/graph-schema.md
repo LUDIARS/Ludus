@@ -26,7 +26,7 @@ timestamp: "2026-07-15T00:00:00+09:00"
 
 | エッジ | 向き | 意味 |
 | --- | --- | --- |
-| `HAS_SYSTEM` | Genre → System | ジャンルがそのシステムを主要要素として持つ。 |
+| `HAS_SYSTEM` | Genre → System | ジャンルがそのシステムを主要要素として持つ。`order` は実装順を示す任意の整数で、順序不明なら `null`。 |
 | `CLASSIFIED_AS` | Case Study → Genre | タイトル事例をジャンルとして分類する。 |
 | `EXEMPLIFIES_SYSTEM` | Case Study → System | タイトル事例がシステムを具体例として持つ。 |
 | `DELIVERS_UX` | System → UX Outcome | システムが目標とする体験効果。 |
@@ -38,3 +38,5 @@ timestamp: "2026-07-15T00:00:00+09:00"
 # 投影データ
 
 [`exports/property-graph.json`](exports/property-graph.json) は、このOKF bundleをグラフDBへ投入するための損失のないノード・エッジ投影である。
+
+`path` はこのbundleルートからの相対パスである。利用側はルートへ安全に解決し、ルート外を指す絶対パスまたは `..` を含む逸脱パスを拒否しなければならない。
